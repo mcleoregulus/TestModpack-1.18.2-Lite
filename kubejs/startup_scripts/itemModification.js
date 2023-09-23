@@ -55,6 +55,27 @@ onEvent('item.modification', event => {
 	event.modify('minecraft:diamond_axe', item => {item.attackDamage = 4.5, item.attackSpeed = 1.0})
 	event.modify('minecraft:netherite_axe', item => {item.attackDamage = 5, item.attackSpeed = 1.0})
 
+	event.modify('minecraft:wooden_shovel', item => {item.attackDamage = 1.5, item.attackSpeed = 1.0})
+	event.modify('minecraft:stone_shovel', item => {item.attackDamage = 2, item.attackSpeed = 1.0})
+	event.modify('minecraft:golden_shovel', item => {item.attackDamage = 1.5, item.attackSpeed = 1.0})
+	event.modify('minecraft:iron_shovel', item => {item.attackDamage = 2.5, item.attackSpeed = 1.0})
+	event.modify('minecraft:diamond_shovel', item => {item.attackDamage = 3, item.attackSpeed = 1.0})
+	event.modify('minecraft:netherite_shovel', item => {item.attackDamage = 3.5, item.attackSpeed = 1.0})
+
+	event.modify('minecraft:wooden_pickaxe', item => {item.attackDamage = 1, item.attackSpeed = 1.2})
+	event.modify('minecraft:stone_pickaxe', item => {item.attackDamage = 1.5, item.attackSpeed = 1.2})
+	event.modify('minecraft:golden_pickaxe', item => {item.attackDamage = 1, item.attackSpeed = 1.2})
+	event.modify('minecraft:iron_pickaxe', item => {item.attackDamage = 2, item.attackSpeed = 1.2})
+	event.modify('minecraft:diamond_pickaxe', item => {item.attackDamage = 2.5, item.attackSpeed = 1.2})
+	event.modify('minecraft:netherite_pickaxe', item => {item.attackDamage = 3, item.attackSpeed = 1.2})
+
+	event.modify('minecraft:wooden_hoe', item => {item.attackDamage = 1, item.attackSpeed = 1})
+	event.modify('minecraft:stone_hoe', item => {item.attackDamage = 1, item.attackSpeed = 1.5})
+	event.modify('minecraft:golden_hoe', item => {item.attackDamage = 1, item.attackSpeed = 1})
+	event.modify('minecraft:iron_hoe', item => {item.attackDamage = 1, item.attackSpeed = 2})
+	event.modify('minecraft:diamond_hoe', item => {item.attackDamage = 1, item.attackSpeed = 3})
+	event.modify('minecraft:netherite_hoe', item => {item.attackDamage = 1, item.attackSpeed = 3})
+
 
 
 
