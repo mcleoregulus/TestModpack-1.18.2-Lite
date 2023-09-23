@@ -1,0 +1,78 @@
+// priority: 0
+
+console.info('Hello, World! (You will only see this line once in console, during startup)')
+
+onEvent('item.registry', event => {
+	// Register new items here
+	event.create('example_item').displayName('Example Item')
+})
+
+onEvent('block.registry', event => {
+	// Register new blocks here
+
+	// event.create('red_block1').material('rock').hardness(2.0).displayName('Bloody Block 1')
+	// event.create('red_block2').material('rock').hardness(2.0).displayName('Bloody Block 2')
+	// event.create('red_block3').material('rock').hardness(2.0).displayName('Bloody Block 3')
+
+	event.create('deepgravel').material('clay').hardness(0.6)
+		 .tagBlock('minecraft:mineable/shovel')
+		 .displayName('渊邃砂砾')
+
+
+
+	onEvent('item.modification', event => {
+
+		// event.modify('minecraft:netherite_sword', item => {
+		// item.attackDamage = 20
+		// item.attackSpeed = 2})
+
+		event.modify('chainmail_helmet', item => {item.armorProtection = 1})
+		event.modify('chainmail_chestplate', item => {item.armorProtection = 2})
+		event.modify('chainmail_leggings', item => {item.armorProtection = 2})
+		event.modify('chainmail_boots', item => {item.armorProtection = 1})
+
+		event.modify('leather_helmet', item => {item.armorProtection = 0.5})
+		event.modify('leather_chestplate', item => {item.armorProtection = 1})
+		event.modify('leather_leggings', item => {item.armorProtection = 1})
+		event.modify('leather_boots', item => {item.armorProtection = 0.5})
+
+		event.modify('iron_helmet', item => {item.armorProtection = 1})
+		event.modify('iron_chestplate', item => {item.armorProtection = 3})
+		event.modify('iron_leggings', item => {item.armorProtection = 2})
+		event.modify('iron_boots', item => {item.armorProtection = 1})
+
+		event.modify('golden_helmet', item => {item.armorProtection = 1})
+		event.modify('golden_chestplate', item => {item.armorProtection = 2})
+		event.modify('golden_leggings', item => {item.armorProtection = 1})
+		event.modify('golden_boots', item => {item.armorProtection = 1})
+
+		event.modify('diamond_helmet', item => {item.armorProtection = 2, item.armorToughness = 1})
+		event.modify('diamond_chestplate', item => {item.armorProtection = 4, item.armorToughness = 1})
+		event.modify('diamond_leggings', item => {item.armorProtection = 3, item.armorToughness = 1})
+		event.modify('diamond_boots', item => {item.armorProtection = 1, item.armorToughness = 1})
+
+		event.modify('neitherite_helmet', item => {item.armorProtection = 2, item.armorToughness = 1, item.armorKnockbackResistance = 0.5})
+		event.modify('neitherite_helmet', item => {item.armorProtection = 5, item.armorToughness = 1, item.armorKnockbackResistance = 0.5})
+		event.modify('neitherite_helmet', item => {item.armorProtection = 3, item.armorToughness = 1, item.armorKnockbackResistance = 0.5})
+		event.modify('neitherite_helmet', item => {item.armorProtection = 1, item.armorToughness = 1, item.armorKnockbackResistance = 0.5})
+
+		event.modify('minecraft:wooden_sword', item => {item.attackDamage = 2})
+		event.modify('minecraft:stone_sword', item => {item.attackDamage = 2.5})
+		event.modify('minecraft:iron_sword', item => {item.attackDamage = 3})
+		event.modify('minecraft:golden_sword', item => {item.attackDamage = 2})
+		event.modify('minecraft:diamond_sword', item => {item.attackDamage = 3.5})
+		event.modify('minecraft:neitherite_sword', item => {item.attackDamage = 4})
+
+		event.modify('minecraft:wooden_axe', item => {item.attackDamage = 3.5})
+		event.modify('minecraft:stone_axe', item => {item.attackDamage = 4.5})
+		event.modify('minecraft:iron_axe', item => {item.attackDamage = 4.5})
+		event.modify('minecraft:golden_axe', item => {item.attackDamage = 3.5})
+		event.modify('minecraft:diamond_axe', item => {item.attackDamage = 4.5})
+		event.modify('minecraft:neitherite_axe', item => {item.attackDamage = 5})
+
+
+		event.modify('botania:blaze_block', item => {item.setBurnTime(3200)})
+
+})
+	
+})

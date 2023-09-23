@@ -1,0 +1,12 @@
+{
+	id: "3655D58E413A17F3"
+	group: "5493F94E7DB4FE3F"
+	order_index: 1
+	filename: "3655D58E413A17F3"
+	title: "第二节 蒸汽动力"
+	icon: "create:blaze_burner"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

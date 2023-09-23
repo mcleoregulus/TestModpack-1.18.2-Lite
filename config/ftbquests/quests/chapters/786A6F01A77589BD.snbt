@@ -1,0 +1,1232 @@
+{
+	id: "786A6F01A77589BD"
+	group: "5493F94E7DB4FE3F"
+	order_index: 0
+	filename: "786A6F01A77589BD"
+	title: "第一节 万事之初"
+	icon: "create:andesite_alloy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "“原木”"
+			x: 6.5d
+			y: 3.0d
+			shape: "octagon"
+			subtitle: "找到一些木头"
+			description: [
+				"似乎在这塔的附近并没有太多的危险，甚至附近还有许多形似是树木的植物，而获取一些原木正是你目前最为紧要的任务，毕竟——要致富先撸树。\\n"
+				"这些形态各异的木头和主世界的原木们有着相同的做用，放心使用。"
+			]
+			dependencies: ["2CB79087C1829C0F"]
+			size: 1.25d
+			id: "558EF48031FEA428"
+			tasks: [{
+				id: "14582D527028F308"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "7C18D518F2456F45"
+					type: "item"
+					item: "undergarden:wigglewood_sapling"
+				}
+				{
+					id: "58FE760F48C9D44D"
+					type: "item"
+					item: "undergarden:grongle_sapling"
+				}
+				{
+					id: "364343452143678A"
+					type: "item"
+					item: "undergarden:smogstem_sapling"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "欢迎来到【飞升】"
+			description: [
+				"这里将是你开始游戏的第一步，配方经过了大量的魔改，所以请务必跟随任务线行动，而在任务线中，正八边形的都是更为重要的主线，而正八边形中，图标更大的意味着更加重要，可以尽量有限考虑完成更加重要的任务，这将让你的旅途更加顺畅。\\n"
+				"主线任务（八边形图标的任务）一般会在第一段有额外的剧情描述，你当然可以略过他们。但是第二段的提示性文字较为重要，可能会极大程度的影响你的游玩体验，请务必认真阅读，尤其是对于那些没有那么多整合包经验的新手玩家，认真阅读任务提示将会解决你超过九成的问题。"
+			]
+			id: "3A62AA5CFA9FA205"
+			tasks: [{
+				id: "2EF4FA6F04E913BD"
+				type: "dimension"
+				dimension: "undergarden:undergarden"
+			}]
+			rewards: [{
+				id: "0ED9AEE8255F7C54"
+				type: "item"
+				item: "farmersdelight:steak_and_potatoes"
+				count: 5
+			}]
+		}
+		{
+			title: "匠人之初"
+			x: 10.5d
+			y: -4.0d
+			subtitle: "匠魂"
+			description: ["普通的工具或许并不能满足你的需求，因此你或许需要使用一些传统的手艺，去打造更加实用的工具，比如鹤嘴锄。"]
+			id: "27788F0121316A53"
+			tasks: [
+				{
+					id: "358EBC9FA15E3752"
+					type: "item"
+					item: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_wood"
+						}
+					}
+				}
+				{
+					id: "68D1DD6C976FFB4B"
+					type: "item"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "70E1FF837AA50090"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "352E2B3D801AA31F"
+					type: "item"
+					item: "tconstruct:materials_and_you"
+				}
+				{
+					id: "47FFF7F9668A0378"
+					type: "item"
+					item: "tconstruct:pattern"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "第一步"
+			x: 4.0d
+			y: 3.0d
+			shape: "octagon"
+			subtitle: "出门吧"
+			description: ["环顾四周后，你发现这似乎是一个未知的维度，塔内也没有任何可用的物资，因此为了发展，你不得不踏出相对安全的塔内，对这个陌生的世界略作探索。"]
+			size: 1.75d
+			id: "2CB79087C1829C0F"
+			tasks: [{
+				id: "05C2DD5EF7CD3CCC"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "56501D218EB5B5B9"
+				type: "item"
+				item: {
+					id: "tconstruct:mattock"
+					Count: 1b
+					tag: {
+						tic_multipliers: {
+							"tconstruct:mining_speed": 1.1f
+							"tconstruct:attack_damage": 1.1f
+							"tconstruct:durability": 1.25f
+						}
+						tic_stats: {
+							"tconstruct:attack_speed": 0.9f
+							"tconstruct:mining_speed": 2.2f
+							"tconstruct:attack_damage": 1.6500001f
+							"tconstruct:harvest_tier": "minecraft:wood"
+							"tconstruct:durability": 75.0f
+						}
+						tic_broken: 0b
+						tic_modifiers: [
+							{
+								name: "tconstruct:sticky"
+								level: 1s
+							}
+							{
+								name: "tconstruct:cultivated"
+								level: 3s
+							}
+							{
+								name: "tconstruct:tilling"
+								level: 1s
+							}
+						]
+						tic_materials: [
+							"tconstruct:wood"
+							"tconstruct:wood"
+							"tconstruct:wood"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "扼塞"
+			x: 8.5d
+			y: 3.0d
+			shape: "octagon"
+			description: [
+				"在探索的过程中，你发现了一些新的矿物，他们似乎和铁有着近似的性质，可以用来制作一些基础的合金，这让你有了发展机械动力的基础，而这也将成为你工业大厦的基础！\\n"
+				"你并不需要使用太多的扼塞来做出初步的产线，你目前的装备也不太能够支持你远离基地去挖掘更多的矿物，所以挖一点就行了，回去推科技吧。"
+			]
+			dependencies: ["558EF48031FEA428"]
+			size: 1.25d
+			id: "694463A85FFAF211"
+			tasks: [{
+				id: "5D7815EA2B22F3CF"
+				type: "item"
+				item: "undergarden:raw_cloggrum"
+				count: 16L
+			}]
+			rewards: [{
+				id: "34DDCB4E38BDEFAB"
+				type: "item"
+				item: "undergarden:cloggrum_ingot"
+				count: 16
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			id: "32FBC47888ADD160"
+			tasks: [
+				{
+					id: "4EBD91EE21D96CC7"
+					type: "item"
+					item: {
+						id: "tconstruct:repair_kit"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:rock"
+						}
+					}
+					count: 5L
+				}
+				{
+					id: "15EB949EFB71A952"
+					type: "item"
+					item: {
+						id: "tconstruct:mattock"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 1.1f
+								"tconstruct:attack_damage": 1.1f
+								"tconstruct:durability": 1.25f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:mining_speed": 4.62f
+								"tconstruct:attack_damage": 2.75f
+								"tconstruct:harvest_tier": "minecraft:stone"
+								"tconstruct:durability": 145.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:sticky"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 3s
+								}
+								{
+									name: "tconstruct:tilling"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:rock"
+								"tconstruct:rock"
+								"tconstruct:rock"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "674E9559B3ED480E"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe"
+						Count: 1b
+						tag: {
+							tic_stats: {
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:mining_speed": 4.2f
+								"tconstruct:attack_damage": 1.0f
+								"tconstruct:harvest_tier": "minecraft:stone"
+								"tconstruct:durability": 116.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [
+								{
+									name: "tconstruct:piercing"
+									level: 1s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 3s
+								}
+							]
+							tic_materials: [
+								"tconstruct:rock"
+								"tconstruct:rock"
+								"tconstruct:rock"
+							]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "渊邃合金"
+			x: 10.5d
+			y: 4.0d
+			shape: "octagon"
+			subtitle: "第一个合金！"
+			description: [
+				"终于你在这个世界用本土物品做出了一种全新的合金，它可以用来制作基础的动力机械，机械化时代要开始了！\\n"
+				"其实就是安山合金"
+			]
+			dependencies: [
+				"1EB78E679ADEF560"
+				"694463A85FFAF211"
+			]
+			size: 1.25d
+			id: "01F0BE597AD815FA"
+			tasks: [{
+				id: "15BC463F1FC87D65"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 32L
+			}]
+			rewards: [{
+				id: "4225BF857D05E3D8"
+				type: "item"
+				item: "create:shaft"
+				count: 16
+			}]
+		}
+		{
+			title: "渊邃石"
+			x: 8.5d
+			y: 5.0d
+			description: ["圆石当然也是必不可少的,很快你还会需要大量的渊邃石，但是之后的事情，之后再说，现在有点就行了。"]
+			id: "1EB78E679ADEF560"
+			tasks: [{
+				id: "37C1145D37BF1114"
+				type: "item"
+				item: "undergarden:depthrock"
+				count: 32L
+			}]
+			rewards: [{
+				id: "0D279BCB6AF28ADA"
+				type: "item"
+				item: "undergarden:depthrock"
+				count: 32
+			}]
+		}
+		{
+			title: "粘土"
+			x: 13.0d
+			y: -1.5d
+			shape: "octagon"
+			description: [
+				"为了给水车提供动力，水当然是必不可少的，但是如何获取水成了你现在的大问题。为此你不得不使用一些原始的方法制作粘土，然后烧制粘土的桶来获取水。\\n"
+				"先制作一个滴灌器，然后用碗装一点水放进去，滴灌器就会缓慢的将水滴到下方的沉沙上，一段时间后沉沙就会转换成粘土。"
+			]
+			id: "6D58DD9C99A96251"
+			tasks: [
+				{
+					id: "03FDD70689C8F8CA"
+					type: "item"
+					item: "ftbdripper:water_bowl"
+				}
+				{
+					id: "7CA4ED8ED6E94E03"
+					type: "item"
+					item: "ftbdripper:dripper"
+				}
+				{
+					id: "33247B8F8C2ABBEB"
+					type: "item"
+					item: "undergarden:sediment"
+				}
+			]
+		}
+		{
+			x: 13.0d
+			y: 2.5d
+			shape: "octagon"
+			description: [
+				"水车，这是你摆脱人力的第一步，运用水流的落差就可以让水车产生应力，而你现在，万事俱备。\\n"
+				"理论上来说这应该是你做出的第一个create的机械，因此在此特别提醒，应力是机械动力的能量单位（类似吧），但是应力是不能储存的（力怎么储存），你只需要关心你机械产生的应力是否够大，每个水车可以产生256su的应力，基本上够前期使用了，顺便送你个应力表，可以让你查看目前应力。至于水车怎么用，鼠标对着它长按w，机械动力的思索功能会详细的告诉你使用方法。"
+			]
+			dependencies: [
+				"01F0BE597AD815FA"
+				"0844C4B7C934391A"
+			]
+			size: 1.5d
+			id: "4730569856210C01"
+			tasks: [{
+				id: "764B3E3CD49A3208"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+			rewards: [
+				{
+					id: "565CC73CF47CFE35"
+					type: "item"
+					item: "create:water_wheel"
+					count: 3
+				}
+				{
+					id: "2AAE57E324545AB8"
+					type: "item"
+					item: "create:stressometer"
+				}
+			]
+		}
+		{
+			title: "水"
+			x: 13.0d
+			y: 0.5d
+			dependencies: [
+				"6D58DD9C99A96251"
+				"54C52B9640F8EF65"
+			]
+			id: "0844C4B7C934391A"
+			tasks: [{
+				id: "46CF346BCBFE8037"
+				type: "item"
+				item: {
+					id: "ceramicbucket:ceramic_bucket"
+					Count: 1b
+					tag: {
+						Fluid: {
+							FluidName: "minecraft:water"
+							Amount: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: 5.5d
+			subtitle: "初级变速"
+			description: ["齿轮是传动和变速必不可少的部分，大齿轮传动给小齿轮就可以增加转速，使机械运行更快，当然所需应力也会增加；反之亦然。"]
+			dependencies: ["01F0BE597AD815FA"]
+			id: "2ED18F5651CCC9BE"
+			tasks: [
+				{
+					id: "3C174AABF1346409"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "26E1210114916F52"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+			rewards: [
+				{
+					id: "215415AD3EF64A97"
+					type: "item"
+					item: "create:cogwheel"
+					count: 4
+				}
+				{
+					id: "6A956C6CE8A2F445"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 19.0d
+			y: 2.5d
+			dependencies: ["52F968B9ED84F02F"]
+			id: "216F9B101D05252C"
+			tasks: [{
+				id: "0B429B5267BE8098"
+				type: "item"
+				item: "create:gearbox"
+			}]
+			rewards: [{
+				id: "44DC9504BA3BC800"
+				type: "item"
+				item: "create:gearbox"
+				count: 4
+			}]
+		}
+		{
+			x: 19.0d
+			y: 0.5d
+			description: ["动力搅拌器的运行最少需要32RPM的转速，因此前期的"]
+			dependencies: ["52F968B9ED84F02F"]
+			id: "7515FFD4667DA4C4"
+			tasks: [{
+				id: "72E0036B66F4BDA9"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+			rewards: [{
+				id: "3B5C7630C4B4F240"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			title: "渊邃机壳"
+			x: 15.75d
+			y: 4.0d
+			shape: "octagon"
+			description: [
+				"你将渊邃合金和原木结合，做出了第一个机器模型——渊邃机壳，他是一些最基本机械装置的外壳，虽然简单，但是确实第一步。\\n"
+				"具体制作方法是将原木放置下来，手持渊邃合金对其右键，就会得到渊邃机壳。"
+			]
+			dependencies: ["01F0BE597AD815FA"]
+			size: 1.75d
+			id: "52F968B9ED84F02F"
+			tasks: [{
+				id: "675E9B3378ABFC1F"
+				type: "item"
+				item: "create:andesite_casing"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "21D50D703BD42A61"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "60BE29B27F96A1EF"
+					type: "item"
+					item: "create:wrench"
+				}
+			]
+		}
+		{
+			x: 19.0d
+			y: 5.5d
+			dependencies: ["52F968B9ED84F02F"]
+			id: "42BADEE8C253324B"
+			tasks: [{
+				id: "430F15B7A7CCE9D9"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 10.5d
+			shape: "octagon"
+			description: [
+				"科技的发展哪些是必要的？能源、技术，和矿物！你解决了能源，拥有技术，现在你需要各种各样的矿物，海量的矿物。因此你的首先需要做动力筛网，以自动化的获得矿物。\\n"
+				"筛子当然是需要筛网的，手持筛网右键就可以将筛网安置到筛子上。而该动力筛网内置存储空间，想要添加原材料直接将其丢进去就可以了，而筛得的产物会暂时存储在筛子内，右键即可取出。当然漏斗和物品管道都是可以用的。"
+				"全速运转的动力筛子需要1024su的应力，四个水车就可以满足其需求,当然你也可以用大水车，每个产生512su。"
+			]
+			dependencies: ["52F968B9ED84F02F"]
+			size: 1.5d
+			id: "61FB5CFB60E8D0B9"
+			tasks: [{
+				id: "281B713E080A1D7F"
+				type: "item"
+				item: "createsifter:sifter"
+			}]
+			rewards: [{
+				id: "460A097CBF94E8E5"
+				type: "item"
+				item: {
+					id: "createsifter:andesite_mesh"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 19.0d
+			y: 8.5d
+			dependencies: ["52F968B9ED84F02F"]
+			id: "7BC936A7E756C552"
+			tasks: [{
+				id: "1010AA05CEF4D4AA"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [
+				{
+					id: "2E867850A3DA93D8"
+					type: "item"
+					item: "create:hand_crank"
+				}
+				{
+					id: "5C7D54BC5BB8C6F5"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+			]
+		}
+		{
+			x: 21.5d
+			y: 10.5d
+			shape: "octagon"
+			dependencies: ["61FB5CFB60E8D0B9"]
+			size: 1.25d
+			id: "0BDD398F1ADF2B56"
+			tasks: [{
+				id: "1B2B79EEF7A30183"
+				type: "item"
+				item: "create_mechanical_extruder:mechanical_extruder"
+			}]
+			rewards: [
+				{
+					id: "78759FAE6C4DBD38"
+					type: "item"
+					item: "cyclic:hopper"
+				}
+				{
+					id: "3832E8E547EF0035"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_1"
+				}
+			]
+		}
+		{
+			x: 24.0d
+			y: 8.5d
+			dependencies: [
+				"0BDD398F1ADF2B56"
+				"7BC936A7E756C552"
+			]
+			id: "2750B49C1E261600"
+			tasks: [{
+				id: "18BCF09389977959"
+				type: "item"
+				item: "kubejs:deepgravel"
+				count: 64L
+			}]
+			rewards: [{
+				id: "5E403D66D9E6DDCC"
+				type: "item"
+				item: "kubejs:deepgravel"
+				count: 64
+			}]
+		}
+		{
+			x: 24.0d
+			y: 10.5d
+			dependencies: [
+				"0BDD398F1ADF2B56"
+				"2750B49C1E261600"
+			]
+			id: "5539DCDA178B4A4E"
+			tasks: [{
+				id: "285469EE1FC4B5AC"
+				type: "item"
+				item: "undergarden:sediment"
+				count: 64L
+			}]
+			rewards: [{
+				id: "20BFE0202C4FF81C"
+				type: "item"
+				item: "undergarden:sediment"
+				count: 64
+			}]
+		}
+		{
+			x: 24.0d
+			y: 12.5d
+			dependencies: [
+				"0B7B21C9B858C12D"
+				"0F4AC83D66F4FEE7"
+				"0BDD398F1ADF2B56"
+			]
+			id: "6B6EA4F6F32B065C"
+			tasks: [{
+				id: "480E75F512BE3158"
+				type: "item"
+				item: "undergarden:deepsoil"
+				count: 64L
+			}]
+			rewards: [{
+				id: "002A09BFFC615027"
+				type: "item"
+				item: "undergarden:deepsoil"
+				count: 64
+			}]
+		}
+		{
+			x: 23.0d
+			y: 14.0d
+			id: "0B7B21C9B858C12D"
+			tasks: [{
+				id: "0C230270FC2F678A"
+				type: "item"
+				item: "undergarden:coarse_deepsoil"
+				count: 64L
+			}]
+			rewards: [{
+				id: "611B8C59916C6B8B"
+				type: "item"
+				item: "undergarden:coarse_deepsoil"
+				count: 64
+			}]
+		}
+		{
+			x: 25.0d
+			y: 14.0d
+			id: "0F4AC83D66F4FEE7"
+			tasks: [{
+				id: "0BBF11EA5C9FFAB2"
+				type: "item"
+				item: "undergarden:depthrock_pebble"
+				count: 32L
+			}]
+			rewards: [{
+				id: "43A51AD4432475CE"
+				type: "item"
+				item: "undergarden:depthrock_pebble"
+				count: 32
+			}]
+		}
+		{
+			x: 19.0d
+			y: -1.5d
+			dependencies: ["52F968B9ED84F02F"]
+			id: "0823156FFE20F36B"
+			tasks: [{
+				id: "4B3123542A86A6FC"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "3B78BD11FACA8452"
+				type: "item"
+				item: "create:depot"
+			}]
+		}
+		{
+			x: 26.5d
+			y: 8.5d
+			dependencies: ["2750B49C1E261600"]
+			id: "2EE0E74C38CE3A57"
+			tasks: [
+				{
+					id: "1A71A99F6CA5CCCF"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 16L
+				}
+				{
+					id: "2F61AE25A7932846"
+					type: "item"
+					item: "minecraft:copper_ingot"
+					count: 16L
+				}
+				{
+					id: "345AC9A6BDF4120A"
+					type: "item"
+					item: "create:zinc_ingot"
+					count: 16L
+				}
+				{
+					id: "1B06E57D5234084B"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 16L
+				}
+				{
+					id: "07F423B290D95E12"
+					type: "item"
+					item: "minecraft:quartz"
+					count: 16L
+				}
+			]
+		}
+		{
+			x: 26.5d
+			y: 10.5d
+			dependencies: ["5539DCDA178B4A4E"]
+			id: "13F22D44587292A5"
+			tasks: [
+				{
+					id: "589A3756959079A7"
+					type: "item"
+					item: "minecraft:blaze_powder"
+					count: 16L
+				}
+				{
+					id: "21A931E722074819"
+					type: "item"
+					item: "minecraft:bone_meal"
+					count: 16L
+				}
+				{
+					id: "4BACE79815BEFB85"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 16L
+				}
+				{
+					id: "68EE4C9D1DCF3825"
+					type: "item"
+					item: "minecraft:redstone"
+					count: 16L
+				}
+				{
+					id: "195C571B49038272"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+					count: 16L
+				}
+				{
+					id: "27B6AFB24A87411A"
+					type: "item"
+					item: "minecraft:lapis_lazuli"
+					count: 16L
+				}
+			]
+		}
+		{
+			x: 26.5d
+			y: 12.5d
+			dependencies: ["6B6EA4F6F32B065C"]
+			id: "30524C3DD1E49F6C"
+			tasks: [
+				{
+					id: "2788C415541A5F4A"
+					type: "item"
+					item: "immersiveengineering:seed"
+					count: 16L
+				}
+				{
+					id: "6553FFFC097E2670"
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 16L
+				}
+				{
+					id: "69F990ECBF4C6762"
+					type: "item"
+					item: "undergarden:gloomgourd_seeds"
+					count: 16L
+				}
+				{
+					id: "2336ED8BFC8DE88F"
+					type: "item"
+					item: "undergarden:ditchbulb"
+					count: 16L
+				}
+				{
+					id: "339287AFD1149957"
+					type: "item"
+					item: "undergarden:underbeans"
+					count: 16L
+				}
+				{
+					id: "741575C7216E8340"
+					type: "item"
+					item: "undergarden:blisterberry"
+					count: 16L
+				}
+				{
+					id: "08DF696239748904"
+					type: "item"
+					item: "undergarden:droopvine_item"
+					count: 16L
+				}
+				{
+					id: "1BF11BBD5159CBA0"
+					type: "item"
+					item: "undergarden:shimmerweed"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "3E19C23643C2B5FE"
+				type: "item"
+				item: "undergarden:gloomgourd_pie"
+				count: 16
+			}]
+		}
+		{
+			x: 22.5d
+			y: 2.5d
+			id: "47D36484CB803A72"
+			tasks: [{
+				id: "1C7D1C7D8D92E54F"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -4.0d
+			id: "32DBC306D74FC30B"
+			tasks: [{
+				id: "7196EE0AD2D2C0D6"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+			rewards: [{
+				id: "14B5EF23FDA93AB2"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+		}
+		{
+			x: 15.5d
+			y: -4.0d
+			id: "36FD8A35FA324EBB"
+			tasks: [{
+				id: "313919CB13E03E08"
+				type: "item"
+				item: "tconstruct:seared_brick"
+			}]
+		}
+		{
+			x: 18.0d
+			y: -4.0d
+			id: "3F81DE42B3F6E9FA"
+			tasks: [
+				{
+					id: "3CA78E5820F2CDB4"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "7EA8DF72E799DA2C"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+			]
+			rewards: [
+				{
+					id: "4FE85D7FA77AE126"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "08E794496E6B2F49"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
+		}
+		{
+			x: 20.5d
+			y: -4.0d
+			id: "0540DD7578A6E6C7"
+			tasks: [
+				{
+					id: "2947BE9D7332DE33"
+					type: "item"
+					item: {
+						id: "tconstruct:smeltery_controller"
+						Count: 1b
+						tag: {
+							texture: "tconstruct:seared_bricks"
+						}
+					}
+				}
+				{
+					id: "63B0FEDCD8D1C240"
+					type: "item"
+					item: {
+						id: "tconstruct:seared_drain"
+						Count: 1b
+						tag: {
+							texture: "tconstruct:seared_stone"
+						}
+					}
+				}
+				{
+					id: "7F66BA756C3F96EF"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+			]
+			rewards: [
+				{
+					id: "2973BE71750AADF5"
+					type: "item"
+					item: "tconstruct:mighty_smelting"
+				}
+				{
+					id: "02CFBE4FFD4D8AAD"
+					type: "item"
+					item: "create:builders_tea"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 6.5d
+			id: "4CA9797E9C462CCA"
+			tasks: [{
+				id: "5C3B9A30EDD147BF"
+				type: "item"
+				item: "undergarden:glitterkelp"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 6.5d
+			id: "0DCAE105AFCBE1C8"
+			tasks: [
+				{
+					id: "28941D3F83618AA4"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+				{
+					id: "44E7500A6EA720C7"
+					type: "item"
+					item: "create:belt_connector"
+				}
+			]
+			rewards: [{
+				id: "7A5507BE568D0B50"
+				type: "item"
+				item: "farmersdelight:kelp_roll_slice"
+				count: 16
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.0d
+			id: "32C1EF746FB74861"
+			tasks: [{
+				id: "26DEBAB2D1ADE706"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			id: "0EA2F96BA9A2B833"
+			tasks: [{
+				id: "612209359A39A92D"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.5d
+			description: ["再烧制一下就可以装水了。"]
+			id: "54C52B9640F8EF65"
+			tasks: [{
+				id: "6A6EE3924B033603"
+				type: "item"
+				item: "ceramicbucket:unfired_clay_bucket"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 12.5d
+			id: "7FE41A02397C33F9"
+			tasks: [
+				{
+					id: "3F04AF2DF05FA50A"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "774B75B45AB25291"
+					type: "item"
+					item: "create:white_sail"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "21183318D4207F87"
+				type: "item"
+				item: "create:sail_frame"
+				count: 16
+			}]
+		}
+		{
+			x: 29.0d
+			y: 12.5d
+			id: "6F85BFB347178098"
+			tasks: [{
+				id: "6F917352A77ED065"
+				type: "item"
+				item: "immersiveengineering:hemp_fabric"
+				count: 8L
+			}]
+			rewards: [{
+				id: "0D5642D11D7308BA"
+				type: "item"
+				item: "immersiveengineering:hemp_fabric"
+				count: 8
+			}]
+		}
+		{
+			x: 10.0d
+			y: 9.5d
+			id: "49BF9B625E685C4A"
+			tasks: [
+				{
+					id: "13425B8A4A9748FC"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "4DE0AC9EFC218D1D"
+					type: "item"
+					item: "minecraft:powered_rail"
+				}
+				{
+					id: "5E9723E9F914DB30"
+					type: "item"
+					item: "minecraft:lever"
+				}
+			]
+			rewards: [
+				{
+					id: "36E51858634DEF63"
+					type: "item"
+					item: "minecraft:rail"
+					count: 16
+				}
+				{
+					id: "67556870929A8CC1"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 8.0d
+			id: "59E4584DA6238827"
+			tasks: [
+				{
+					id: "42AB12C5F0778284"
+					type: "item"
+					item: "create:linear_chassis"
+					count: 6L
+				}
+				{
+					id: "7386AFBEAF74A948"
+					type: "item"
+					item: "create:radial_chassis"
+					count: 6L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 0.5d
+			id: "0530B7A8FB8BD08C"
+			tasks: [
+				{
+					id: "03D52F09A48AB622"
+					type: "item"
+					item: "undergarden:shimmerweed"
+				}
+				{
+					id: "6079689E0DEC6F52"
+					type: "item"
+					item: "undergarden:ditchbulb"
+				}
+				{
+					id: "027A613550D3B3E7"
+					type: "item"
+					item: "undergarden:droopvine_item"
+				}
+				{
+					id: "3B225369873B439D"
+					type: "item"
+					item: "undergarden:underbeans"
+				}
+				{
+					id: "3505AA5CE523F528"
+					type: "item"
+					item: "undergarden:gloomgourd"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 5.5d
+			id: "6F324559164111CE"
+			tasks: [
+				{
+					id: "322AD61FF2FDE13A"
+					type: "item"
+					item: "undergarden:depthrock_pebble"
+				}
+				{
+					id: "177A0AF5588A1ECA"
+					type: "item"
+					item: "undergarden:depthrock"
+				}
+				{
+					id: "3E5167ABE1565158"
+					type: "item"
+					item: "undergarden:shiverstone"
+				}
+				{
+					id: "3E199D9506C1987D"
+					type: "item"
+					item: "undergarden:sediment"
+				}
+				{
+					id: "2F9CBB0622441162"
+					type: "item"
+					item: "undergarden:virulent_mix_bucket"
+				}
+			]
+		}
+	]
+	quest_links: [ ]
+}

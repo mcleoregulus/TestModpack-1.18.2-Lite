@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "5493F94E7DB4FE3F", title: "第一章 机械造物" }
+		{ id: "03EB50C4A9422DAD", title: "第二章 沉浸生电" }
+		{ id: "27CC0297EE2CA143", title: "第三章 热力复兴" }
+		{ id: "4EDDA09AC3D8DF61", title: "第四章 工业时代" }
+		{ id: "38A5CF1235EC5AED", title: "第五章 科技飞升" }
+		{ id: "7D8A5A40ACC4A15B", title: "第六章 破灭星河" }
+	]
+}
