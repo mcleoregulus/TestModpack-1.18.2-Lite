@@ -7,6 +7,37 @@
 	icon: "create:blaze_burner"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "2E9E9CADDBA8BF4B"
+			tasks: [{
+				id: "0FD3E516DF480D14"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			id: "14317DD47B965F15"
+			tasks: [{
+				id: "3DE7A17A5C3D1366"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			id: "229E3E2A68E4A724"
+			tasks: [{
+				id: "398742BAF053CAC1"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

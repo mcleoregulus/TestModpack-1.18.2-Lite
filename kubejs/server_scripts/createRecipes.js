@@ -27,6 +27,8 @@ onEvent('recipes', event => {
 	event.remove({id:'create:crafting/appliances/netherite_backtank_from_netherite'})
 	event.remove({type:'createsifter:sifting'})
 
+	event.replaceInput({output:'create:empty_blaze_burner'},'minecraft:netherrack','undergarden:tremblecrust')
+
 	event.shaped('create:andesite_alloy', [
 		'AB',
 		'BA',
@@ -44,6 +46,14 @@ onEvent('recipes', event => {
 		'undergarden:tremblecrust',
 		'undergarden:ditchbulb_paste',
 		'minecraft:blaze_powder'
+	])
+
+	event.recipes.createMixing(Fluid.of('undergarden:virulent_mix_source',100),[
+		Fluid.of('minecraft:water',100),
+		'undergarden:ink_mushroom',
+		'undergarden:blood_mushroom',
+		'undergarden:veil_mushroom',
+		'undergarden:indigo_mushroom'
 	])
 
 	event.recipes.createMilling('kubejs:deepgravel','undergarden:depthrock')
@@ -83,8 +93,10 @@ onEvent('recipes', event => {
 			Item.of('minecraft:lapis_lazuli').withChance(0.35),
 			Item.of('minecraft:coal').withChance(0.4),
 			Item.of('minecraft:flint').withChance(0.2),
-			Item.of('minecraft:quartz').withChance(0.6),
-			Item.of('create:experience_nugget').withChance(0.3)
+			Item.of('minecraft:quartz').withChance(0.25),
+			Item.of('create:experience_nugget').withChance(0.3),
+			Item.of('minecraft:diamond').withChance(0.1)
+
 		], [
 			'kubejs:deepgravel','createsifter:brass_mesh'
 		]).processingTime(200)//.waterlogged()

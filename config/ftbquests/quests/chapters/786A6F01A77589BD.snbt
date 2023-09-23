@@ -75,8 +75,8 @@
 		}
 		{
 			title: "匠人之初"
-			x: 10.5d
-			y: -4.0d
+			x: 8.5d
+			y: -1.5d
 			subtitle: "匠魂"
 			description: ["普通的工具或许并不能满足你的需求，因此你或许需要使用一些传统的手艺，去打造更加实用的工具，比如鹤嘴锄。"]
 			id: "27788F0121316A53"
@@ -199,7 +199,10 @@
 				"在探索的过程中，你发现了一些新的矿物，他们似乎和铁有着近似的性质，可以用来制作一些基础的合金，这让你有了发展机械动力的基础，而这也将成为你工业大厦的基础！\\n"
 				"你并不需要使用太多的扼塞来做出初步的产线，你目前的装备也不太能够支持你远离基地去挖掘更多的矿物，所以挖一点就行了，回去推科技吧。"
 			]
-			dependencies: ["558EF48031FEA428"]
+			dependencies: [
+				"558EF48031FEA428"
+				"32FBC47888ADD160"
+			]
 			size: 1.25d
 			id: "694463A85FFAF211"
 			tasks: [{
@@ -216,8 +219,9 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: -4.0d
+			x: 8.5d
+			y: 0.5d
+			dependencies: ["27788F0121316A53"]
 			id: "32FBC47888ADD160"
 			tasks: [
 				{
@@ -350,8 +354,8 @@
 		}
 		{
 			title: "渊邃石"
-			x: 8.5d
-			y: 5.0d
+			x: 10.5d
+			y: 2.0d
 			description: ["圆石当然也是必不可少的,很快你还会需要大量的渊邃石，但是之后的事情，之后再说，现在有点就行了。"]
 			id: "1EB78E679ADEF560"
 			tasks: [{
@@ -453,8 +457,8 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: 5.5d
+			x: 10.5d
+			y: 6.5d
 			subtitle: "初级变速"
 			description: ["齿轮是传动和变速必不可少的部分，大齿轮传动给小齿轮就可以增加转速，使机械运行更快，当然所需应力也会增加；反之亦然。"]
 			dependencies: ["01F0BE597AD815FA"]
@@ -487,26 +491,34 @@
 			]
 		}
 		{
-			x: 19.0d
-			y: 2.5d
+			x: 17.5d
+			y: 6.5d
+			description: ["基础的传动结构，十字齿轮箱可以改变传动方向，使用扳手或在工作台中变为竖直十字齿轮箱。链式传动箱可以水平传动旋转力。"]
 			dependencies: ["52F968B9ED84F02F"]
 			id: "216F9B101D05252C"
-			tasks: [{
-				id: "0B429B5267BE8098"
-				type: "item"
-				item: "create:gearbox"
-			}]
+			tasks: [
+				{
+					id: "0B429B5267BE8098"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "57A3EC624435BA7A"
+					type: "item"
+					item: "create:encased_chain_drive"
+				}
+			]
 			rewards: [{
-				id: "44DC9504BA3BC800"
+				id: "4F88DA9BB1EE5E11"
 				type: "item"
-				item: "create:gearbox"
+				item: "create:vertical_gearbox"
 				count: 4
 			}]
 		}
 		{
-			x: 19.0d
-			y: 0.5d
-			description: ["动力搅拌器的运行最少需要32RPM的转速，因此前期的"]
+			x: 21.0d
+			y: 0.0d
+			description: ["动力搅拌器的运行最少需要32RPM的转速，因此变速是必要的，除了用传统的齿轮变速，你还可以使用可调节链式传动箱。"]
 			dependencies: ["52F968B9ED84F02F"]
 			id: "7515FFD4667DA4C4"
 			tasks: [{
@@ -514,20 +526,28 @@
 				type: "item"
 				item: "create:mechanical_mixer"
 			}]
-			rewards: [{
-				id: "3B5C7630C4B4F240"
-				type: "item"
-				item: "create:basin"
-			}]
+			rewards: [
+				{
+					id: "3B5C7630C4B4F240"
+					type: "item"
+					item: "create:basin"
+				}
+				{
+					id: "4D9B7C470C23F9F4"
+					type: "item"
+					item: "create:adjustable_chain_gearshift"
+				}
+			]
 		}
 		{
 			title: "渊邃机壳"
-			x: 15.75d
+			x: 17.5d
 			y: 4.0d
 			shape: "octagon"
 			description: [
 				"你将渊邃合金和原木结合，做出了第一个机器模型——渊邃机壳，他是一些最基本机械装置的外壳，虽然简单，但是确实第一步。\\n"
-				"具体制作方法是将原木放置下来，手持渊邃合金对其右键，就会得到渊邃机壳。"
+				"具体制作方法是将原木去皮，手持渊邃合金对其右键，就会得到渊邃机壳。\\n"
+				"戴上工程师护目镜能看到一些机器的参数信息，使用扳手Shift+右键能快速拆除机壳和机器。"
 			]
 			dependencies: ["01F0BE597AD815FA"]
 			size: 1.75d
@@ -552,8 +572,8 @@
 			]
 		}
 		{
-			x: 19.0d
-			y: 5.5d
+			x: 21.0d
+			y: -2.0d
 			dependencies: ["52F968B9ED84F02F"]
 			id: "42BADEE8C253324B"
 			tasks: [{
@@ -563,8 +583,8 @@
 			}]
 		}
 		{
-			x: 19.0d
-			y: 10.5d
+			x: 21.0d
+			y: 4.0d
 			shape: "octagon"
 			description: [
 				"科技的发展哪些是必要的？能源、技术，和矿物！你解决了能源，拥有技术，现在你需要各种各样的矿物，海量的矿物。因此你的首先需要做动力筛网，以自动化的获得矿物。\\n"
@@ -590,8 +610,8 @@
 			}]
 		}
 		{
-			x: 19.0d
-			y: 8.5d
+			x: 21.0d
+			y: 2.0d
 			dependencies: ["52F968B9ED84F02F"]
 			id: "7BC936A7E756C552"
 			tasks: [{
@@ -613,8 +633,8 @@
 			]
 		}
 		{
-			x: 21.5d
-			y: 10.5d
+			x: 23.75d
+			y: 4.0d
 			shape: "octagon"
 			dependencies: ["61FB5CFB60E8D0B9"]
 			size: 1.25d
@@ -624,22 +644,16 @@
 				type: "item"
 				item: "create_mechanical_extruder:mechanical_extruder"
 			}]
-			rewards: [
-				{
-					id: "78759FAE6C4DBD38"
-					type: "item"
-					item: "cyclic:hopper"
-				}
-				{
-					id: "3832E8E547EF0035"
-					type: "item"
-					item: "storagedrawers:oak_full_drawers_1"
-				}
-			]
+			rewards: [{
+				id: "3832E8E547EF0035"
+				type: "item"
+				item: "storagedrawers:oak_full_drawers_1"
+			}]
 		}
 		{
-			x: 24.0d
-			y: 8.5d
+			x: 26.0d
+			y: 2.0d
+			description: ["你可以通过粉碎渊邃石来自动化生产渊邃沙砾，因此建议先使用致命毒液混合物在利用造石机制作出三重压缩颤动地壳以自动化生产渊邃石。"]
 			dependencies: [
 				"0BDD398F1ADF2B56"
 				"7BC936A7E756C552"
@@ -659,8 +673,9 @@
 			}]
 		}
 		{
-			x: 24.0d
-			y: 10.5d
+			x: 26.0d
+			y: 4.0d
+			description: ["沙砾进一步粉碎当然就是沙子（沉沙）了。"]
 			dependencies: [
 				"0BDD398F1ADF2B56"
 				"2750B49C1E261600"
@@ -680,8 +695,12 @@
 			}]
 		}
 		{
-			x: 24.0d
-			y: 12.5d
+			x: 26.0d
+			y: 6.0d
+			description: [
+				"邃土可以用来筛出一些基本的作物种子，虽然你或许并不需要太多，但是它其实也能够量产。"
+				"通过和深渊卵石可以合成砂邃土（参考原版砂土），而砂邃土可以直接转化为邃土（本来应该锄头锄一锄，但是为了方便还是工作台直接合成吧），而卵石可以切石渊邃石获得，或者在地上也能捡到不少。"
+			]
 			dependencies: [
 				"0B7B21C9B858C12D"
 				"0F4AC83D66F4FEE7"
@@ -702,8 +721,8 @@
 			}]
 		}
 		{
-			x: 23.0d
-			y: 14.0d
+			x: 25.0d
+			y: 7.5d
 			id: "0B7B21C9B858C12D"
 			tasks: [{
 				id: "0C230270FC2F678A"
@@ -719,8 +738,8 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: 14.0d
+			x: 27.0d
+			y: 7.5d
 			id: "0F4AC83D66F4FEE7"
 			tasks: [{
 				id: "0BBF11EA5C9FFAB2"
@@ -736,8 +755,9 @@
 			}]
 		}
 		{
-			x: 19.0d
-			y: -1.5d
+			x: 21.0d
+			y: 6.0d
+			description: ["使用辊压机将金属锭压制成金属板，除了制作基础套装以外，他们还是后续制作机器的重要基础材料。"]
 			dependencies: ["52F968B9ED84F02F"]
 			id: "0823156FFE20F36B"
 			tasks: [{
@@ -752,8 +772,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 8.5d
+			x: 29.0d
+			y: 2.0d
 			dependencies: ["2750B49C1E261600"]
 			id: "2EE0E74C38CE3A57"
 			tasks: [
@@ -790,8 +810,8 @@
 			]
 		}
 		{
-			x: 26.5d
-			y: 10.5d
+			x: 29.0d
+			y: 4.0d
 			dependencies: ["5539DCDA178B4A4E"]
 			id: "13F22D44587292A5"
 			tasks: [
@@ -834,8 +854,8 @@
 			]
 		}
 		{
-			x: 26.5d
-			y: 12.5d
+			x: 29.0d
+			y: 6.0d
 			dependencies: ["6B6EA4F6F32B065C"]
 			id: "30524C3DD1E49F6C"
 			tasks: [
@@ -896,8 +916,9 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: 2.5d
+			x: 23.5d
+			y: -2.0d
+			dependencies: ["42BADEE8C253324B"]
 			id: "47D36484CB803A72"
 			tasks: [{
 				id: "1C7D1C7D8D92E54F"
@@ -906,33 +927,25 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: -4.0d
-			id: "32DBC306D74FC30B"
-			tasks: [{
-				id: "7196EE0AD2D2C0D6"
-				type: "item"
-				item: "tconstruct:grout"
-			}]
-			rewards: [{
-				id: "14B5EF23FDA93AB2"
-				type: "item"
-				item: "tconstruct:puny_smelting"
-			}]
-		}
-		{
-			x: 15.5d
-			y: -4.0d
+			x: 26.5d
+			y: -2.0d
+			dependencies: ["47D36484CB803A72"]
 			id: "36FD8A35FA324EBB"
 			tasks: [{
 				id: "313919CB13E03E08"
 				type: "item"
 				item: "tconstruct:seared_brick"
 			}]
+			rewards: [{
+				id: "3E37B700D2E71E10"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
 		}
 		{
-			x: 18.0d
-			y: -4.0d
+			x: 29.0d
+			y: -2.0d
+			dependencies: ["36FD8A35FA324EBB"]
 			id: "3F81DE42B3F6E9FA"
 			tasks: [
 				{
@@ -960,8 +973,13 @@
 			]
 		}
 		{
-			x: 20.5d
-			y: -4.0d
+			x: 29.0d
+			y: 0.0d
+			dependencies: [
+				"0EA2F96BA9A2B833"
+				"3F81DE42B3F6E9FA"
+				"2EE0E74C38CE3A57"
+			]
 			id: "0540DD7578A6E6C7"
 			tasks: [
 				{
@@ -1006,8 +1024,8 @@
 			]
 		}
 		{
-			x: 11.0d
-			y: 6.5d
+			x: 13.0d
+			y: 5.5d
 			id: "4CA9797E9C462CCA"
 			tasks: [{
 				id: "5C3B9A30EDD147BF"
@@ -1016,8 +1034,10 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 6.5d
+			x: 15.0d
+			y: 5.5d
+			description: ["传送带除了可以传输物品外，还是重要的传动元件。类似于链式传动箱，它可以直线传输应力，但它也可以斜向传递应力。"]
+			dependencies: ["4CA9797E9C462CCA"]
 			id: "0DCAE105AFCBE1C8"
 			tasks: [
 				{
@@ -1039,17 +1059,9 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 1.0d
-			id: "32C1EF746FB74861"
-			tasks: [{
-				id: "26DEBAB2D1ADE706"
-				type: "checkmark"
-			}]
-		}
-		{
-			x: 16.0d
-			y: -2.0d
+			x: 23.5d
+			y: 0.0d
+			dependencies: ["7515FFD4667DA4C4"]
 			id: "0EA2F96BA9A2B833"
 			tasks: [{
 				id: "612209359A39A92D"
@@ -1069,8 +1081,9 @@
 			}]
 		}
 		{
-			x: 31.5d
-			y: 12.5d
+			x: 34.0d
+			y: 6.0d
+			dependencies: ["6F85BFB347178098"]
 			id: "7FE41A02397C33F9"
 			tasks: [
 				{
@@ -1093,8 +1106,10 @@
 			}]
 		}
 		{
-			x: 29.0d
-			y: 12.5d
+			x: 31.5d
+			y: 6.0d
+			description: ["你可以通过种植工业大麻来获得坚韧布料，这是做风车的材料之一。"]
+			dependencies: ["30524C3DD1E49F6C"]
 			id: "6F85BFB347178098"
 			tasks: [{
 				id: "6F917352A77ED065"
@@ -1110,8 +1125,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 9.5d
+			x: 13.0d
+			y: 7.5d
 			id: "49BF9B625E685C4A"
 			tasks: [
 				{
@@ -1145,8 +1160,8 @@
 			]
 		}
 		{
-			x: 11.5d
-			y: 8.0d
+			x: 15.0d
+			y: 7.5d
 			id: "59E4584DA6238827"
 			tasks: [
 				{
@@ -1164,8 +1179,9 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: 0.5d
+			x: 7.5d
+			y: 5.0d
+			dependencies: ["558EF48031FEA428"]
 			id: "0530B7A8FB8BD08C"
 			tasks: [
 				{
@@ -1196,8 +1212,9 @@
 			]
 		}
 		{
-			x: 4.0d
-			y: 5.5d
+			x: 5.5d
+			y: 5.0d
+			dependencies: ["558EF48031FEA428"]
 			id: "6F324559164111CE"
 			tasks: [
 				{
@@ -1224,6 +1241,81 @@
 					id: "2F9CBB0622441162"
 					type: "item"
 					item: "undergarden:virulent_mix_bucket"
+				}
+			]
+		}
+		{
+			x: 29.0d
+			y: 7.5d
+			dependencies: ["30524C3DD1E49F6C"]
+			id: "4444DF4CAF179A2A"
+			tasks: [{
+				id: "32FA697468FDF966"
+				type: "item"
+				item: "minecraft:white_wool"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 7.5d
+			dependencies: ["0823156FFE20F36B"]
+			id: "4909DDC1E1425200"
+			tasks: [{
+				id: "7B894B089987FC12"
+				type: "item"
+				item: "create:iron_sheet"
+				count: 16L
+			}]
+		}
+		{
+			x: 23.0d
+			y: 7.5d
+			dependencies: ["4909DDC1E1425200"]
+			id: "740E688FC7D56DD2"
+			tasks: [
+				{
+					id: "61D9A11442186859"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60F57D587CE84004"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7E74FC4EE4E302DF"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2104535604145632"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 		}
