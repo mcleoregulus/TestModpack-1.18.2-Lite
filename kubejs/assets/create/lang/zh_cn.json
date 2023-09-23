@@ -1,6 +1,7 @@
 {
     "item.create.andesite_alloy": "渊邃合金",
     "block.create.andesite_alloy_block": "渊邃合金块",
-    "item.createsifter.andesite_mesh": "渊邃筛网"
+    "item.createsifter.andesite_mesh": "渊邃筛网",
+    "block.create.andesite_casing": "渊邃机壳"
 
 }
