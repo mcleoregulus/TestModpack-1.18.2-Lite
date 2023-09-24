@@ -11,9 +11,44 @@ onEvent('recipes', event => {
 	// Change recipes here
 
 	event.remove({id:'tconstruct:smeltery/alloys/molten_brass'})
+	event.remove({output:'tconstruct:seared_fuel_gauge'})
+	event.remove({output:'tconstruct:seared_ingot_tank'})
+	event.remove({output:'tconstruct:seared_ingot_gauge'})
 
 	event.replaceInput({output:'tconstruct:grout'},'minecraft:gravel','#forge:gravel')
 	event.replaceInput({output:'tconstruct:grout'},'#minecraft:sand','#forge:sand')
+	event.replaceInput({output:'tconstruct:seared_fuel_tank'},'#forge:glass','create:fluid_tank')
+
+	event.shaped('tconstruct:seared_fuel_gauge', [
+		'ABA',
+		'BCB',
+		'ABA',
+	], {
+		A: 'tconstruct:seared_brick',
+		B: '#forge:glass',
+		C: 'create:fluid_tank'
+  	})
+
+	  event.shaped('tconstruct:seared_ingot_tank', [
+		'ABA',
+		'ACA',
+		'ABA',
+	], {
+		A: 'tconstruct:seared_brick',
+		B: '#forge:glass',
+		C: 'create:fluid_tank'
+  	})
+
+	  event.shaped('tconstruct:seared_ingot_gauge', [
+		'ABA',
+		'BCB',
+		'ABA',
+	], {
+		B: 'tconstruct:seared_brick',
+		A: '#forge:glass',
+		C: 'create:fluid_tank'
+  	})
+
 
 })
 
