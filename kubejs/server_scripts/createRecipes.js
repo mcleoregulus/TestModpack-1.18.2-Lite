@@ -127,7 +127,7 @@ onEvent('recipes', event => {
 			Item.of('minecraft:spider_eye').withChance(0.4),
 			Item.of('minecraft:gunpowder').withChance(0.6),
 			Item.of('minecraft:ender_pearl').withChance(0.3),
-			Item.of('minecraft:slime_ball').withChance(0.3),
+			Item.of('undergarden:goo_ball').withChance(0.3),
 			Item.of('minecraft:blaze_powder').withChance(0.3)
 		], [
 			'undergarden:deepsoil','createsifter:brass_mesh'

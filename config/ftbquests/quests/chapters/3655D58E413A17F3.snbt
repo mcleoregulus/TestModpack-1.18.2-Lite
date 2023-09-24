@@ -9,33 +9,136 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 0.0d
-			y: 0.0d
-			id: "2E9E9CADDBA8BF4B"
-			tasks: [{
-				id: "0FD3E516DF480D14"
-				type: "item"
-				item: "create:empty_blaze_burner"
-			}]
-		}
-		{
-			x: 2.5d
-			y: 0.0d
-			id: "14317DD47B965F15"
-			tasks: [{
-				id: "3DE7A17A5C3D1366"
-				type: "item"
-				item: "create:blaze_burner"
-			}]
-		}
-		{
-			x: 5.0d
+			x: 7.5d
 			y: 0.0d
 			id: "229E3E2A68E4A724"
 			tasks: [{
 				id: "398742BAF053CAC1"
 				type: "item"
 				item: "create:brass_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			id: "017CCA5157BC2FAB"
+			tasks: [
+				{
+					id: "7C2FF96555DF383F"
+					type: "item"
+					item: "create:fluid_tank"
+					count: 4L
+				}
+				{
+					id: "7FFF18400C682B6E"
+					type: "item"
+					item: "create:steam_engine"
+				}
+				{
+					id: "3C04756E86887F0C"
+					type: "item"
+					item: "supplementaries:faucet"
+				}
+				{
+					id: "4FFB0D738FBA7686"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			id: "14CC0E7920F1E6F0"
+			tasks: [{
+				id: "4BA4E74FFAA9D722"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			id: "3A383A65655A3A8A"
+			tasks: [{
+				id: "40153761815C5864"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			id: "343EC5D4A640CA09"
+			tasks: [{
+				id: "76B1F247C4A94D26"
+				type: "item"
+				item: "create:brass_casing"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 5.0d
+			id: "51E21D1025589528"
+			tasks: [
+				{
+					id: "60165E125F014D4B"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "39E08A3DB96C3A37"
+					type: "item"
+					item: "createaddition:connector"
+				}
+				{
+					id: "4267C7DB985EE933"
+					type: "item"
+					item: "createaddition:copper_spool"
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 5.0d
+			id: "34DE38B0F96C1CAD"
+			tasks: [{
+				id: "6BF9BB2625C489F9"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 2.5d
+			id: "0D9AE875368860B5"
+			tasks: [{
+				id: "048BAB32125DA260"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 21L
+			}]
+		}
+		{
+			x: 16.5d
+			y: 5.0d
+			id: "53B4AD208F808125"
+			tasks: [{
+				id: "48CE5759C6282670"
+				type: "item"
+				item: "createaddition:modular_accumulator"
+				count: 27L
+			}]
+		}
+		{
+			x: 16.5d
+			y: 2.5d
+			id: "7F508F62E5847147"
+			tasks: [{
+				id: "5E1D6B2F49C3CAF2"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
 			}]
 		}
 	]

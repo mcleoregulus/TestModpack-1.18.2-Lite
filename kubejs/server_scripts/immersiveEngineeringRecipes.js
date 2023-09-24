@@ -10,6 +10,10 @@ console.info('Hello, World! (You will see this line every time server resources 
 onEvent('recipes', event => {
 	// Change recipes here
 
+	event.remove({output:'#forge:rods/all_metal',type:'minecraft:crafting_shaped'})
+	event.remove({output:'#forge:plates',type:'minecraft:crafting_shapeless'})
+	event.remove({output:'#forge:wires',type:'minecraft:crafting_shapeless'})
+
 
 })
 
