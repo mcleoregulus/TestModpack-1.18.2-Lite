@@ -9,7 +9,7 @@ onEvent('item.modification', event => {
 	// item.attackDamage = 20
 	// item.attackSpeed = 2})
 
-	event.modify('botania:blaze_block', item => {item.burnTime = 0})
+	event.modify('botania:blaze_block', item => {item.burnTime = 3200})
 
 	event.modify('chainmail_helmet', item => {item.armorProtection = 1})
 	event.modify('chainmail_chestplate', item => {item.armorProtection = 2})
