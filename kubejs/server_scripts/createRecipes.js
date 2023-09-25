@@ -37,6 +37,36 @@ onEvent('recipes', event => {
 		B: 'undergarden:depthrock'
   	})
 
+	event.recipes.createMechanicalCrafting('minecraft:diamond_helmet', [
+		'AAA',
+		'A A'
+	  ], {
+		A: 'minecraft:diamond'
+	})
+
+	event.recipes.createMechanicalCrafting('minecraft:diamond_chestplate', [
+		'A A',
+		'AAA',
+		'AAA'
+	  ], {
+		A: 'minecraft:diamond'
+	})
+
+	event.recipes.createMechanicalCrafting('minecraft:diamond_leggings', [
+		'AAA',
+		'A A',
+		'A A'
+	  ], {
+		A: 'minecraft:diamond'
+	})
+
+	event.recipes.createMechanicalCrafting('minecraft:diamond_boots', [
+		'A A',
+		'A A'
+	  ], {
+		A: 'minecraft:diamond'
+	})
+
   	event.recipes.createMixing('create:andesite_alloy',[
 		'undergarden:depthrock',
 		'undergarden:cloggrum_nugget'
