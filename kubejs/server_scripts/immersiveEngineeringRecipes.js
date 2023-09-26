@@ -19,6 +19,8 @@ onEvent('recipes', event => {
 	event.remove({id:'immersiveengineering:refinery/biodiesel'})
 
 
+	event.recipes.immersiveengineeringCloche('undergarden:droopvine_item', 'undergarden:droopvine_item', 'undergarden:deepsoil')
+
 	event.custom({
 		"type":"immersiveengineering:refinery",
 		"result":{"fluid":"immersiveengineering:biodiesel","amount":16},

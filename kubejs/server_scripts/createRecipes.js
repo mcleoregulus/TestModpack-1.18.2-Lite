@@ -27,7 +27,11 @@ onEvent('recipes', event => {
 	event.remove({id:'create:crafting/appliances/netherite_backtank_from_netherite'})
 	event.remove({type:'createsifter:sifting'})
 
+
+	// event.replaceOutput({mod:'createaddition', output:'createaddition:biomass'}, 'createaddition:biomass', '4x createaddition:biomass')
+
 	// event.replaceInput({output:'create:empty_blaze_burner'},'minecraft:netherrack','undergarden:tremblecrust')
+
 
 	event.shaped('create:andesite_alloy', [
 		'AB',
@@ -97,6 +101,8 @@ onEvent('recipes', event => {
 	event.recipes.createMilling('undergarden:sediment','kubejs:deepgravel')
 	event.recipes.createCrushing('undergarden:sediment','kubejs:deepgravel')
 
+	event.recipes.createCrushing(['6x create:cinder_flour', Item.of('4x create:cinder_flour').withChance(0.75)], 'minecraft:nether_bricks')
+
 
 	event.recipes.createMechanicalExtruderExtruding(Item.of('undergarden:tremblecrust'),
 		[Fluid.of('minecraft:water'),Fluid.of('undergarden:virulent_mix_source')])
@@ -119,13 +125,13 @@ onEvent('recipes', event => {
 			Item.of('minecraft:flint').withChance(0.1)
 		], [
 			'kubejs:deepgravel','createsifter:andesite_mesh'
-		]).processingTime(300)//.waterlogged()
+	]).processingTime(300)//.waterlogged()
 
 	event.recipes.createsifterSifting([
-			Item.of('create:crushed_raw_iron').withChance(0.8),
-			Item.of('create:crushed_raw_copper').withChance(0.6),
-			Item.of('create:crushed_raw_zinc').withChance(0.5),
-			Item.of('create:crushed_raw_gold').withChance(0.4),
+			Item.of('minecraft:raw_iron').withChance(0.8),
+			Item.of('minecraft:raw_copper').withChance(0.6),
+			Item.of('create:raw_zinc').withChance(0.5),
+			Item.of('minecraft:raw_gold').withChance(0.4),
 			Item.of('minecraft:lapis_lazuli').withChance(0.35),
 			Item.of('minecraft:coal').withChance(0.4),
 			Item.of('minecraft:flint').withChance(0.2),
@@ -135,7 +141,7 @@ onEvent('recipes', event => {
 
 		], [
 			'kubejs:deepgravel','createsifter:brass_mesh'
-		]).processingTime(200)//.waterlogged()
+	]).processingTime(200)//.waterlogged()
 
 	event.recipes.createsifterSifting([
 			Item.of('minecraft:wheat_seeds').withChance(0.2),
@@ -148,7 +154,7 @@ onEvent('recipes', event => {
 			Item.of('undergarden:shimmerweed').withChance(0.2)
 		], [
 			'undergarden:deepsoil','createsifter:andesite_mesh'
-		]).processingTime(300)//.waterlogged()
+	]).processingTime(300)//.waterlogged()
 
 	event.recipes.createsifterSifting([
 			Item.of('minecraft:rotten_flesh').withChance(0.6),
@@ -161,7 +167,7 @@ onEvent('recipes', event => {
 			Item.of('minecraft:blaze_rod').withChance(0.15)
 		], [
 			'undergarden:deepsoil','createsifter:brass_mesh'
-		]).processingTime(200)//.waterlogged()
+	]).processingTime(200)//.waterlogged()
 
 	event.recipes.createsifterSifting([
 			Item.of('undergarden:glitterkelp').withChance(0.4),
@@ -171,7 +177,7 @@ onEvent('recipes', event => {
 			Item.of('undergarden:indigo_mushroom').withChance(0.3)
 		], [
 			'undergarden:deepsoil','createsifter:andesite_mesh'
-		]).processingTime(300).waterlogged()
+	]).processingTime(300).waterlogged()
 
 	event.recipes.createsifterSifting([
 			Item.of('undergarden:glitterkelp').withChance(0.8),
@@ -181,7 +187,7 @@ onEvent('recipes', event => {
 			Item.of('undergarden:indigo_mushroom').withChance(0.6)
 	], [
 			'undergarden:deepsoil','createsifter:brass_mesh'
-		]).processingTime(200).waterlogged()
+	]).processingTime(200).waterlogged()
 
 	event.recipes.createsifterSifting([
 			Item.of('minecraft:bone_meal').withChance(0.3),
@@ -192,7 +198,7 @@ onEvent('recipes', event => {
 			Item.of('minecraft:blaze_powder').withChance(0.15)
 		], [
 			'undergarden:sediment','createsifter:andesite_mesh'
-		]).processingTime(300)//.waterlogged()
+	]).processingTime(300)//.waterlogged()
 
 	event.recipes.createsifterSifting([
 			Item.of('minecraft:bone_meal').withChance(0.6),
@@ -202,9 +208,9 @@ onEvent('recipes', event => {
 			Item.of('minecraft:blaze_powder').withChance(0.6)
 		], [
 			'undergarden:sediment','createsifter:brass_mesh'
-		]).processingTime(200)//.waterlogged()
+	]).processingTime(200)//.waterlogged()
 
-
+	event.recipes.createHaunting( 'minecraft:glow_berries', 'undergarden:droopvine_item')
 
 
 

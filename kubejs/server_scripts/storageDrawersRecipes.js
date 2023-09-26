@@ -21,6 +21,12 @@ onEvent('recipes', event => {
 	event.remove({output:'storagedrawers:crimson_trim'})
 	event.remove({output:'storagedrawers:warped_trim'})
 
+	event.replaceInput({output:'minecraft:repeater'}, 'minecraft:stone', '#forge:stone')
+	event.replaceInput({output:'minecraft:comparator'}, 'minecraft:stone', '#forge:stone')
+	event.replaceInput({output:'storagedrawers:controller'}, 'minecraft:stone', '#forge:stone')
+	event.replaceInput({output:'storagedrawers:compacting_drawers_3'}, 'minecraft:stone', '#forge:stone')
+
+
 	event.shaped('4x storagedrawers:oak_trim', [
 		'ABA',
 		'BCB',
@@ -160,6 +166,16 @@ onEvent('recipes', event => {
 	event.replaceInput({output:'storagedrawers:upgrade_template'},'#storagedrawers:drawers',[
 			'storagedrawers:oak_trim','storagedrawers:spruce_trim','storagedrawers:birch_trim','storagedrawers:jungle_trim',
 			'storagedrawers:acacia_trim','storagedrawers:dark_oak_trim','storagedrawers:crimson_trim','storagedrawers:warped_trim'])
+
+	
+	event.replaceInput({output:'storagedrawers:controller'},'#storagedrawers:drawers',[
+			'storagedrawers:oak_trim','storagedrawers:spruce_trim','storagedrawers:birch_trim','storagedrawers:jungle_trim',
+			'storagedrawers:acacia_trim','storagedrawers:dark_oak_trim','storagedrawers:crimson_trim','storagedrawers:warped_trim'])
+	
+	event.replaceInput({output:'storagedrawers:compacting_drawers_3'},'#storagedrawers:drawers',[
+			'storagedrawers:oak_trim','storagedrawers:spruce_trim','storagedrawers:birch_trim','storagedrawers:jungle_trim',
+			'storagedrawers:acacia_trim','storagedrawers:dark_oak_trim','storagedrawers:crimson_trim','storagedrawers:warped_trim'])
+	
 
 })
 

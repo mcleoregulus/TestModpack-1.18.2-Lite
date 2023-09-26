@@ -14,6 +14,7 @@ onEvent('recipes', event => {
 	event.remove({output:'tconstruct:seared_fuel_gauge'})
 	event.remove({output:'tconstruct:seared_ingot_tank'})
 	event.remove({output:'tconstruct:seared_ingot_gauge'})
+	event.remove({mod:'tconstruct', input:'#minecraft:rails'})
 
 	event.replaceInput({output:'tconstruct:grout'},'minecraft:gravel','#forge:gravel')
 	event.replaceInput({output:'tconstruct:grout'},'#minecraft:sand','#forge:sand')
