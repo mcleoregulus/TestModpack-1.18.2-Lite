@@ -19,7 +19,9 @@ onEvent('recipes', event => {
 	event.remove({id:'immersiveengineering:refinery/biodiesel'})
 
 
-	event.recipes.immersiveengineeringCloche('undergarden:droopvine_item', 'undergarden:droopvine_item', 'undergarden:deepsoil')
+	event.recipes.immersiveengineeringCloche('2x undergarden:droopvine_item', 'undergarden:droopvine_item', 'undergarden:deepsoil')
+	event.recipes.immersiveengineeringCloche('2x undergarden:ditchbulb', 'undergarden:ditchbulb', 'undergarden:deepsoil')
+
 
 	event.custom({
 		"type":"immersiveengineering:refinery",

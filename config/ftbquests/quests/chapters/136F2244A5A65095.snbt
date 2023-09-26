@@ -1,0 +1,642 @@
+{
+	id: "136F2244A5A65095"
+	group: "0512320FA916E829"
+	order_index: 0
+	filename: "136F2244A5A65095"
+	title: "第一节 沉浸工程"
+	icon: "immersiveengineering:manual"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 3.0d
+			y: -1.0d
+			id: "511EB0E9B0D11C48"
+			tasks: [{
+				id: "657740F9714C06B8"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.0d
+			id: "0018452FBC89A46C"
+			tasks: [{
+				id: "242FA22E347B116D"
+				type: "item"
+				item: "immersiveengineering:creosote_bucket"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.0d
+			id: "571BBC3AAE177521"
+			tasks: [{
+				id: "0733DEDB46A1C09A"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+				count: 16L
+			}]
+			rewards: [
+				{
+					id: "31FB68758EFA163C"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+				}
+				{
+					id: "108707869CABDCFA"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			id: "160DDAD1002B12C8"
+			tasks: [{
+				id: "51B957E5CFB6D61B"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.5d
+			id: "34BD4314083C322D"
+			tasks: [{
+				id: "6F0FA6D9B5C9D083"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+				count: 27L
+			}]
+		}
+		{
+			x: 9.0d
+			y: 2.5d
+			dependencies: ["12EB7684AF87957C"]
+			id: "3A726AF2CBD93D41"
+			tasks: [
+				{
+					id: "4D8632B864898BE8"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "14287393CB3D3786"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+		}
+		{
+			title: "工业挤压机"
+			x: 20.5d
+			y: 4.5d
+			size: 1.5d
+			id: "279BD4142FFE845E"
+			tasks: [
+				{
+					id: "5A76AE37618587F7"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "3601B63BF435AD51"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "7179DA6D26146CCB"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "57473C40020CBA14"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "449E2937CEA36E76"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "64E05BF2AD316362"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "59F32E1D09937501"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "4ABB931F25CD62CB"
+				type: "item"
+				item: "immersiveengineering:seed"
+				count: 16
+			}]
+		}
+		{
+			title: "发酵机"
+			x: 25.0d
+			y: 4.5d
+			size: 1.5d
+			id: "4C3B8FEB05317123"
+			tasks: [
+				{
+					id: "2F48DA8C5109B558"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3F17BD06C76A83C3"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "500149EAF3DC23EF"
+					type: "item"
+					item: "minecraft:cauldron"
+					count: 4L
+				}
+				{
+					id: "12051B3406BD5933"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "4B933650B5B06F3C"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "695A31E04AEECBB1"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "309EDB473E55D19A"
+				type: "item"
+				item: "undergarden:droopvine_item"
+				count: 16
+			}]
+		}
+		{
+			x: 20.5d
+			y: -5.0d
+			description: [
+				""
+				"输入水和能量自动种植作物，左边加入肥料或骨粉加速工作过程，每个园艺玻璃罩耗能8FE/t"
+			]
+			id: "0FF480ABC498B01B"
+			tasks: [{
+				id: "7AF8CB9093442C4E"
+				type: "item"
+				item: "immersiveengineering:cloche"
+				count: 16L
+			}]
+			rewards: [{
+				id: "65CB75C41585718C"
+				type: "item"
+				item: "immersiveengineering:fertilizer"
+				count: 16
+			}]
+		}
+		{
+			x: 20.5d
+			y: -6.5d
+			description: ["蓝色染料可以从青金石或者靛蓝蘑菇分解得到"]
+			id: "290478D17444A31E"
+			tasks: [
+				{
+					id: "12AC1258228C661C"
+					type: "item"
+					item: "immersiveengineering:workbench"
+				}
+				{
+					id: "00A9CE25FABB0A72"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "components"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 18.5d
+			y: -3.5d
+			id: "33F3D5CBDD768D35"
+			tasks: [{
+				id: "0A89759D6379A9D0"
+				type: "item"
+				item: "immersiveengineering:seed"
+			}]
+		}
+		{
+			x: 23.0d
+			y: -5.0d
+			id: "60CA6F66AF9B20B1"
+			tasks: [{
+				id: "57365E4B6940C486"
+				type: "item"
+				item: "undergarden:droopvine_item"
+			}]
+		}
+		{
+			x: 23.0d
+			y: -3.5d
+			id: "32116D5C41A5684E"
+			tasks: [{
+				id: "0BF1B05FFF6555A3"
+				type: "item"
+				item: "minecraft:glow_berries"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			id: "45EA586DE43C1467"
+			tasks: [{
+				id: "606097F2E44C184C"
+				type: "item"
+				item: {
+					id: "immersiveengineering:hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "469B6C679842C16E"
+				type: "item"
+				item: "immersiveengineering:manual"
+			}]
+		}
+		{
+			x: 25.0d
+			y: 6.75d
+			id: "334BA17FA450CA06"
+			tasks: [{
+				id: "5A84FEB687139B68"
+				type: "item"
+				item: "immersiveengineering:ethanol_bucket"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 6.75d
+			id: "366D1C48F000A4B2"
+			tasks: [{
+				id: "5263BDFB213087E8"
+				type: "item"
+				item: "immersiveengineering:plantoil_bucket"
+			}]
+		}
+		{
+			title: "炼油厂"
+			x: 23.0d
+			y: 8.75d
+			dependencies: [
+				"334BA17FA450CA06"
+				"366D1C48F000A4B2"
+			]
+			id: "525EF4FE5BEF62E2"
+			tasks: [
+				{
+					id: "0354DEE03B1D8E06"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "66BCA45F82557E2B"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "4D09EAF20691E0AC"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "0FCEC0477AC1F8E7"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 16L
+				}
+				{
+					id: "7323C8DA9A4D428A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "496E581F38607446"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+		}
+		{
+			x: 23.0d
+			y: 11.0d
+			dependencies: [
+				"525EF4FE5BEF62E2"
+				"6518CD6E93473770"
+			]
+			id: "18F7612CC5996506"
+			tasks: [{
+				id: "351C914D3ADFF916"
+				type: "item"
+				item: "immersiveengineering:biodiesel_bucket"
+			}]
+		}
+		{
+			title: "柴油发电机"
+			x: 19.5d
+			y: 11.25d
+			size: 1.5d
+			id: "632C75835B3D02D4"
+			tasks: [
+				{
+					id: "3293F892AFDC783A"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "01317BFFC04F49BF"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "6715935D2C4C0E3B"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "3ADB00A6F9B39B34"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "435EBF392FE541CD"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0CAA9B37D7098D13"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+			rewards: [
+				{
+					id: "36199DA45F9A7118"
+					type: "item"
+					item: "create:chocolate_glazed_berries"
+					count: 16
+				}
+				{
+					id: "17B2C6141AF049DF"
+					type: "item"
+					item: "create:honeyed_apple"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "电弧炉（电耗子）"
+			x: 17.5d
+			y: 11.5d
+			id: "36304E4D65CE5BFC"
+			tasks: [
+				{
+					id: "35B384ED5D63F446"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "010262544756E2C9"
+					type: "item"
+					item: "immersiveengineering:storage_steel"
+					count: 6L
+				}
+				{
+					id: "4248DD1CF72D7BD8"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "4A947A0FCF26FECB"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "4C8B18DB65F20640"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "65938734CB25AAB6"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "0329B90949A593B4"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "686F216909972070"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "7EA111A3E9BD8FAF"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+			]
+		}
+		{
+			x: 20.5d
+			y: 13.75d
+			dependencies: [
+				"69DAD97CA8679423"
+				"069FF2EE50746114"
+			]
+			id: "44B7921C12A6751C"
+			tasks: [{
+				id: "3396B460911EF588"
+				type: "item"
+				item: "createaddition:seed_oil_bucket"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 15.25d
+			id: "069FF2EE50746114"
+			tasks: [{
+				id: "2EE1ABB6094258C5"
+				type: "item"
+				item: "createaddition:biomass"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 13.75d
+			id: "59BA7600EAAD9C74"
+			tasks: [{
+				id: "03384F28BA9326C4"
+				type: "item"
+				item: "createaddition:bioethanol_bucket"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 15.25d
+			dependencies: ["26FE0E2855C3CBC2"]
+			id: "69DAD97CA8679423"
+			tasks: [{
+				id: "238791E8715C8A7E"
+				type: "item"
+				item: "create:cinder_flour"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 16.75d
+			dependencies: ["44A1900EED9CCD1C"]
+			id: "26FE0E2855C3CBC2"
+			tasks: [{
+				id: "602B0579EDBEF115"
+				type: "item"
+				item: "minecraft:nether_brick"
+			}]
+		}
+		{
+			x: 20.5d
+			y: 18.75d
+			id: "44A1900EED9CCD1C"
+			tasks: [{
+				id: "08DEDD71EC4EEDC3"
+				type: "item"
+				item: "minecraft:brick"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 5.0d
+			dependencies: ["4466DCFDE07D6592"]
+			id: "12EB7684AF87957C"
+			tasks: [{
+				id: "50823DF5F94DB5F2"
+				type: "item"
+				item: "immersiveengineering:blastfurnace_preheater"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 7.0d
+			dependencies: [
+				"741FBB2E55AF3BA1"
+				"4466DCFDE07D6592"
+			]
+			id: "5851F5CA02D55354"
+			tasks: [{
+				id: "249D3725C6139DB2"
+				type: "item"
+				item: "immersiveengineering:dynamo"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 9.0d
+			id: "741FBB2E55AF3BA1"
+			tasks: [{
+				id: "4504EAB42F3CC272"
+				type: "item"
+				item: "immersiveengineering:watermill"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 7.0d
+			dependencies: ["4466DCFDE07D6592"]
+			id: "1807D9F036484861"
+			tasks: [{
+				id: "1D57547B3ACF5C4F"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			id: "4466DCFDE07D6592"
+			tasks: [{
+				id: "3B015F54A6F2CD18"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 9.0d
+			id: "0CDCA1DA68E8FF11"
+			tasks: [{
+				id: "48B4FD7DDD4CFF88"
+				type: "item"
+				item: "immersiveengineering:ingot_constantan"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 13.0d
+			dependencies: [
+				"44B7921C12A6751C"
+				"59BA7600EAAD9C74"
+			]
+			id: "6518CD6E93473770"
+			tasks: [{
+				id: "7CED5D266E25E197"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

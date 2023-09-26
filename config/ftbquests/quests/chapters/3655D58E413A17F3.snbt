@@ -3,8 +3,8 @@
 	group: "5493F94E7DB4FE3F"
 	order_index: 1
 	filename: "3655D58E413A17F3"
-	title: "第二节 蒸汽动力"
-	icon: "create:blaze_burner"
+	title: "第二节 黄铜时代"
+	icon: "create:brass_casing"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -19,8 +19,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 0.0d
+			x: 14.0d
+			y: -3.5d
 			id: "017CCA5157BC2FAB"
 			tasks: [
 				{
@@ -47,8 +47,9 @@
 			]
 		}
 		{
-			x: 13.5d
-			y: 0.0d
+			x: 17.5d
+			y: 2.0d
+			dependencies: ["3A383A65655A3A8A"]
 			id: "14CC0E7920F1E6F0"
 			tasks: [{
 				id: "4BA4E74FFAA9D722"
@@ -57,8 +58,9 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 0.0d
+			x: 15.0d
+			y: 2.0d
+			dependencies: ["5CEA57E2A0750D4D"]
 			id: "3A383A65655A3A8A"
 			tasks: [{
 				id: "40153761815C5864"
@@ -67,8 +69,9 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: 0.0d
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["229E3E2A68E4A724"]
 			id: "343EC5D4A640CA09"
 			tasks: [{
 				id: "76B1F247C4A94D26"
@@ -77,8 +80,13 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: 5.0d
+			x: 15.0d
+			y: -2.0d
+			dependencies: [
+				"0D9AE875368860B5"
+				"017CCA5157BC2FAB"
+				"34DE38B0F96C1CAD"
+			]
 			id: "51E21D1025589528"
 			tasks: [
 				{
@@ -99,8 +107,8 @@
 			]
 		}
 		{
-			x: 10.5d
-			y: 5.0d
+			x: 16.0d
+			y: -3.5d
 			id: "34DE38B0F96C1CAD"
 			tasks: [{
 				id: "6BF9BB2625C489F9"
@@ -109,8 +117,12 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: 2.5d
+			x: 12.5d
+			y: -2.0d
+			dependencies: [
+				"766BF20B84572498"
+				"343EC5D4A640CA09"
+			]
 			id: "0D9AE875368860B5"
 			tasks: [{
 				id: "048BAB32125DA260"
@@ -120,25 +132,99 @@
 			}]
 		}
 		{
-			x: 16.5d
-			y: 5.0d
+			x: 17.5d
+			y: -2.0d
+			dependencies: ["51E21D1025589528"]
 			id: "53B4AD208F808125"
 			tasks: [{
 				id: "48CE5759C6282670"
 				type: "item"
 				item: "createaddition:modular_accumulator"
-				count: 27L
+				count: 8L
 			}]
 		}
 		{
-			x: 16.5d
-			y: 2.5d
+			x: 14.0d
+			y: 0.0d
+			description: ["比石磨更高效！"]
+			dependencies: ["0D9AE875368860B5"]
 			id: "7F508F62E5847147"
 			tasks: [{
 				id: "5E1D6B2F49C3CAF2"
 				type: "item"
 				item: "create:crushing_wheel"
 				count: 2L
+			}]
+		}
+		{
+			x: 12.5d
+			y: 2.0d
+			description: ["这个装置可以模拟玩家的右手，此处"]
+			dependencies: [
+				"15A16A7C6236D2F2"
+				"766BF20B84572498"
+			]
+			id: "5CEA57E2A0750D4D"
+			tasks: [{
+				id: "6F0E3171492BA321"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "5A65F3C136E472D9"
+				type: "command"
+				title: "思索：机械手"
+				icon: "botania:cosmetic_thinking_hand"
+				command: "/c ponder create:deployer"
+				player_command: true
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			dependencies: ["229E3E2A68E4A724"]
+			id: "15A16A7C6236D2F2"
+			tasks: [{
+				id: "25FFCCE5FFA5684F"
+				type: "item"
+				item: "create:brass_hand"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.0d
+			id: "766BF20B84572498"
+			tasks: [{
+				id: "0D037AE392A3D5AF"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 0.0d
+			shape: "gear"
+			size: 2.0d
+			id: "1F5504D716DE2DA7"
+			tasks: [{
+				id: "0177A631B81DDEB3"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.5d
+			description: ["初步增产"]
+			dependencies: ["229E3E2A68E4A724"]
+			id: "68AE0D3A1A7903EB"
+			tasks: [{
+				id: "143EC985DACBC94E"
+				type: "item"
+				item: {
+					id: "createsifter:brass_mesh"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]

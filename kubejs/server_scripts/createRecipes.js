@@ -28,7 +28,45 @@ onEvent('recipes', event => {
 	event.remove({type:'createsifter:sifting'})
 
 
-	// event.replaceOutput({mod:'createaddition', output:'createaddition:biomass'}, 'createaddition:biomass', '4x createaddition:biomass')
+	event.remove({mod:'createaddition', output:'createaddition:biomass'})
+	event.remove({id:'createaddition:compacting/biomass_pellet'})
+
+	event.recipes.createCompacting([
+		'createaddition:biomass_pellet', Fluid.of('minecraft:water', 50)],
+		'4x createaddition:biomass'
+	)
+
+	event.recipes.createMixing('4x createaddition:biomass',[
+		Fluid.of('createaddition:seed_oil',100),
+		'2x create:tree_fertilizer',
+		'undergarden:ditchbulb_paste'
+	])
+
+	event.recipes.createMixing('6x createaddition:biomass',[
+		Fluid.of('createaddition:seed_oil',100),
+		'2x create:tree_fertilizer',
+	]).heated()
+
+
+	// event.recipes.createMixing('4x createaddition:biomass',[
+	// 	Fluid.of('createaddition:seed_oil',100),
+	// 	'2x #minecraft:flowers',
+	// 	'undergarden:ditchbulb_paste'
+	// ])
+
+	// event.recipes.createMixing('4x createaddition:biomass',[
+	// 	Fluid.of('createaddition:seed_oil',100),
+	// 	'2x #forge:crops',
+	// 	'undergarden:ditchbulb_paste'
+	// ])
+
+	// event.recipes.createMixing('4x createaddition:biomass',[
+	// 	Fluid.of('createaddition:seed_oil',100),
+	// 	'8x minecraft:stick',
+	// 	'undergarden:ditchbulb_paste'
+	// ])
+
+		
 
 	// event.replaceInput({output:'create:empty_blaze_burner'},'minecraft:netherrack','undergarden:tremblecrust')
 
@@ -180,11 +218,13 @@ onEvent('recipes', event => {
 	]).processingTime(300).waterlogged()
 
 	event.recipes.createsifterSifting([
-			Item.of('undergarden:glitterkelp').withChance(0.8),
-			Item.of('undergarden:ink_mushroom').withChance(0.6),
-			Item.of('undergarden:veil_mushroom').withChance(0.6),
-			Item.of('undergarden:blood_mushroom').withChance(0.6),
-			Item.of('undergarden:indigo_mushroom').withChance(0.6)
+			Item.of('undergarden:glitterkelp').withChance(0.6),
+			Item.of('minecraft:sugar_cane').withChance(0.6),
+			Item.of('minecraft:fire_coral').withChance(0.4),
+			Item.of('minecraft:horn_coral').withChance(0.4),
+			Item.of('minecraft:tube_coral').withChance(0.4),
+			Item.of('minecraft:brain_coral').withChance(0.4),
+			Item.of('minecraft:bubble_coral').withChance(0.4)
 	], [
 			'undergarden:deepsoil','createsifter:brass_mesh'
 	]).processingTime(200).waterlogged()

@@ -133,7 +133,7 @@
 			title: "第一步"
 			x: 4.0d
 			y: 3.0d
-			shape: "octagon"
+			shape: "gear"
 			subtitle: "出门吧"
 			description: ["环顾四周后，你发现这似乎是一个未知的维度，塔内也没有任何可用的物资，因此为了发展，你不得不踏出相对安全的塔内，对这个陌生的世界略作探索。"]
 			size: 1.75d
@@ -373,7 +373,7 @@
 		}
 		{
 			title: "粘土"
-			x: 13.0d
+			x: 14.5d
 			y: -1.5d
 			shape: "octagon"
 			description: [
@@ -400,8 +400,8 @@
 			]
 		}
 		{
-			x: 13.0d
-			y: 2.5d
+			x: 14.5d
+			y: 2.25d
 			shape: "octagon"
 			description: [
 				"水车，这是你摆脱人力的第一步，运用水流的落差就可以让水车产生应力，而你现在，万事俱备。\\n"
@@ -434,7 +434,7 @@
 		}
 		{
 			title: "水"
-			x: 13.0d
+			x: 14.5d
 			y: 0.5d
 			dependencies: [
 				"6D58DD9C99A96251"
@@ -508,12 +508,22 @@
 					item: "create:encased_chain_drive"
 				}
 			]
-			rewards: [{
-				id: "4F88DA9BB1EE5E11"
-				type: "item"
-				item: "create:vertical_gearbox"
-				count: 4
-			}]
+			rewards: [
+				{
+					id: "4F88DA9BB1EE5E11"
+					type: "item"
+					item: "create:vertical_gearbox"
+					count: 4
+				}
+				{
+					id: "1CDF7EF84B228101"
+					type: "command"
+					title: "思索：十字齿轮箱"
+					icon: "botania:cosmetic_thinking_hand"
+					command: "/c ponder create:gearbox"
+					player_command: true
+				}
+			]
 		}
 		{
 			x: 21.0d
@@ -536,6 +546,14 @@
 					id: "4D9B7C470C23F9F4"
 					type: "item"
 					item: "create:adjustable_chain_gearshift"
+				}
+				{
+					id: "5D7EA6DC04BFBDF2"
+					type: "command"
+					title: "思索：动力搅拌器"
+					icon: "botania:cosmetic_thinking_hand"
+					command: "/c ponder create:mechanical_mixer"
+					player_command: true
 				}
 			]
 		}
@@ -574,12 +592,28 @@
 		{
 			x: 21.0d
 			y: -2.0d
+			description: ["鼓风机可以批量对物品进行粒子加工，包括洗涤、烟熏、熔炼和缠魂，具体配方可以通过jei查看。"]
 			dependencies: ["52F968B9ED84F02F"]
 			id: "42BADEE8C253324B"
-			tasks: [{
-				id: "430F15B7A7CCE9D9"
-				type: "item"
-				item: "create:encased_fan"
+			tasks: [
+				{
+					id: "430F15B7A7CCE9D9"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "042E62EEE7C0787C"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+			]
+			rewards: [{
+				id: "60560427F93A62E9"
+				type: "command"
+				title: "思索：鼓风机"
+				icon: "botania:cosmetic_thinking_hand"
+				command: "/c ponder create:encased_fan"
+				player_command: true
 			}]
 		}
 		{
@@ -612,7 +646,11 @@
 		{
 			x: 21.0d
 			y: 2.0d
-			dependencies: ["52F968B9ED84F02F"]
+			description: ["石磨可以将造石机产生的石头研磨成砂砾，进而研磨成沙子，以供给动力筛子的原材料。"]
+			dependencies: [
+				"52F968B9ED84F02F"
+				"0BDD398F1ADF2B56"
+			]
 			id: "7BC936A7E756C552"
 			tasks: [{
 				id: "1010AA05CEF4D4AA"
@@ -630,6 +668,14 @@
 					type: "item"
 					item: "create:large_cogwheel"
 				}
+				{
+					id: "4E8A8F4C59690A5E"
+					type: "command"
+					title: "思索：石磨"
+					icon: "botania:cosmetic_thinking_hand"
+					command: "/c ponder create:millstone"
+					player_command: true
+				}
 			]
 		}
 		{
@@ -644,16 +690,26 @@
 				type: "item"
 				item: "create_mechanical_extruder:mechanical_extruder"
 			}]
-			rewards: [{
-				id: "3832E8E547EF0035"
-				type: "item"
-				item: "storagedrawers:oak_full_drawers_1"
-			}]
+			rewards: [
+				{
+					id: "3832E8E547EF0035"
+					type: "item"
+					item: "storagedrawers:oak_full_drawers_1"
+				}
+				{
+					id: "79523A179934168C"
+					type: "command"
+					title: "思索：动力造石机"
+					icon: "botania:cosmetic_thinking_hand"
+					command: "/c ponder create_mechanical_extruder:mechanical_extruder"
+					player_command: true
+				}
+			]
 		}
 		{
 			x: 26.0d
 			y: 2.0d
-			description: ["你可以通过粉碎渊邃石来自动化生产渊邃沙砾，因此建议先使用致命毒液混合物在利用造石机制作出三重压缩颤动地壳以自动化生产渊邃石。"]
+			description: ["你可以通过粉碎渊邃石来自动化生产渊邃沙砾，因此建议先使用致毒混合物在利用造石机制作出三重压缩颤动地壳以自动化生产渊邃石。"]
 			dependencies: [
 				"0BDD398F1ADF2B56"
 				"7BC936A7E756C552"
@@ -765,15 +821,27 @@
 				type: "item"
 				item: "create:mechanical_press"
 			}]
-			rewards: [{
-				id: "3B78BD11FACA8452"
-				type: "item"
-				item: "create:depot"
-			}]
+			rewards: [
+				{
+					id: "3B78BD11FACA8452"
+					type: "item"
+					item: "create:depot"
+				}
+				{
+					id: "3B1629F1EE93CF82"
+					type: "command"
+					title: "思索：动力辊压机"
+					icon: "botania:cosmetic_thinking_hand"
+					command: "/c ponder create:mechanical_press"
+					player_command: true
+				}
+			]
 		}
 		{
+			title: "第一批矿物"
 			x: 29.0d
 			y: 2.0d
+			description: ["通过筛矿获得你的第一批矿物。"]
 			dependencies: ["2750B49C1E261600"]
 			id: "2EE0E74C38CE3A57"
 			tasks: [
@@ -810,6 +878,7 @@
 			]
 		}
 		{
+			title: "一些有用的粉尘"
 			x: 29.0d
 			y: 4.0d
 			dependencies: ["5539DCDA178B4A4E"]
@@ -918,6 +987,7 @@
 		{
 			x: 23.5d
 			y: -2.0d
+			description: ["利用鼓风机批量洗涤沉沙可以自动化产出粘土球。"]
 			dependencies: ["42BADEE8C253324B"]
 			id: "47D36484CB803A72"
 			tasks: [{
@@ -973,7 +1043,7 @@
 			]
 		}
 		{
-			x: 29.0d
+			x: 31.0d
 			y: 0.0d
 			dependencies: [
 				"0EA2F96BA9A2B833"
@@ -1070,7 +1140,7 @@
 			}]
 		}
 		{
-			x: 11.0d
+			x: 12.5d
 			y: 0.5d
 			description: ["再烧制一下就可以装水了。"]
 			id: "54C52B9640F8EF65"
@@ -1118,9 +1188,9 @@
 				count: 8L
 			}]
 			rewards: [{
-				id: "0D5642D11D7308BA"
+				id: "7B0584D05BE63322"
 				type: "item"
-				item: "immersiveengineering:hemp_fabric"
+				item: "immersiveengineering:ersatz_leather"
 				count: 8
 			}]
 		}
@@ -1260,12 +1330,20 @@
 			y: 7.5d
 			dependencies: ["0823156FFE20F36B"]
 			id: "4909DDC1E1425200"
-			tasks: [{
-				id: "7B894B089987FC12"
-				type: "item"
-				item: "create:iron_sheet"
-				count: 16L
-			}]
+			tasks: [
+				{
+					id: "7B894B089987FC12"
+					type: "item"
+					item: "create:iron_sheet"
+					count: 16L
+				}
+				{
+					id: "3EF8A36AA636F770"
+					type: "item"
+					item: "create:copper_sheet"
+					count: 16L
+				}
+			]
 		}
 		{
 			x: 23.0d
