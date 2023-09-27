@@ -227,6 +227,911 @@
 				}
 			}]
 		}
+		{
+			x: 22.5d
+			y: 4.5d
+			id: "679A1435DE4DC785"
+			tasks: [{
+				id: "7B25A1E2945D44C2"
+				type: "checkmark"
+				title: "总览"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 7.0d
+			id: "39936B68A60FA57E"
+			tasks: [{
+				id: "23B943D2DD49DE3F"
+				type: "checkmark"
+				title: "物流系统"
+			}]
+		}
+		{
+			icon: "create:belt_connector"
+			x: 13.5d
+			y: 8.0d
+			id: "351DF0A94DF0839B"
+			tasks: [{
+				id: "1D80AF7EE01B038D"
+				type: "checkmark"
+				title: "水平、斜向输送"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 8.0d
+			id: "787CFA402AE59897"
+			tasks: [{
+				id: "26E6ECB9601D8CD8"
+				type: "checkmark"
+				title: "垂直输送"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 9.0d
+			id: "0BF5C23C65059CB4"
+			tasks: [{
+				id: "349E5E68153ACCF1"
+				type: "checkmark"
+				title: "弹射"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 10.0d
+			id: "7D7B5276993F0742"
+			tasks: [{
+				id: "669ED21B69E62FF5"
+				type: "checkmark"
+				title: "滚动"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 7.0d
+			id: "37ED8A104598A178"
+			tasks: [{
+				id: "57171D65EAF7C5BF"
+				type: "checkmark"
+				title: "存储系统"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 10.0d
+			id: "010476F99768D4C7"
+			tasks: [{
+				id: "010127928969DB74"
+				type: "checkmark"
+				title: "抽屉系统"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 9.0d
+			id: "2A201017EA7B2804"
+			tasks: [{
+				id: "4CB5D63549C9FC3E"
+				type: "checkmark"
+				title: "物品保险库"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 9.0d
+			id: "49C7FAA7B6A6467B"
+			tasks: [{
+				id: "785595B28444E5C6"
+				type: "checkmark"
+				title: "动力臂"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 7.0d
+			id: "2636CBF8C0E13615"
+			tasks: [{
+				id: "6C9915292F0A570D"
+				type: "checkmark"
+				title: "动态结构"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 8.0d
+			id: "1286BA019736C79E"
+			tasks: [{
+				id: "57F652231E780EB3"
+				type: "checkmark"
+				title: "矿车装配"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 8.0d
+			id: "58023D979A97AEE1"
+			tasks: [{
+				id: "048D0E117B673CB1"
+				type: "checkmark"
+				title: "铁路"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 9.5d
+			id: "340D3ED8690D4767"
+			tasks: [{
+				id: "3416A1416A24E589"
+				type: "checkmark"
+				title: "动力活塞"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 10.5d
+			id: "278D619782F860B7"
+			tasks: [{
+				id: "0CAA9E94A3556379"
+				type: "checkmark"
+				title: "起重机"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 11.5d
+			id: "72F60E2023032BC6"
+			tasks: [{
+				id: "227E1B8C8A180A53"
+				type: "checkmark"
+				title: "绳索滑轮"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 9.5d
+			id: "181C06A04010560E"
+			tasks: [{
+				id: "1B050236C6DBFC4D"
+				type: "checkmark"
+				title: "风车轴承"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 10.5d
+			id: "5E8CEE579F947CE3"
+			tasks: [{
+				id: "179B5BA04D9C10D3"
+				type: "checkmark"
+				title: "动力轴承"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 15.5d
+			id: "72CC42E24251EB9B"
+			tasks: [{
+				id: "7CDF019BC0E28ABD"
+				type: "checkmark"
+				title: "轴向底盘"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 15.5d
+			id: "5BB29E4E09EF29F7"
+			tasks: [{
+				id: "7F17589585AA2D0A"
+				type: "checkmark"
+				title: "径向底盘"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 9.5d
+			id: "2028F284F404C500"
+			tasks: [{
+				id: "48D6784013A173D0"
+				type: "checkmark"
+				title: "矿车装配站"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 10.5d
+			id: "1E67637023B10080"
+			tasks: [{
+				id: "58F8DD51E716E00D"
+				type: "checkmark"
+				title: "动力矿车"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 11.5d
+			id: "6BE8C099D6BBF9D8"
+			tasks: [{
+				id: "30B29C6F7CF38CC9"
+				type: "checkmark"
+				title: "双矿车结构"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 5.5d
+			id: "3A0B11971F1CF12F"
+			tasks: [{
+				id: "023C993C9C5A082A"
+				type: "checkmark"
+				title: "动态结构工作部件"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 16.5d
+			id: "70D3D6986E884BE6"
+			tasks: [{
+				id: "24207A4D1571D205"
+				type: "checkmark"
+				title: "强力胶"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 9.5d
+			id: "2DEFB7A15C1C75F0"
+			tasks: [{
+				id: "16BA723AE2B95441"
+				type: "checkmark"
+				title: "列车站"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 11.5d
+			id: "399582D751BEB3BA"
+			tasks: [{
+				id: "3C795335E3BC3359"
+				type: "checkmark"
+				title: "列车信号机"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 12.5d
+			id: "3FC9733CC0D28711"
+			tasks: [{
+				id: "719CD599C7BE75BE"
+				type: "checkmark"
+				title: "列车侦测器"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 14.5d
+			id: "0EEA4F35BAC68B17"
+			tasks: [{
+				id: "5B5003E1F8356285"
+				type: "checkmark"
+				title: "列车时刻表"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 8.0d
+			id: "381ACCABAB57E2A9"
+			tasks: [{
+				id: "6F922E01BF52A22B"
+				type: "checkmark"
+				title: "定点平动"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 8.0d
+			id: "01D1DF2B49CE3DE7"
+			tasks: [{
+				id: "4F5E897EA7B2FC34"
+				type: "checkmark"
+				title: "定点转动"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 8.0d
+			id: "7BED8C1C4FEAD6B4"
+			tasks: [{
+				id: "1779F89BF4BD5D08"
+				type: "checkmark"
+				title: "物流辅助"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 9.0d
+			id: "1BD74C0150D33987"
+			tasks: [{
+				id: "15E7ED71714A341A"
+				type: "checkmark"
+				title: "安山漏斗和黄铜漏斗"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 10.0d
+			id: "61356CEB90012EA2"
+			tasks: [{
+				id: "3382B009CA22B879"
+				type: "checkmark"
+				title: "安山隧道和黄铜隧道"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 11.0d
+			id: "46E06AA33436EB06"
+			tasks: [{
+				id: "79D54078462014F2"
+				type: "checkmark"
+				title: "过滤器和属性过滤器"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 12.0d
+			id: "44FC0244D8DDA42C"
+			tasks: [{
+				id: "669FA33C68EC30DD"
+				type: "checkmark"
+				title: "物品侦测器和存量检信器"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 5.5d
+			id: "4D9B52883D008285"
+			tasks: [{
+				id: "036013223DE4724F"
+				type: "checkmark"
+				title: "动态结构与世界的交互"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 8.0d
+			id: "1E2475A47B4D2096"
+			tasks: [{
+				id: "0C592D0A2862C68D"
+				type: "checkmark"
+				title: "置物台和工作盆"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 8.0d
+			id: "56D86FA322214565"
+			tasks: [{
+				id: "6A3B1A9A9EBBB20C"
+				type: "checkmark"
+				title: "机械手"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 7.0d
+			id: "606A7C42E41A9772"
+			tasks: [{
+				id: "042141A357502A43"
+				type: "checkmark"
+				title: "工作部件"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 9.0d
+			id: "4F5EB64F1AA2002C"
+			tasks: [{
+				id: "473C3ABFA83F7DCF"
+				type: "checkmark"
+				title: "鼓风机"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 7.0d
+			id: "2A48E4A460CA4A3E"
+			tasks: [{
+				id: "23BC3CEA73FC586B"
+				type: "checkmark"
+				title: "红石元件"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 9.0d
+			id: "6239BF19884C6B68"
+			tasks: [{
+				id: "1497809CCC7D01D7"
+				type: "checkmark"
+				title: "模拟拉杆"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 10.0d
+			id: "7BFFC7F54BD2E84D"
+			tasks: [{
+				id: "3F6D012A63750425"
+				type: "checkmark"
+				title: "锁存器和转换锁存器"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 11.0d
+			id: "7D6D01669763C4EF"
+			tasks: [{
+				id: "4DAED7D1E62781A9"
+				type: "checkmark"
+				title: "脉冲中继器和脉冲延长器"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 13.0d
+			id: "4624760B3BA778F4"
+			tasks: [{
+				id: "47AF7D91A7E07786"
+				type: "checkmark"
+				title: "置物板"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 7.0d
+			id: "13DF76649E334040"
+			tasks: [{
+				id: "64FDC11D11BCFB45"
+				type: "checkmark"
+				title: "应力系统"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 8.0d
+			id: "385E1E3E218DB72B"
+			tasks: [{
+				id: "4CA04CB94FE58D49"
+				type: "checkmark"
+				title: "应力发生"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 8.0d
+			id: "7C81788ACE8A5E24"
+			tasks: [{
+				id: "142781276D1273CC"
+				type: "checkmark"
+				title: "应力消耗"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 10.0d
+			id: "639BC415A36426D4"
+			tasks: [{
+				id: "2E04EB0D3E965D4B"
+				type: "checkmark"
+				title: "风车"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 9.0d
+			id: "198598C4A0C1CB3E"
+			tasks: [{
+				id: "77D6CB1C26041FE7"
+				type: "checkmark"
+				title: "水车和大水车"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 11.0d
+			id: "280CFE57324B245B"
+			tasks: [{
+				id: "1376005A45B7087D"
+				type: "checkmark"
+				title: "蒸汽机"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 12.0d
+			id: "0B3246BE8D515F2B"
+			tasks: [{
+				id: "5E2BFCE4EE67B715"
+				type: "checkmark"
+				title: "电动马达"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 12.5d
+			id: "6AC973D8BEE2CC2A"
+			tasks: [{
+				id: "71F1A9EC3BB49C22"
+				type: "checkmark"
+				title: "升降机"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 13.5d
+			id: "46FA32172F45250C"
+			tasks: [{
+				id: "72D81B0DBAFE997A"
+				type: "checkmark"
+				title: "乘客与车长"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 9.0d
+			id: "55241C7C344C414C"
+			tasks: [{
+				id: "46567A6F37779279"
+				type: "checkmark"
+				title: "1x 应力影响"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 10.0d
+			id: "24ED243B16ABB3F7"
+			tasks: [{
+				id: "7ECCFEFFD3EEC70F"
+				type: "checkmark"
+				title: "2x 应力影响"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 11.0d
+			id: "196F627634866FB0"
+			tasks: [{
+				id: "103350FD67A8CAA1"
+				type: "checkmark"
+				title: "4x 应力影响"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 12.0d
+			id: "67B35E61565556F5"
+			tasks: [{
+				id: "112988CE2CC71E60"
+				type: "checkmark"
+				title: "8x 应力影响"
+			}]
+		}
+		{
+			x: 29.0d
+			y: 7.0d
+			id: "1B473A1390615ACF"
+			tasks: [{
+				id: "19255BCE556BF363"
+				type: "checkmark"
+				title: "流体系统"
+			}]
+		}
+		{
+			x: 29.0d
+			y: 8.0d
+			id: "619E3A1E7B9B26D3"
+			tasks: [{
+				id: "29594FCE63AA0E9E"
+				type: "checkmark"
+				title: "流体管道和动力泵"
+			}]
+		}
+		{
+			x: 29.0d
+			y: 9.0d
+			id: "2DA5A5A64ECD4CD5"
+			tasks: [{
+				id: "64EB3786FA7C3DBB"
+				type: "checkmark"
+				title: "流体储罐"
+			}]
+		}
+		{
+			x: 29.0d
+			y: 10.0d
+			id: "124E5B1EB94AD38B"
+			tasks: [{
+				id: "63445B1CD86E14F9"
+				type: "checkmark"
+				title: "流体阀门"
+			}]
+		}
+		{
+			x: 29.0d
+			y: 12.0d
+			id: "45DBEAA7E5801972"
+			tasks: [{
+				id: "3C54234E94AFAE82"
+				type: "checkmark"
+				title: "分液池"
+			}]
+		}
+		{
+			x: 29.0d
+			y: 11.0d
+			id: "07FB2D6874962B14"
+			tasks: [{
+				id: "3B1B12F12CC3BC31"
+				type: "checkmark"
+				title: "软管滑轮"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 10.5d
+			id: "10EDCC8C873512D1"
+			tasks: [{
+				id: "7B2818BF4133FD3A"
+				type: "checkmark"
+				title: "组装列车"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 7.0d
+			id: "19876EBF4F5DDDE8"
+			tasks: [{
+				id: "19CB93A064964D36"
+				type: "checkmark"
+				title: "传动系统"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 8.0d
+			id: "1F9DD1E5AED64084"
+			tasks: [{
+				id: "5699685120635D8C"
+				type: "checkmark"
+				title: "传动杆和齿轮"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 11.0d
+			id: "3FC9A8184BA93176"
+			tasks: [{
+				id: "7D324966422393CE"
+				type: "checkmark"
+				title: "离合器和反转齿轮箱"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 9.0d
+			id: "619A1733640150AE"
+			tasks: [{
+				id: "71D7EDC03F17BD14"
+				type: "checkmark"
+				title: "十字齿轮箱"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 10.0d
+			id: "6884F9E86E435310"
+			tasks: [{
+				id: "515942446EE28F24"
+				type: "checkmark"
+				title: "链式传动箱和传送带"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 12.0d
+			subtitle: "工程师的眼中钉！"
+			id: "485BBE60AA9672CB"
+			tasks: [{
+				id: "70BB74D3F2AF1BC2"
+				type: "checkmark"
+				title: "转速控制器"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 13.0d
+			subtitle: "真正的大爹"
+			id: "22F9E2FFA04622E4"
+			tasks: [{
+				id: "21A0B660C370EA66"
+				type: "checkmark"
+				title: "可编程齿轮箱"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 7.0d
+			id: "4ED9C5830986F7E5"
+			tasks: [{
+				id: "79F3BA1797FC20BE"
+				type: "checkmark"
+				title: "杂项"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 15.0d
+			id: "18184B97EC5B37B5"
+			tasks: [{
+				id: "6B9BBF7C1B96EC46"
+				type: "checkmark"
+				title: "神秘转化"
+			}]
+		}
+		{
+			x: 36.5d
+			y: 7.0d
+			subtitle: "制作你的专属工厂大屏！"
+			id: "3FF53B2C90F2304A"
+			tasks: [{
+				id: "1419CD46584A1455"
+				type: "checkmark"
+				title: "动态信息显示"
+			}]
+		}
+		{
+			x: 36.5d
+			y: 8.0d
+			id: "7D585C6B7ED20985"
+			tasks: [{
+				id: "42B5D3ACA257D8AC"
+				type: "checkmark"
+				title: "显示链接器"
+			}]
+		}
+		{
+			x: 36.5d
+			y: 9.0d
+			id: "7706653D7F0EEC5D"
+			tasks: [{
+				id: "1607EFFB15A80067"
+				type: "checkmark"
+				title: "翻牌显示器"
+			}]
+		}
+		{
+			x: 36.5d
+			y: 10.0d
+			id: "657F9D5FF28E9846"
+			tasks: [{
+				id: "330639C06FB2FA0D"
+				type: "checkmark"
+				title: "辉光管"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 8.0d
+			id: "0A101A89A90CB36B"
+			tasks: [{
+				id: "23CD83A5006C6D75"
+				type: "checkmark"
+				title: "蓝图加农炮"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 13.0d
+			id: "52590AD6387CD7B9"
+			tasks: [{
+				id: "47BE4321C96A7096"
+				type: "checkmark"
+				title: "对称之杖"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 14.0d
+			subtitle: "（仅创造！）"
+			id: "7FBB41A7B7CB2BDE"
+			tasks: [{
+				id: "71D9D9DA9C2A16D9"
+				type: "checkmark"
+				title: "手持式环境塑形器"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 10.0d
+			id: "38CB6E04D77CCC01"
+			tasks: [{
+				id: "58CDB3374CCB9A2A"
+				type: "checkmark"
+				title: "粉碎轮"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.5d
+			id: "04A5DA658F222D91"
+			tasks: [{
+				id: "7CC8F43B9B50FA6E"
+				type: "checkmark"
+				title: "动态结构控制器"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 9.0d
+			id: "11C3C1A3DCF876AB"
+			tasks: [{
+				id: "540E4FADD8C7A0C7"
+				type: "checkmark"
+				title: "应力表和速度表"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 11.0d
+			id: "01A1D050E3616F7A"
+			tasks: [{
+				id: "3B360961CBA87607"
+				type: "checkmark"
+				title: "剪贴板"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 12.0d
+			id: "0E5EF3A9949F56B5"
+			tasks: [{
+				id: "61B33B2FC21CB07B"
+				type: "checkmark"
+				title: "武器和装备"
+			}]
+		}
+		{
+			x: 39.0d
+			y: 10.0d
+			id: "7CABAB90ACAD118E"
+			tasks: [{
+				id: "1E44257F126068B0"
+				type: "checkmark"
+				title: "工具箱"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 12.0d
+			id: "3F844379C366F1A1"
+			tasks: [{
+				id: "56B82934919DB00F"
+				type: "checkmark"
+				title: "玫瑰石英灯"
+			}]
+		}
+		{
+			x: 34.0d
+			y: 8.0d
+			id: "16E1A016BAE2A542"
+			tasks: [{
+				id: "21A3573D930072F9"
+				type: "checkmark"
+				title: "无线红石控制"
+			}]
+		}
 	]
 	quest_links: [ ]
 }
