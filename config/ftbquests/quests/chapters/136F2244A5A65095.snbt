@@ -11,6 +11,7 @@
 		{
 			x: 3.0d
 			y: -1.0d
+			dependencies: ["45EA586DE43C1467"]
 			id: "511EB0E9B0D11C48"
 			tasks: [{
 				id: "657740F9714C06B8"
@@ -22,6 +23,7 @@
 		{
 			x: 6.0d
 			y: -1.0d
+			dependencies: ["511EB0E9B0D11C48"]
 			id: "0018452FBC89A46C"
 			tasks: [{
 				id: "242FA22E347B116D"
@@ -32,6 +34,7 @@
 		{
 			x: 9.0d
 			y: -1.0d
+			dependencies: ["0018452FBC89A46C"]
 			id: "571BBC3AAE177521"
 			tasks: [{
 				id: "0733DEDB46A1C09A"
@@ -55,6 +58,7 @@
 		{
 			x: 3.0d
 			y: 2.5d
+			dependencies: ["511EB0E9B0D11C48"]
 			id: "160DDAD1002B12C8"
 			tasks: [{
 				id: "51B957E5CFB6D61B"
@@ -65,6 +69,8 @@
 		{
 			x: 6.0d
 			y: 2.5d
+			description: ["炼钢是一个漫长的过程，建议将你生产的第一批钢材用来升级高炉"]
+			dependencies: ["160DDAD1002B12C8"]
 			id: "34BD4314083C322D"
 			tasks: [{
 				id: "6F0FA6D9B5C9D083"
@@ -76,7 +82,10 @@
 		{
 			x: 9.0d
 			y: 2.5d
-			dependencies: ["12EB7684AF87957C"]
+			dependencies: [
+				"12EB7684AF87957C"
+				"34BD4314083C322D"
+			]
 			id: "3A726AF2CBD93D41"
 			tasks: [
 				{
@@ -94,8 +103,16 @@
 		}
 		{
 			title: "工业挤压机"
-			x: 20.5d
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "immersiveengineering:textures/block/multiblocks/squeezer.png"
+				}
+			}
+			x: 21.0d
 			y: 4.5d
+			dependencies: ["33F3D5CBDD768D35"]
 			size: 1.5d
 			id: "279BD4142FFE845E"
 			tasks: [
@@ -149,8 +166,9 @@
 		}
 		{
 			title: "发酵机"
-			x: 25.0d
+			x: 24.75d
 			y: 4.5d
+			dependencies: ["60CA6F66AF9B20B1"]
 			size: 1.5d
 			id: "4C3B8FEB05317123"
 			tasks: [
@@ -198,12 +216,13 @@
 			}]
 		}
 		{
-			x: 20.5d
-			y: -5.0d
+			x: 23.0d
+			y: 1.0d
 			description: [
 				""
 				"输入水和能量自动种植作物，左边加入肥料或骨粉加速工作过程，每个园艺玻璃罩耗能8FE/t"
 			]
+			dependencies: ["290478D17444A31E"]
 			id: "0FF480ABC498B01B"
 			tasks: [{
 				id: "7AF8CB9093442C4E"
@@ -219,8 +238,8 @@
 			}]
 		}
 		{
-			x: 20.5d
-			y: -6.5d
+			x: 22.5d
+			y: -0.5d
 			description: ["蓝色染料可以从青金石或者靛蓝蘑菇分解得到"]
 			id: "290478D17444A31E"
 			tasks: [
@@ -243,8 +262,9 @@
 			]
 		}
 		{
-			x: 18.5d
-			y: -3.5d
+			x: 21.5d
+			y: 2.5d
+			dependencies: ["0FF480ABC498B01B"]
 			id: "33F3D5CBDD768D35"
 			tasks: [{
 				id: "0A89759D6379A9D0"
@@ -253,23 +273,14 @@
 			}]
 		}
 		{
-			x: 23.0d
-			y: -5.0d
+			x: 24.5d
+			y: 2.5d
+			dependencies: ["0FF480ABC498B01B"]
 			id: "60CA6F66AF9B20B1"
 			tasks: [{
 				id: "57365E4B6940C486"
 				type: "item"
 				item: "undergarden:droopvine_item"
-			}]
-		}
-		{
-			x: 23.0d
-			y: -3.5d
-			id: "32116D5C41A5684E"
-			tasks: [{
-				id: "0BF1B05FFF6555A3"
-				type: "item"
-				item: "minecraft:glow_berries"
 			}]
 		}
 		{
@@ -294,8 +305,9 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: 6.75d
+			x: 24.5d
+			y: 6.5d
+			dependencies: ["4C3B8FEB05317123"]
 			id: "334BA17FA450CA06"
 			tasks: [{
 				id: "5A84FEB687139B68"
@@ -304,8 +316,9 @@
 			}]
 		}
 		{
-			x: 20.5d
-			y: 6.75d
+			x: 21.5d
+			y: 6.5d
+			dependencies: ["279BD4142FFE845E"]
 			id: "366D1C48F000A4B2"
 			tasks: [{
 				id: "5263BDFB213087E8"
@@ -436,6 +449,7 @@
 			title: "电弧炉（电耗子）"
 			x: 17.5d
 			y: 11.5d
+			subtitle: "强化高炉砖可以从之前的炉子上拆下来"
 			id: "36304E4D65CE5BFC"
 			tasks: [
 				{
@@ -495,10 +509,6 @@
 		{
 			x: 20.5d
 			y: 13.75d
-			dependencies: [
-				"69DAD97CA8679423"
-				"069FF2EE50746114"
-			]
 			id: "44B7921C12A6751C"
 			tasks: [{
 				id: "3396B460911EF588"
@@ -509,6 +519,10 @@
 		{
 			x: 23.0d
 			y: 15.25d
+			dependencies: [
+				"44B7921C12A6751C"
+				"48B00FB0CB2DBCDC"
+			]
 			id: "069FF2EE50746114"
 			tasks: [{
 				id: "2EE1ABB6094258C5"
@@ -519,6 +533,11 @@
 		{
 			x: 25.5d
 			y: 13.75d
+			dependencies: [
+				"069FF2EE50746114"
+				"69DAD97CA8679423"
+				"095494863B74FCDE"
+			]
 			id: "59BA7600EAAD9C74"
 			tasks: [{
 				id: "03384F28BA9326C4"
@@ -527,8 +546,8 @@
 			}]
 		}
 		{
-			x: 18.0d
-			y: 15.25d
+			x: 28.0d
+			y: 15.5d
 			dependencies: ["26FE0E2855C3CBC2"]
 			id: "69DAD97CA8679423"
 			tasks: [{
@@ -538,8 +557,8 @@
 			}]
 		}
 		{
-			x: 20.5d
-			y: 16.75d
+			x: 26.5d
+			y: 16.0d
 			dependencies: ["44A1900EED9CCD1C"]
 			id: "26FE0E2855C3CBC2"
 			tasks: [{
@@ -549,8 +568,8 @@
 			}]
 		}
 		{
-			x: 20.5d
-			y: 18.75d
+			x: 26.5d
+			y: 17.0d
 			id: "44A1900EED9CCD1C"
 			tasks: [{
 				id: "08DEDD71EC4EEDC3"
@@ -596,7 +615,10 @@
 		{
 			x: 7.0d
 			y: 7.0d
-			dependencies: ["4466DCFDE07D6592"]
+			dependencies: [
+				"4466DCFDE07D6592"
+				"0CDCA1DA68E8FF11"
+			]
 			id: "1807D9F036484861"
 			tasks: [{
 				id: "1D57547B3ACF5C4F"
@@ -635,6 +657,37 @@
 				id: "7CED5D266E25E197"
 				type: "item"
 				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			x: 23.0d
+			y: 17.0d
+			id: "48B00FB0CB2DBCDC"
+			tasks: [{
+				id: "65AE11F68630FDA3"
+				type: "item"
+				item: "create:tree_fertilizer"
+			}]
+		}
+		{
+			x: 25.0d
+			y: 15.5d
+			dependencies: ["1AB16B51BE5439A5"]
+			id: "095494863B74FCDE"
+			tasks: [{
+				id: "23F5D000BE78A3F3"
+				type: "item"
+				item: "minecraft:sugar"
+			}]
+		}
+		{
+			x: 25.0d
+			y: 17.0d
+			id: "1AB16B51BE5439A5"
+			tasks: [{
+				id: "357BA1714F723E82"
+				type: "item"
+				item: "minecraft:sugar_cane"
 			}]
 		}
 	]

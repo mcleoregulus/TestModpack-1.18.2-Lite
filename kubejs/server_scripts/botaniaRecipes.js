@@ -12,6 +12,8 @@ onEvent('recipes', event => {
 
 	event.remove({id:'botania:blaze_block'})
     event.remove({id:'botania:conversions/blazeblock_deconstruct'})
+	event.remove({id:'botania:pure_daisy/sand'})
+
 	event.shaped('botania:blaze_block', [
 		'ABA',
 		'BCB',

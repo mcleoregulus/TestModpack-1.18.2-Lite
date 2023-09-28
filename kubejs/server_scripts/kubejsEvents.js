@@ -14,9 +14,8 @@ onEvent('block.right_click', event => {
     //     event.server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} minecraft:sand`)
     // }
 
-    if (event.block == 'undergarden:sediment' && event.player.mainHandItem.id == "kubejs:soul_shard") {
-        event.server.runCommandSilent(`give ${event.player} soul_sand`)
-        event.server.runCommandSilent(`setblock ${event.player.x} ${event.player.y}^-1 ${event.player.z} minecraft:soul_sand`)
+    if (event.block == 'undergarden:sediment' && event.player.mainHandItem.id == 'kubejs:soul_shard') {
+        event.server.runCommandSilent(`execute in undergarden:undergarden run setblock ${event.block.x} ${event.block.y} ${event.block.z} minecraft:soul_sand`)
     }
 })
 

@@ -31,6 +31,8 @@ onEvent('recipes', event => {
 	event.remove({mod:'createaddition', output:'createaddition:biomass'})
 	event.remove({id:'createaddition:compacting/biomass_pellet'})
 
+	event.replaceInput({id:'create:haunting/soul_sand'}, '#minecraft:sand', '#forge:sand')
+
 	event.recipes.createCompacting([
 		'createaddition:biomass_pellet', Fluid.of('minecraft:water', 50)],
 		'4x createaddition:biomass'
@@ -45,6 +47,17 @@ onEvent('recipes', event => {
 	event.recipes.createMixing('6x createaddition:biomass',[
 		Fluid.of('createaddition:seed_oil',100),
 		'2x create:tree_fertilizer',
+	]).heated()
+
+	event.recipes.createMixing(Fluid.of('immersiveengineering:biodiesel',20), [
+		Fluid.of('createaddition:seed_oil', 10),
+		Fluid.of('createaddition:bioethanol', 10),
+		'undergarden:ditchbulb_paste'
+	])
+
+	event.recipes.createMixing(Fluid.of('immersiveengineering:biodiesel',20), [
+		Fluid.of('createaddition:seed_oil', 10),
+		Fluid.of('createaddition:bioethanol', 10),
 	]).heated()
 
 
