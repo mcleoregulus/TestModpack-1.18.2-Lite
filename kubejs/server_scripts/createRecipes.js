@@ -38,6 +38,11 @@ onEvent('recipes', event => {
 		'4x createaddition:biomass'
 	)
 
+	event.recipes.createCompacting(
+		'thermal:rubber',
+		Fluid.of('thermal:latex', 250)
+	)
+
 	event.recipes.createMixing('4x createaddition:biomass',[
 		Fluid.of('createaddition:seed_oil',100),
 		'2x create:tree_fertilizer',
@@ -168,27 +173,27 @@ onEvent('recipes', event => {
 	event.recipes.createsifterSifting([
 			Item.of('minecraft:iron_nugget').withChance(0.8),
 			Item.of('create:copper_nugget').withChance(0.6),
+			Item.of('undergarden:cloggrum_nugget').withChance(0.6),
 			Item.of('create:zinc_nugget').withChance(0.5),
 			Item.of('minecraft:gold_nugget').withChance(0.4),
 			Item.of('undergarden:depthrock_pebble').withChance(0.2),
 			Item.of('minecraft:coal').withChance(0.2),
-			Item.of('minecraft:quartz').withChance(0.3),
 			Item.of('minecraft:flint').withChance(0.1)
 		], [
 			'kubejs:deepgravel','createsifter:andesite_mesh'
 	]).processingTime(300)//.waterlogged()
 
 	event.recipes.createsifterSifting([
-			Item.of('minecraft:raw_iron').withChance(0.8),
-			Item.of('minecraft:raw_copper').withChance(0.6),
-			Item.of('create:raw_zinc').withChance(0.5),
-			Item.of('minecraft:raw_gold').withChance(0.4),
-			Item.of('minecraft:lapis_lazuli').withChance(0.35),
+			Item.of('minecraft:raw_iron').withChance(0.6),
+			Item.of('minecraft:raw_copper').withChance(0.5),
+			Item.of('create:raw_zinc').withChance(0.4),
+			Item.of('minecraft:raw_gold').withChance(0.3),
+			Item.of('undergarden:raw_cloggrum').withChance(0.4),
+			Item.of('minecraft:lapis_lazuli').withChance(0.4),
 			Item.of('minecraft:coal').withChance(0.4),
 			Item.of('minecraft:flint').withChance(0.2),
-			Item.of('minecraft:quartz').withChance(0.25),
 			Item.of('create:experience_nugget').withChance(0.3),
-			Item.of('minecraft:diamond').withChance(0.05)
+			Item.of('minecraft:diamond').withChance(0.1)
 
 		], [
 			'kubejs:deepgravel','createsifter:brass_mesh'

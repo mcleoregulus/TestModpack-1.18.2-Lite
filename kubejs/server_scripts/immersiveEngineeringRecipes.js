@@ -23,6 +23,7 @@ onEvent('recipes', event => {
 	event.recipes.immersiveengineeringCloche('2x undergarden:droopvine_item', 'undergarden:droopvine_item', 'undergarden:deepsoil')
 	event.recipes.immersiveengineeringCloche('2x undergarden:ditchbulb', 'undergarden:ditchbulb', 'undergarden:deepsoil')
 
+	event.remove({id:'immersiveengineering:mineral/uraninite'})
 
 	event.custom({
 		"type":"immersiveengineering:refinery",
@@ -33,6 +34,29 @@ onEvent('recipes', event => {
 		"energy":80
 	})
 
+	event.custom({
+		"type":"immersiveengineering:mineral_mix",
+		"ores":[{"chance":0.4,"output":{"item":"powah:uraninite_ore_poor"}},
+				{"chance":0.3,"output":{"item":"powah:uraninite_ore"}},
+				{"chance":0.2,"output":{"item":"powah:deepslate_uraninite_ore"}},
+				{"chance":0.1,"output":{"item":"powah:deepslate_uraninite_ore_dense"}}],
+		"spoils":[{"chance":0.5,"output":{"item":"minecraft:cobblestone"}},
+				  {"chance":0.3,"output":{"item":"minecraft:cobbled_deepslate"}},
+				  {"chance":0.2,"output":{"item":"minecraft:gravel"}}],
+		"dimensions":["jamd:mining"],"weight":15,"fail_chance":0.15}
+	)
+
+	event.custom({
+		"type":"immersiveengineering:mineral_mix",
+		"ores":[{"chance":0.6,"output":{"item":"thermal:oil_sand"}},
+				{"chance":0.3,"output":{"item":"thermal:oil_red_sand"}},
+				{"chance":0.1,"output":{"item":"immersiveengineering:dust_sulfur"}}],
+		"spoils":[{"chance":0.5,"output":{"item":"minecraft:sand"}},
+				  {"chance":0.2,"output":{"item":"minecraft:sandstone"}},
+				  {"chance":0.2,"output":{"item":"minecraft:red_sand"}},
+				  {"chance":0.1,"output":{"item":"minecraft:red_sandstone"}},],
+		"dimensions":["jamd:mining"],"weight":15,"fail_chance":0.15}
+	)
 	
 	// event.custom({
 	// 	"type":"immersiveengineering:refinery",

@@ -56,10 +56,7 @@
 			x: 1.5d
 			y: 3.0d
 			subtitle: "欢迎来到【飞升】"
-			description: [
-				"这里将是你开始游戏的第一步，配方经过了大量的魔改，所以请务必跟随任务线行动，而在任务线中，正八边形的都是更为重要的主线，而正八边形中，图标更大的意味着更加重要，可以尽量有限考虑完成更加重要的任务，这将让你的旅途更加顺畅。\\n"
-				"主线任务（八边形图标的任务）一般会在第一段有额外的剧情描述，你当然可以略过他们。但是第二段的提示性文字较为重要，可能会极大程度的影响你的游玩体验，请务必认真阅读，尤其是对于那些没有那么多整合包经验的新手玩家，认真阅读任务提示将会解决你超过九成的问题。"
-			]
+			description: ["这里将是你开始游戏的第一步，配方经过了大量的魔改，所以请务必跟随任务线行动，而在任务线中，正八边形的都是更为重要的主线，而正八边形中，图标更大的意味着更加重要，可以尽量优先考虑完成更加重要的任务，这将让你的旅途更加顺畅。\\n"]
 			id: "3A62AA5CFA9FA205"
 			tasks: [{
 				id: "2EF4FA6F04E913BD"
@@ -134,7 +131,6 @@
 			x: 4.0d
 			y: 3.0d
 			shape: "gear"
-			subtitle: "出门吧"
 			description: ["环顾四周后，你发现这似乎是一个未知的维度，塔内也没有任何可用的物资，因此为了发展，你不得不踏出相对安全的塔内，对这个陌生的世界略作探索。"]
 			size: 1.75d
 			id: "2CB79087C1829C0F"
@@ -999,6 +995,7 @@
 		{
 			x: 26.5d
 			y: -2.0d
+			shape: "octagon"
 			dependencies: ["47D36484CB803A72"]
 			id: "36FD8A35FA324EBB"
 			tasks: [{
@@ -1015,6 +1012,7 @@
 		{
 			x: 29.0d
 			y: -2.0d
+			shape: "octagon"
 			dependencies: ["36FD8A35FA324EBB"]
 			id: "3F81DE42B3F6E9FA"
 			tasks: [
@@ -1045,6 +1043,7 @@
 		{
 			x: 31.0d
 			y: 0.0d
+			shape: "octagon"
 			dependencies: [
 				"0EA2F96BA9A2B833"
 				"3F81DE42B3F6E9FA"
@@ -1394,6 +1393,31 @@
 							Damage: 0
 						}
 					}
+				}
+			]
+		}
+		{
+			icon: "minecraft:detector_rail"
+			x: 34.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: [
+				"?大可不必的（doge）"
+				"如果你不知道这个任务是什么意思，这意味着你不需要知道它是什么意思，别想它了，去做别的事情吧。"
+			]
+			dependencies: ["0540DD7578A6E6C7"]
+			hide: true
+			id: "2FA0803971121637"
+			tasks: [
+				{
+					id: "023263A57AB48CAC"
+					type: "item"
+					item: "minecraft:detector_rail"
+				}
+				{
+					id: "2F924CBC231BC07B"
+					type: "item"
+					item: "minecraft:powered_rail"
 				}
 			]
 		}

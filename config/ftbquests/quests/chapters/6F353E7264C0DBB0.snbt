@@ -1,0 +1,88 @@
+{
+	id: "6F353E7264C0DBB0"
+	group: "0512320FA916E829"
+	order_index: 1
+	filename: "6F353E7264C0DBB0"
+	title: "第二节 破碎虚空"
+	icon: "kubejs:soul_shard"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "34DE52DEB39752AF"
+			tasks: [{
+				id: "2C63F4D2C4A6A44C"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			dependencies: ["4128979DA7FB8202"]
+			id: "38B5A5FEB347258B"
+			tasks: [{
+				id: "0D2154F58CDDAF10"
+				type: "item"
+				item: "immersiveengineering:component_electronic_adv"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 3.5d
+			dependencies: ["4128979DA7FB8202"]
+			id: "78CCC4BB16579ED9"
+			tasks: [{
+				id: "28BF12244B927128"
+				type: "item"
+				item: "immersiveengineering:circuit_board"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["34DE52DEB39752AF"]
+			id: "43370F1600F59065"
+			tasks: [{
+				id: "11489F8D904E5919"
+				type: "item"
+				item: "immersiveengineering:ethanol_bucket"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			dependencies: ["43370F1600F59065"]
+			id: "6042CE76924AD11F"
+			tasks: [{
+				id: "61B45A5F0A895902"
+				type: "item"
+				item: "immersiveengineering:acetaldehyde_bucket"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.5d
+			dependencies: ["6042CE76924AD11F"]
+			id: "58B4E805ACA3F00A"
+			tasks: [{
+				id: "1A60E260FA2D1BBF"
+				type: "item"
+				item: "immersiveengineering:phenolic_resin_bucket"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["58B4E805ACA3F00A"]
+			id: "4128979DA7FB8202"
+			tasks: [{
+				id: "1ABCB6C1CCFEC0E4"
+				type: "item"
+				item: "immersiveengineering:plate_duroplast"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

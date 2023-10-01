@@ -10,12 +10,10 @@ console.info('Hello, World! (You will see this line every time server resources 
 
 onEvent('block.right_click', event => {
 
-    // if (event.block == 'undergarden:sediment' && event.player.mainHandItem.id == 'kubejs:soul_shard'){
-    //     event.server.runCommandSilent(`setblock ${event.block.x} ${event.block.y} ${event.block.z} minecraft:sand`)
-    // }
 
     if (event.block == 'undergarden:sediment' && event.player.mainHandItem.id == 'kubejs:soul_shard') {
-        event.server.runCommandSilent(`execute in undergarden:undergarden run setblock ${event.block.x} ${event.block.y} ${event.block.z} minecraft:soul_sand`)
+        event.server.runCommandSilent(
+            `execute in undergarden:undergarden run setblock ${event.block.x} ${event.block.y} ${event.block.z} minecraft:soul_sand`)
     }
 })
 

@@ -11,6 +11,8 @@
 		{
 			x: 7.5d
 			y: 0.0d
+			shape: "octagon"
+			size: 1.75d
 			id: "229E3E2A68E4A724"
 			tasks: [{
 				id: "398742BAF053CAC1"
@@ -21,6 +23,8 @@
 		{
 			x: 14.0d
 			y: -3.5d
+			shape: "hexagon"
+			size: 1.5d
 			id: "017CCA5157BC2FAB"
 			tasks: [
 				{
@@ -71,7 +75,9 @@
 		{
 			x: 10.0d
 			y: -2.0d
+			shape: "octagon"
 			dependencies: ["229E3E2A68E4A724"]
+			size: 1.25d
 			id: "343EC5D4A640CA09"
 			tasks: [{
 				id: "76B1F247C4A94D26"
@@ -82,11 +88,13 @@
 		{
 			x: 15.0d
 			y: -2.0d
+			shape: "octagon"
 			dependencies: [
 				"0D9AE875368860B5"
 				"017CCA5157BC2FAB"
 				"34DE38B0F96C1CAD"
 			]
+			size: 1.25d
 			id: "51E21D1025589528"
 			tasks: [
 				{
@@ -119,10 +127,12 @@
 		{
 			x: 12.5d
 			y: -2.0d
+			shape: "octagon"
 			dependencies: [
 				"766BF20B84572498"
 				"343EC5D4A640CA09"
 			]
+			size: 1.25d
 			id: "0D9AE875368860B5"
 			tasks: [{
 				id: "048BAB32125DA260"
@@ -146,6 +156,7 @@
 		{
 			x: 14.0d
 			y: 0.0d
+			shape: "octagon"
 			description: ["比石磨更高效！"]
 			dependencies: ["0D9AE875368860B5"]
 			id: "7F508F62E5847147"
@@ -204,7 +215,11 @@
 			x: 22.5d
 			y: 0.0d
 			shape: "gear"
-			size: 2.0d
+			dependencies: [
+				"14CC0E7920F1E6F0"
+				"53B4AD208F808125"
+			]
+			size: 1.5d
 			id: "1F5504D716DE2DA7"
 			tasks: [{
 				id: "0177A631B81DDEB3"
@@ -235,6 +250,19 @@
 			shape: "gear"
 			subtitle: "请善用思索系统！"
 			description: ["拿好你的扳手和工程师护目镜，准备做一个专业的工程师！"]
+			dependencies: [
+				"3FF53B2C90F2304A"
+				"736D73A7A9C1BB48"
+				"13DF76649E334040"
+				"2A48E4A460CA4A3E"
+				"4ED9C5830986F7E5"
+				"2636CBF8C0E13615"
+				"39936B68A60FA57E"
+				"1B473A1390615ACF"
+				"37ED8A104598A178"
+				"19876EBF4F5DDDE8"
+				"1F5504D716DE2DA7"
+			]
 			size: 2.0d
 			id: "679A1435DE4DC785"
 			tasks: [{
@@ -247,6 +275,13 @@
 			icon: "minecraft:hopper"
 			x: 14.0d
 			y: 7.0d
+			dependencies: [
+				"7D7B5276993F0742"
+				"0BF5C23C65059CB4"
+				"49C7FAA7B6A6467B"
+				"787CFA402AE59897"
+				"351DF0A94DF0839B"
+			]
 			id: "39936B68A60FA57E"
 			tasks: [{
 				id: "23B943D2DD49DE3F"
@@ -302,6 +337,11 @@
 			icon: "minecraft:barrel"
 			x: 18.0d
 			y: 7.0d
+			dependencies: [
+				"1BC4B0C0ADDF8F6D"
+				"2A201017EA7B2804"
+				"1E2475A47B4D2096"
+			]
 			id: "37ED8A104598A178"
 			tasks: [{
 				id: "57171D65EAF7C5BF"
@@ -335,6 +375,12 @@
 		{
 			x: 8.0d
 			y: 7.0d
+			dependencies: [
+				"6AEDF0549349AAF3"
+				"01D1DF2B49CE3DE7"
+				"58023D979A97AEE1"
+				"1286BA019736C79E"
+			]
 			id: "2636CBF8C0E13615"
 			tasks: [{
 				id: "6C9915292F0A570D"
@@ -343,9 +389,20 @@
 			}]
 		}
 		{
-			icon: "minecraft:furnace_minecart"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "create:textures/item/minecart_contraption.png"
+				}
+			}
 			x: 8.5d
 			y: 8.0d
+			dependencies: [
+				"6BE8C099D6BBF9D8"
+				"1E67637023B10080"
+				"2028F284F404C500"
+			]
 			id: "1286BA019736C79E"
 			tasks: [{
 				id: "57F652231E780EB3"
@@ -357,6 +414,14 @@
 			icon: "create:track"
 			x: 9.5d
 			y: 8.0d
+			dependencies: [
+				"2DEFB7A15C1C75F0"
+				"46FA32172F45250C"
+				"10EDCC8C873512D1"
+				"399582D751BEB3BA"
+				"3FC9733CC0D28711"
+				"0EEA4F35BAC68B17"
+			]
 			id: "58023D979A97AEE1"
 			tasks: [{
 				id: "048D0E117B673CB1"
@@ -528,6 +593,11 @@
 			icon: "create:radial_chassis"
 			x: 7.5d
 			y: 8.0d
+			dependencies: [
+				"181C06A04010560E"
+				"1FF36117EE930BDE"
+				"5E8CEE579F947CE3"
+			]
 			id: "01D1DF2B49CE3DE7"
 			tasks: [{
 				id: "4F5E897EA7B2FC34"
@@ -539,6 +609,14 @@
 			icon: "create:andesite_funnel"
 			x: 16.0d
 			y: 8.0d
+			dependencies: [
+				"39936B68A60FA57E"
+				"37ED8A104598A178"
+				"1BD74C0150D33987"
+				"46E06AA33436EB06"
+				"44FC0244D8DDA42C"
+				"61356CEB90012EA2"
+			]
 			id: "7BED8C1C4FEAD6B4"
 			tasks: [{
 				id: "1779F89BF4BD5D08"
@@ -639,6 +717,14 @@
 			icon: "minecraft:redstone"
 			x: 34.0d
 			y: 7.0d
+			dependencies: [
+				"6239BF19884C6B68"
+				"7BFFC7F54BD2E84D"
+				"16E1A016BAE2A542"
+				"7D6D01669763C4EF"
+				"3F844379C366F1A1"
+				"4624760B3BA778F4"
+			]
 			id: "2A48E4A460CA4A3E"
 			tasks: [{
 				id: "23BC3CEA73FC586B"
@@ -694,6 +780,10 @@
 			icon: "create:creative_motor"
 			x: 22.5d
 			y: 7.0d
+			dependencies: [
+				"7C81788ACE8A5E24"
+				"385E1E3E218DB72B"
+			]
 			id: "13DF76649E334040"
 			tasks: [{
 				id: "64FDC11D11BCFB45"
@@ -704,6 +794,12 @@
 		{
 			x: 22.0d
 			y: 8.0d
+			dependencies: [
+				"0B3246BE8D515F2B"
+				"280CFE57324B245B"
+				"198598C4A0C1CB3E"
+				"639BC415A36426D4"
+			]
 			id: "385E1E3E218DB72B"
 			tasks: [{
 				id: "4CA04CB94FE58D49"
@@ -714,6 +810,12 @@
 		{
 			x: 23.0d
 			y: 8.0d
+			dependencies: [
+				"67B35E61565556F5"
+				"2148AE97D96D4196"
+				"24ED243B16ABB3F7"
+				"196F627634866FB0"
+			]
 			id: "7C81788ACE8A5E24"
 			tasks: [{
 				id: "142781276D1273CC"
@@ -827,6 +929,13 @@
 			icon: "create:fluid_pipe"
 			x: 29.0d
 			y: 7.0d
+			dependencies: [
+				"124E5B1EB94AD38B"
+				"07FB2D6874962B14"
+				"619E3A1E7B9B26D3"
+				"2DA5A5A64ECD4CD5"
+				"5A972AA18AC98E51"
+			]
 			id: "1B473A1390615ACF"
 			tasks: [{
 				id: "19255BCE556BF363"
@@ -893,6 +1002,14 @@
 			icon: "create:cogwheel"
 			x: 26.0d
 			y: 7.0d
+			dependencies: [
+				"22F9E2FFA04622E4"
+				"619A1733640150AE"
+				"485BBE60AA9672CB"
+				"1F9DD1E5AED64084"
+				"3FC9A8184BA93176"
+				"6884F9E86E435310"
+			]
 			id: "19876EBF4F5DDDE8"
 			tasks: [{
 				id: "19CB93A064964D36"
@@ -972,6 +1089,16 @@
 			icon: "create:blaze_cake"
 			x: 39.0d
 			y: 7.0d
+			dependencies: [
+				"18184B97EC5B37B5"
+				"11C3C1A3DCF876AB"
+				"7CABAB90ACAD118E"
+				"7FBB41A7B7CB2BDE"
+				"01A1D050E3616F7A"
+				"52590AD6387CD7B9"
+				"0E5EF3A9949F56B5"
+				"0A101A89A90CB36B"
+			]
 			id: "4ED9C5830986F7E5"
 			tasks: [{
 				id: "79F3BA1797FC20BE"
@@ -994,6 +1121,11 @@
 			x: 36.5d
 			y: 7.0d
 			subtitle: "制作你的专属工厂大屏！"
+			dependencies: [
+				"7D585C6B7ED20985"
+				"7706653D7F0EEC5D"
+				"657F9D5FF28E9846"
+			]
 			id: "3FF53B2C90F2304A"
 			tasks: [{
 				id: "1419CD46584A1455"
@@ -1166,6 +1298,14 @@
 			icon: "create:mechanical_press"
 			x: 31.5d
 			y: 7.0d
+			dependencies: [
+				"5F0F1F67A18F7396"
+				"38CB6E04D77CCC01"
+				"0BF0150B77A563A7"
+				"18AC8EF3EDB10015"
+				"56D86FA322214565"
+				"4F5EB64F1AA2002C"
+			]
 			id: "736D73A7A9C1BB48"
 			tasks: [{
 				id: "6EEE3DD0F2DD8B10"
@@ -1255,6 +1395,12 @@
 			icon: "create:linear_chassis"
 			x: 6.5d
 			y: 8.0d
+			dependencies: [
+				"72F60E2023032BC6"
+				"278D619782F860B7"
+				"6AC973D8BEE2CC2A"
+				"340D3ED8690D4767"
+			]
 			id: "6AEDF0549349AAF3"
 			tasks: [{
 				id: "473DB366D62C7D5D"

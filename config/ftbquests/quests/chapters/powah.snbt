@@ -1,0 +1,11 @@
+{
+	id: "2DAB3FCCE89A5E9E"
+	group: "27CC0297EE2CA143"
+	order_index: 2
+	filename: "powah"
+	title: "科技系列 powah！"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

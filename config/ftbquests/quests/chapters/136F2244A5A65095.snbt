@@ -9,9 +9,11 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 3.0d
-			y: -1.0d
+			x: 1.5d
+			y: 0.5d
+			shape: "octagon"
 			dependencies: ["45EA586DE43C1467"]
+			size: 1.25d
 			id: "511EB0E9B0D11C48"
 			tasks: [{
 				id: "657740F9714C06B8"
@@ -21,7 +23,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 3.5d
 			y: -1.0d
 			dependencies: ["511EB0E9B0D11C48"]
 			id: "0018452FBC89A46C"
@@ -32,7 +34,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: 5.5d
 			y: -1.0d
 			dependencies: ["0018452FBC89A46C"]
 			id: "571BBC3AAE177521"
@@ -56,9 +58,11 @@
 			]
 		}
 		{
-			x: 3.0d
-			y: 2.5d
+			x: 3.5d
+			y: 2.0d
+			shape: "octagon"
 			dependencies: ["511EB0E9B0D11C48"]
+			size: 1.25d
 			id: "160DDAD1002B12C8"
 			tasks: [{
 				id: "51B957E5CFB6D61B"
@@ -67,10 +71,14 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 2.5d
+			x: 5.5d
+			y: 1.25d
+			shape: "octagon"
 			description: ["炼钢是一个漫长的过程，建议将你生产的第一批钢材用来升级高炉"]
-			dependencies: ["160DDAD1002B12C8"]
+			dependencies: [
+				"5118BD146087EC2E"
+				"160DDAD1002B12C8"
+			]
 			id: "34BD4314083C322D"
 			tasks: [{
 				id: "6F0FA6D9B5C9D083"
@@ -80,26 +88,23 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 2.5d
+			title: "强化高炉"
+			icon: "immersiveengineering:blastbrick_reinforced"
+			x: 8.0d
+			y: 1.25d
+			shape: "octagon"
 			dependencies: [
-				"12EB7684AF87957C"
 				"34BD4314083C322D"
+				"40DB614CC6120A64"
 			]
+			size: 1.25d
 			id: "3A726AF2CBD93D41"
-			tasks: [
-				{
-					id: "4D8632B864898BE8"
-					type: "item"
-					item: "immersiveengineering:blastbrick_reinforced"
-					count: 27L
-				}
-				{
-					id: "14287393CB3D3786"
-					type: "item"
-					item: "minecraft:hopper"
-				}
-			]
+			tasks: [{
+				id: "4D8632B864898BE8"
+				type: "item"
+				item: "immersiveengineering:blastbrick_reinforced"
+				count: 27L
+			}]
 		}
 		{
 			title: "工业挤压机"
@@ -110,8 +115,9 @@
 					Icon: "immersiveengineering:textures/block/multiblocks/squeezer.png"
 				}
 			}
-			x: 21.0d
-			y: 4.5d
+			x: 15.75d
+			y: -2.0d
+			shape: "octagon"
 			dependencies: ["33F3D5CBDD768D35"]
 			size: 1.5d
 			id: "279BD4142FFE845E"
@@ -166,8 +172,9 @@
 		}
 		{
 			title: "发酵机"
-			x: 24.75d
-			y: 4.5d
+			x: 15.75d
+			y: 0.0d
+			shape: "octagon"
 			dependencies: ["60CA6F66AF9B20B1"]
 			size: 1.5d
 			id: "4C3B8FEB05317123"
@@ -216,8 +223,8 @@
 			}]
 		}
 		{
-			x: 23.0d
-			y: 1.0d
+			x: 11.0d
+			y: -1.0d
 			description: [
 				""
 				"输入水和能量自动种植作物，左边加入肥料或骨粉加速工作过程，每个园艺玻璃罩耗能8FE/t"
@@ -238,9 +245,10 @@
 			}]
 		}
 		{
-			x: 22.5d
-			y: -0.5d
+			x: 8.0d
+			y: -1.0d
 			description: ["蓝色染料可以从青金石或者靛蓝蘑菇分解得到"]
+			dependencies: ["571BBC3AAE177521"]
 			id: "290478D17444A31E"
 			tasks: [
 				{
@@ -262,8 +270,8 @@
 			]
 		}
 		{
-			x: 21.5d
-			y: 2.5d
+			x: 13.0d
+			y: -2.0d
 			dependencies: ["0FF480ABC498B01B"]
 			id: "33F3D5CBDD768D35"
 			tasks: [{
@@ -273,8 +281,8 @@
 			}]
 		}
 		{
-			x: 24.5d
-			y: 2.5d
+			x: 13.0d
+			y: 0.0d
 			dependencies: ["0FF480ABC498B01B"]
 			id: "60CA6F66AF9B20B1"
 			tasks: [{
@@ -284,8 +292,10 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: -1.0d
 			y: 0.5d
+			shape: "gear"
+			size: 2.0d
 			id: "45EA586DE43C1467"
 			tasks: [{
 				id: "606097F2E44C184C"
@@ -305,8 +315,8 @@
 			}]
 		}
 		{
-			x: 24.5d
-			y: 6.5d
+			x: 18.5d
+			y: 0.0d
 			dependencies: ["4C3B8FEB05317123"]
 			id: "334BA17FA450CA06"
 			tasks: [{
@@ -316,8 +326,8 @@
 			}]
 		}
 		{
-			x: 21.5d
-			y: 6.5d
+			x: 18.5d
+			y: -2.0d
 			dependencies: ["279BD4142FFE845E"]
 			id: "366D1C48F000A4B2"
 			tasks: [{
@@ -328,12 +338,14 @@
 		}
 		{
 			title: "炼油厂"
-			x: 23.0d
-			y: 8.75d
+			x: 20.5d
+			y: -1.0d
+			shape: "octagon"
 			dependencies: [
 				"334BA17FA450CA06"
 				"366D1C48F000A4B2"
 			]
+			size: 1.25d
 			id: "525EF4FE5BEF62E2"
 			tasks: [
 				{
@@ -374,8 +386,9 @@
 			]
 		}
 		{
-			x: 23.0d
-			y: 11.0d
+			x: 20.5d
+			y: 1.5d
+			shape: "octagon"
 			dependencies: [
 				"525EF4FE5BEF62E2"
 				"6518CD6E93473770"
@@ -389,9 +402,11 @@
 		}
 		{
 			title: "柴油发电机"
-			x: 19.5d
-			y: 11.25d
-			size: 1.5d
+			x: 23.25d
+			y: 1.5d
+			shape: "octagon"
+			dependencies: ["18F7612CC5996506"]
+			size: 1.75d
 			id: "632C75835B3D02D4"
 			tasks: [
 				{
@@ -447,9 +462,15 @@
 		}
 		{
 			title: "电弧炉（电耗子）"
-			x: 17.5d
-			y: 11.5d
+			x: 26.5d
+			y: 1.5d
+			shape: "octagon"
 			subtitle: "强化高炉砖可以从之前的炉子上拆下来"
+			dependencies: [
+				"632C75835B3D02D4"
+				"08B4C4E5C5742B61"
+			]
+			size: 1.25d
 			id: "36304E4D65CE5BFC"
 			tasks: [
 				{
@@ -507,8 +528,9 @@
 			]
 		}
 		{
-			x: 20.5d
-			y: 13.75d
+			x: 22.5d
+			y: 5.0d
+			dependencies: ["3D33C25B9B43854A"]
 			id: "44B7921C12A6751C"
 			tasks: [{
 				id: "3396B460911EF588"
@@ -517,12 +539,9 @@
 			}]
 		}
 		{
-			x: 23.0d
-			y: 15.25d
-			dependencies: [
-				"44B7921C12A6751C"
-				"48B00FB0CB2DBCDC"
-			]
+			x: 16.5d
+			y: 3.0d
+			dependencies: ["48B00FB0CB2DBCDC"]
 			id: "069FF2EE50746114"
 			tasks: [{
 				id: "2EE1ABB6094258C5"
@@ -531,8 +550,8 @@
 			}]
 		}
 		{
-			x: 25.5d
-			y: 13.75d
+			x: 18.5d
+			y: 5.0d
 			dependencies: [
 				"069FF2EE50746114"
 				"69DAD97CA8679423"
@@ -546,8 +565,8 @@
 			}]
 		}
 		{
-			x: 28.0d
-			y: 15.5d
+			x: 16.5d
+			y: 7.0d
 			dependencies: ["26FE0E2855C3CBC2"]
 			id: "69DAD97CA8679423"
 			tasks: [{
@@ -557,8 +576,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 16.0d
+			x: 14.5d
+			y: 7.0d
 			dependencies: ["44A1900EED9CCD1C"]
 			id: "26FE0E2855C3CBC2"
 			tasks: [{
@@ -568,8 +587,8 @@
 			}]
 		}
 		{
-			x: 26.5d
-			y: 17.0d
+			x: 12.5d
+			y: 7.0d
 			id: "44A1900EED9CCD1C"
 			tasks: [{
 				id: "08DEDD71EC4EEDC3"
@@ -578,19 +597,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 5.0d
-			dependencies: ["4466DCFDE07D6592"]
-			id: "12EB7684AF87957C"
-			tasks: [{
-				id: "50823DF5F94DB5F2"
-				type: "item"
-				item: "immersiveengineering:blastfurnace_preheater"
-			}]
-		}
-		{
-			x: 11.0d
-			y: 7.0d
+			x: 10.0d
+			y: 3.0d
 			dependencies: [
 				"741FBB2E55AF3BA1"
 				"4466DCFDE07D6592"
@@ -603,18 +611,26 @@
 			}]
 		}
 		{
-			x: 11.0d
-			y: 9.0d
+			icon: "immersiveengineering:watermill"
+			x: 10.0d
+			y: 5.0d
 			id: "741FBB2E55AF3BA1"
-			tasks: [{
-				id: "4504EAB42F3CC272"
-				type: "item"
-				item: "immersiveengineering:watermill"
-			}]
+			tasks: [
+				{
+					id: "4504EAB42F3CC272"
+					type: "item"
+					item: "immersiveengineering:watermill"
+				}
+				{
+					id: "5A076A70437F215F"
+					type: "item"
+					item: "immersiveengineering:windmill"
+				}
+			]
 		}
 		{
-			x: 7.0d
-			y: 7.0d
+			x: 6.0d
+			y: 3.0d
 			dependencies: [
 				"4466DCFDE07D6592"
 				"0CDCA1DA68E8FF11"
@@ -627,8 +643,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 9.0d
+			x: 8.0d
+			y: 5.0d
 			id: "4466DCFDE07D6592"
 			tasks: [{
 				id: "3B015F54A6F2CD18"
@@ -636,8 +652,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 9.0d
+			x: 6.0d
+			y: 5.0d
 			id: "0CDCA1DA68E8FF11"
 			tasks: [{
 				id: "48B4FD7DDD4CFF88"
@@ -646,8 +662,8 @@
 			}]
 		}
 		{
-			x: 23.0d
-			y: 13.0d
+			x: 20.5d
+			y: 3.5d
 			dependencies: [
 				"44B7921C12A6751C"
 				"59BA7600EAAD9C74"
@@ -660,8 +676,8 @@
 			}]
 		}
 		{
-			x: 23.0d
-			y: 17.0d
+			x: 14.5d
+			y: 3.0d
 			id: "48B00FB0CB2DBCDC"
 			tasks: [{
 				id: "65AE11F68630FDA3"
@@ -670,8 +686,8 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: 15.5d
+			x: 16.5d
+			y: 5.0d
 			dependencies: ["1AB16B51BE5439A5"]
 			id: "095494863B74FCDE"
 			tasks: [{
@@ -681,13 +697,82 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: 17.0d
+			x: 14.5d
+			y: 5.0d
 			id: "1AB16B51BE5439A5"
 			tasks: [{
 				id: "357BA1714F723E82"
 				type: "item"
 				item: "minecraft:sugar_cane"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["511EB0E9B0D11C48"]
+			id: "5118BD146087EC2E"
+			tasks: [{
+				id: "38EDA57418D1D5DC"
+				type: "item"
+				item: "immersiveengineering:coal_coke"
+			}]
+		}
+		{
+			x: 26.5d
+			y: 3.5d
+			id: "08B4C4E5C5742B61"
+			tasks: [{
+				id: "5D7AC64E056DF9A2"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+				count: 3L
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.0d
+			dependencies: ["4466DCFDE07D6592"]
+			id: "40DB614CC6120A64"
+			tasks: [{
+				id: "12F58F25EED25B80"
+				type: "item"
+				item: "immersiveengineering:blastfurnace_preheater"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 7.0d
+			id: "3D33C25B9B43854A"
+			tasks: [{
+				id: "223E0F6251D443B7"
+				type: "item"
+				title: "Any #forge:seeds"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:seeds"
+					}
+				}
+				count: 64L
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.25d
+			shape: "gear"
+			dependencies: ["3A726AF2CBD93D41"]
+			size: 1.5d
+			id: "180871D409F16158"
+			tasks: [{
+				id: "606C217ED6588FF2"
+				type: "checkmark"
 			}]
 		}
 	]
