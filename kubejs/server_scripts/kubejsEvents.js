@@ -13,7 +13,7 @@ onEvent('block.right_click', event => {
 
     if (event.block == 'undergarden:sediment' && event.player.mainHandItem.id == 'kubejs:soul_shard') {
         event.server.runCommandSilent(
-            `execute in undergarden:undergarden run setblock ${event.block.x} ${event.block.y} ${event.block.z} minecraft:soul_sand`)
+            `execute at ${event.player} run setblock ${event.block.x} ${event.block.y} ${event.block.z} minecraft:soul_sand`)
     }
 })
 

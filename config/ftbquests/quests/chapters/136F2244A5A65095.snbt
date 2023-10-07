@@ -9,6 +9,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			title: "焦炉"
+			icon: "immersiveengineering:coke_oven"
 			x: 1.5d
 			y: 0.5d
 			shape: "octagon"
@@ -58,6 +60,8 @@
 			]
 		}
 		{
+			title: "高炉"
+			icon: "immersiveengineering:blast_furnace"
 			x: 3.5d
 			y: 2.0d
 			shape: "octagon"
@@ -89,7 +93,7 @@
 		}
 		{
 			title: "强化高炉"
-			icon: "immersiveengineering:blastbrick_reinforced"
+			icon: "immersiveengineering:advanced_blast_furnace"
 			x: 8.0d
 			y: 1.25d
 			shape: "octagon"
@@ -108,13 +112,7 @@
 		}
 		{
 			title: "工业挤压机"
-			icon: {
-				id: "ftbquests:custom_icon"
-				Count: 1b
-				tag: {
-					Icon: "immersiveengineering:textures/block/multiblocks/squeezer.png"
-				}
-			}
+			icon: "immersiveengineering:squeezer"
 			x: 15.75d
 			y: -2.0d
 			shape: "octagon"
@@ -164,14 +162,34 @@
 				}
 			]
 			rewards: [{
-				id: "4ABB931F25CD62CB"
+				id: "24E9CF9FEFDCAACA"
 				type: "item"
-				item: "immersiveengineering:seed"
-				count: 16
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Owner: "LeoRegulus"
+						Bounds: [
+							3
+							3
+							3
+						]
+						Deployed: 0b
+						File: "工业挤压机.nbt"
+						Mirror: "NONE"
+						Rotation: "NONE"
+					}
+				}
 			}]
 		}
 		{
-			title: "发酵机"
+			title: "工业发酵机"
+			icon: "immersiveengineering:fermenter"
 			x: 15.75d
 			y: 0.0d
 			shape: "octagon"
@@ -216,10 +234,29 @@
 				}
 			]
 			rewards: [{
-				id: "309EDB473E55D19A"
+				id: "29191E5D3F72E6C5"
 				type: "item"
-				item: "undergarden:droopvine_item"
-				count: 16
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Owner: "LeoRegulus"
+						Bounds: [
+							3
+							3
+							3
+						]
+						Deployed: 0b
+						File: "工业发酵机.nbt"
+						Mirror: "NONE"
+						Rotation: "NONE"
+					}
+				}
 			}]
 		}
 		{
@@ -245,6 +282,7 @@
 			}]
 		}
 		{
+			icon: "immersiveengineering:workbench"
 			x: 8.0d
 			y: -1.0d
 			description: ["蓝色染料可以从青金石或者靛蓝蘑菇分解得到"]
@@ -338,6 +376,7 @@
 		}
 		{
 			title: "炼油厂"
+			icon: "immersiveengineering:refinery"
 			x: 20.5d
 			y: -1.0d
 			shape: "octagon"
@@ -384,6 +423,31 @@
 					count: 5L
 				}
 			]
+			rewards: [{
+				id: "6BCF2F1A24BB70D3"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Owner: "LeoRegulus"
+						Bounds: [
+							5
+							3
+							3
+						]
+						Deployed: 0b
+						File: "炼油厂.nbt"
+						Mirror: "NONE"
+						Rotation: "NONE"
+					}
+				}
+			}]
 		}
 		{
 			x: 20.5d
@@ -402,6 +466,7 @@
 		}
 		{
 			title: "柴油发电机"
+			icon: "immersiveengineering:diesel_generator"
 			x: 23.25d
 			y: 1.5d
 			shape: "octagon"
@@ -445,23 +510,35 @@
 					count: 5L
 				}
 			]
-			rewards: [
-				{
-					id: "36199DA45F9A7118"
-					type: "item"
-					item: "create:chocolate_glazed_berries"
-					count: 16
+			rewards: [{
+				id: "5DABA2CE33CD6188"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Owner: "LeoRegulus"
+						Bounds: [
+							3
+							3
+							5
+						]
+						Deployed: 0b
+						File: "柴油发电机.nbt"
+						Mirror: "NONE"
+						Rotation: "NONE"
+					}
 				}
-				{
-					id: "17B2C6141AF049DF"
-					type: "item"
-					item: "create:honeyed_apple"
-					count: 4
-				}
-			]
+			}]
 		}
 		{
-			title: "电弧炉（电耗子）"
+			title: "电弧炉（电葫芦）"
+			icon: "immersiveengineering:arc_furnace"
 			x: 26.5d
 			y: 1.5d
 			shape: "octagon"
@@ -526,6 +603,31 @@
 					count: 27L
 				}
 			]
+			rewards: [{
+				id: "1E53BEBA02DA165B"
+				type: "item"
+				item: {
+					id: "create:schematic"
+					Count: 1b
+					tag: {
+						Anchor: {
+							X: 0
+							Y: 0
+							Z: 0
+						}
+						Owner: "LeoRegulus"
+						Bounds: [
+							5
+							5
+							5
+						]
+						Deployed: 0b
+						File: "电弧炉.nbt"
+						Mirror: "NONE"
+						Rotation: "NONE"
+					}
+				}
+			}]
 		}
 		{
 			x: 22.5d
@@ -773,6 +875,27 @@
 			tasks: [{
 				id: "606C217ED6588FF2"
 				type: "checkmark"
+			}]
+		}
+		{
+			x: 29.5d
+			y: 1.5d
+			id: "26D5EE93ECB0B55B"
+			tasks: [{
+				id: "68286558D60DAF8F"
+				type: "item"
+				item: "immersiveengineering:storage_steel"
+				count: 8L
+			}]
+		}
+		{
+			x: 24.5d
+			y: -2.5d
+			id: "24AB0DD9B3128E65"
+			tasks: [{
+				id: "5C208DCF133F5237"
+				type: "item"
+				item: "immersiveengineering:squeezer"
 			}]
 		}
 	]

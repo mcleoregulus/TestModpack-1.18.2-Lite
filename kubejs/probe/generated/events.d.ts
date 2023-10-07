@@ -37,11 +37,32 @@ declare function onEvent(name: "tags.worldgen.material_condition", handler: (eve
 declare function onEvent(name: "player.tick", handler: (event: Internal.SimplePlayerEventJS) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.structure_formed.mod_id.component_id", handler: (event: Internal.StructureFormedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.worldgen.material_rule", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.recipe_ui.new1", handler: (event: Internal.RecipeUIEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.recipe_ui.new2", handler: (event: Internal.RecipeUIEvent) => void);
 /**
  * 
  * The event fires on: **server**.
@@ -111,7 +132,21 @@ declare function onEvent(name: "recipes", handler: (event: Internal.RecipeEventJ
  * 
  * The event is **not** cancellable.
 */
+declare function onEvent(name: "player.chest.opened", handler: (event: Internal.ChestEventJS) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
 declare function onEvent(name: "tags.int_provider_type", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.write_initial_data.multiblocked.controller_tester", handler: (event: Internal.WriteInitialDataEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -140,6 +175,20 @@ declare function onEvent(name: "tags.worldgen.feature_size_type", handler: (even
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.position_source_type", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.read_initial_data.multiblocked.controller_tester", handler: (event: Internal.ReadInitialDataEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_renderer.multiblocked.item_input", handler: (event: Internal.UpdateRendererEvent) => void);
 /**
  * 
  * The event fires on: **startup**.
@@ -175,6 +224,13 @@ declare function onEvent(name: "server.unload", handler: (event: Internal.Server
  * The event is cancellable.
 */
 declare function onEvent(name: "player.chat", handler: (event: Internal.PlayerChatEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.multiblocked.item_output", handler: (event: Internal.StatusChangedEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -226,6 +282,13 @@ declare function onEvent(name: "ftbquests.started.01B8643812DD9251", handler: (e
 declare function onEvent(name: "entity.drops", handler: (event: Internal.LivingEntityDropsEventJS) => void);
 /**
  * 
+ * The event fires on: **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.multiblocked.blueprint_table", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -238,6 +301,13 @@ declare function onEvent(name: "tags.worldgen.foliage_placer_type", handler: (ev
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.recipe_serializer", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.neighbor_changed.multiblocked.energy_input", handler: (event: Internal.NeighborChangedEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -261,6 +331,20 @@ declare function onEvent(name: "level.tick", handler: (event: Internal.SimpleLev
 declare function onEvent(name: "tags.enchantment", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.part_added.multiblocked.item.any", handler: (event: Internal.PartAddedEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.read_initial_data.multiblocked.item_output", handler: (event: Internal.ReadInitialDataEvent) => void);
+/**
+ * 
  * The event fires on: **server**.
  * 
  * The event is **not** cancellable.
@@ -275,11 +359,32 @@ declare function onEvent(name: "ftbquests.completed.6B81B52E65E0B90F", handler: 
 declare function onEvent(name: "ftbquests.started.246604E63CBCE5B2", handler: (event: Internal.QuestObjectStartedEventJS) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.read_initial_data.multiblocked.blueprint_table_part", handler: (event: Internal.ReadInitialDataEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **client**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "jei.add.items", handler: (event: Internal.AddJEIEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.write_initial_data.multiblocked.blueprint_table", handler: (event: Internal.WriteInitialDataEvent) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.write_initial_data.multiblocked.energy_input", handler: (event: Internal.WriteInitialDataEvent) => void);
 /**
  * 
  * The event fires on: **server**.
@@ -401,11 +506,39 @@ declare function onEvent(name: "postinit", handler: (event: Internal.StartupEven
 declare function onEvent(name: "tags.worldgen.structure_feature", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.dynamic_pattern.test.01", handler: (event: Internal.DynamicPatternEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.dynamic_pattern.test.02", handler: (event: Internal.DynamicPatternEvent) => void);
+/**
+ * 
  * The event fires on: **startup**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "item.model_properties", handler: (event: Internal.ItemModelPropertiesEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.dynamic_pattern.test.03", handler: (event: Internal.DynamicPatternEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.dynamic_pattern.test.04", handler: (event: Internal.DynamicPatternEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -422,6 +555,13 @@ declare function onEvent(name: "tags.forge.loot_modifier_serializers", handler: 
 declare function onEvent(name: "ftbquests.completed.346148FE871FEFD8", handler: (event: Internal.QuestObjectCompletedEventJS) => void);
 /**
  * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.part_added.multiblocked.blueprint_table_part", handler: (event: Internal.PartAddedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -436,6 +576,13 @@ declare function onEvent(name: "player.logged_out", handler: (event: Internal.Si
 declare function onEvent(name: "tags.worldgen.feature", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.read_initial_data.multiblocked.energy_input", handler: (event: Internal.ReadInitialDataEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -448,6 +595,20 @@ declare function onEvent(name: "tags.worldgen.density_function_type", handler: (
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "server.load", handler: (event: Internal.ServerEventJS) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.right_click.multiblocked.controller_tester", handler: (event: Internal.RightClickEvent) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**, **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.recipe_converter_register", handler: (event: Internal.RecipeConverterRegisterEvent) => void);
 /**
  * 
  * The event fires on: **server**.
@@ -469,6 +630,13 @@ declare function onEvent(name: "server.datapack.high_priority", handler: (event:
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "ftbquests.started.3F56D626E988AEDF", handler: (event: Internal.QuestObjectStartedEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_renderer.multiblocked.controller_tester", handler: (event: Internal.UpdateRendererEvent) => void);
 /**
  * 
  * The event fires on: **server**.
@@ -555,11 +723,32 @@ declare function onEvent(name: "entity.loot_tables", handler: (event: Internal.E
 declare function onEvent(name: "ftbquests.completed.62F707604BC353A1", handler: (event: Internal.QuestObjectCompletedEventJS) => void);
 /**
  * 
+ * The event fires on: **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.multiblocked.blueprint_table_part", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is cancellable.
 */
 declare function onEvent(name: "block.break", handler: (event: Internal.BlockBreakEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.multiblocked.energy_input", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.part_added.multiblocked.item_output", handler: (event: Internal.PartAddedEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**, **client**.
@@ -609,6 +798,13 @@ declare function onEvent(name: "tags.villager_type", handler: (event: Internal.T
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "ftbquests.completed.372E035F184D29E2", handler: (event: Internal.QuestObjectCompletedEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.read_initial_data.multiblocked.blueprint_table", handler: (event: Internal.ReadInitialDataEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -709,6 +905,13 @@ declare function onEvent(name: "block.right_click", handler: (event: Internal.Bl
 declare function onEvent(name: "jei.subtypes", handler: (event: Internal.JEISubtypesEventJS) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.multiblocked.item_input", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -721,6 +924,20 @@ declare function onEvent(name: "tags.menu", handler: (event: Internal.TagEventJS
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.potion", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_tick.multiblocked.item_input", handler: (event: Internal.UpdateTickEvent) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.write_initial_data.multiblocked.blueprint_table_part", handler: (event: Internal.WriteInitialDataEvent) => void);
 /**
  * 
  * The event fires on: **server**.
@@ -758,7 +975,7 @@ declare function onEvent(name: "ftbquests.completed.0806CEBBBB7274CF", handler: 
 declare function onEvent(name: "tags.activity", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
- * The event fires on: **startup**, **client**.
+ * The event fires on: **startup**, **server**, **client**.
  * 
  * The event is cancellable.
 */
@@ -821,6 +1038,20 @@ declare function onEvent(name: "tags.items", handler: (event: Internal.TagEventJ
 declare function onEvent(name: "tags.worldgen.trunk_placer_type", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.structure_formed.multiblocked.controller_tester", handler: (event: Internal.StructureFormedEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.structure_formed.test.04", handler: (event: Internal.StructureFormedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -828,11 +1059,32 @@ declare function onEvent(name: "tags.worldgen.trunk_placer_type", handler: (even
 declare function onEvent(name: "tags.blocks", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.write_initial_data.multiblocked.item_output", handler: (event: Internal.WriteInitialDataEvent) => void);
+/**
+ * 
  * The event fires on: **startup**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "init", handler: (event: Internal.StartupEventJS) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.dynamic_pattern.multiblocked.blueprint_table", handler: (event: Internal.DynamicPatternEvent) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_tick.multiblocked.item_output", handler: (event: Internal.UpdateTickEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -870,6 +1122,20 @@ declare function onEvent(name: "tags.memory_module_type", handler: (event: Inter
 declare function onEvent(name: "tags.motive", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **server**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.dynamic_pattern.multiblocked.controller_tester", handler: (event: Internal.DynamicPatternEvent) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_tick.multiblocked.blueprint_table", handler: (event: Internal.UpdateTickEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -898,6 +1164,13 @@ declare function onEvent(name: "tags.botania.brews", handler: (event: Internal.T
 declare function onEvent(name: "tags.block_entity_type", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_renderer.multiblocked.blueprint_table", handler: (event: Internal.UpdateRendererEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -919,11 +1192,25 @@ declare function onEvent(name: "tags.worldgen.structure_pool_element", handler: 
 declare function onEvent(name: "block.place", handler: (event: Internal.BlockPlaceEventJS) => void);
 /**
  * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.write_initial_data.multiblocked.item_input", handler: (event: Internal.WriteInitialDataEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.data_serializers", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.mod_id.component_id", handler: (event: Internal.StatusChangedEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -954,11 +1241,32 @@ declare function onEvent(name: "player.advancement", handler: (event: Internal.P
 declare function onEvent(name: "tags.worldgen.block_state_provider_type", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.test.01", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.mekanism.slurry", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.test.02", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.test.03", handler: (event: Internal.StatusChangedEvent) => void);
 /**
  * 
  * The event fires on: **startup**.
@@ -1010,11 +1318,39 @@ declare function onEvent(name: "gift.loot_tables", handler: (event: Internal.Gif
 declare function onEvent(name: "tags.particle_type", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.test.04", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "fishing.loot_tables", handler: (event: Internal.FishingLootEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.structure_formed.test.01", handler: (event: Internal.StructureFormedEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.structure_formed.test.02", handler: (event: Internal.StructureFormedEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.structure_formed.test.03", handler: (event: Internal.StructureFormedEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1031,11 +1367,25 @@ declare function onEvent(name: "tags.mekanism.infuse_type", handler: (event: Int
 declare function onEvent(name: "tags.mob_effect", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.multiblocked.controller_tester", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
  * The event fires on: **server**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "ftbquests.started.73380B05D9F41032", handler: (event: Internal.QuestObjectStartedEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_renderer.multiblocked.energy_input", handler: (event: Internal.UpdateRendererEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1064,6 +1414,13 @@ declare function onEvent(name: "tags.point_of_interest_type", handler: (event: I
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "server.tick", handler: (event: Internal.ServerEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.create_ui.multiblocked.controller_tester", handler: (event: Internal.CreateUIEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1155,6 +1512,13 @@ declare function onEvent(name: "player.inventory.opened", handler: (event: Inter
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "ftbquests.completed.039A7ADDEF374A80", handler: (event: Internal.QuestObjectCompletedEventJS) => void);
+/**
+ * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.structure_formed.multiblocked.blueprint_table", handler: (event: Internal.StructureFormedEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1262,11 +1626,32 @@ declare function onEvent(name: "tags.schedule", handler: (event: Internal.TagEve
 declare function onEvent(name: "jei.hide.custom", handler: (event: Internal.HideCustomJEIEventJS) => void);
 /**
  * 
+ * The event fires on: **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_tick.multiblocked.controller_tester", handler: (event: Internal.UpdateTickEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.part_added.multiblocked.energy_input", handler: (event: Internal.PartAddedEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "tags.worldgen.structure_processor", handler: (event: Internal.TagEventJS<any>) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.part_added.multiblocked.item_input", handler: (event: Internal.PartAddedEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**, **client**.
@@ -1381,6 +1766,13 @@ declare function onEvent(name: "player.inventory.closed", handler: (event: Inter
 declare function onEvent(name: "create.spout.special", handler: (event: Internal.SpecialSpoutHandlerEvent) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.update_renderer.multiblocked.item_output", handler: (event: Internal.UpdateRendererEvent) => void);
+/**
+ * 
  * The event fires on: **startup**, **server**.
  * 
  * The event is **not** cancellable.
@@ -1395,6 +1787,27 @@ declare function onEvent(name: "tags.fluids", handler: (event: Internal.TagEvent
 declare function onEvent(name: "tags.worldgen.configured_carver", handler: (event: Internal.TagEventJS<any>) => void);
 /**
  * 
+ * The event fires on: **client**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "mbd.read_initial_data.multiblocked.item_input", handler: (event: Internal.ReadInitialDataEvent) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.status_changed.multiblocked.item.any", handler: (event: Internal.StatusChangedEvent) => void);
+/**
+ * 
+ * The event fires on: **startup**, **server**.
+ * 
+ * The event is **not** cancellable.
+*/
+declare function onEvent(name: "player.chest.closed", handler: (event: Internal.ChestEventJS) => void);
+/**
+ * 
  * The event fires on: **server**.
  * 
  * The event is **not** cancellable.
@@ -1407,6 +1820,13 @@ declare function onEvent(name: "ftbquests.started.2794B74BDD9EF748", handler: (e
  * The event is **not** cancellable.
 */
 declare function onEvent(name: "ftbquests.started.2C6829592D884399", handler: (event: Internal.QuestObjectStartedEventJS) => void);
+/**
+ * 
+ * The event fires on: **client**.
+ * 
+ * The event is cancellable.
+*/
+declare function onEvent(name: "mbd.dynamic_pattern.mod_id.component_id", handler: (event: Internal.DynamicPatternEvent) => void);
 /**
  * 
  * The event fires on: **startup**, **server**.
@@ -1429,7 +1849,19 @@ declare function onEvent(name: "ftbquests.completed.7C0CE5606590AA73", handler: 
 */
 declare function onEvent(name: "server.datapack.first", handler: (event: Internal.DataPackEventJS) => void);
 declare function onEvent(name: `ftbquests.completed`, handler: (event: Internal.QuestObjectCompletedEventJS) => void);
+declare function onEvent(name: `mbd.update_renderer`, handler: (event: Internal.UpdateRendererEvent) => void);
+declare function onEvent(name: `mbd.dynamic_pattern`, handler: (event: Internal.DynamicPatternEvent) => void);
+declare function onEvent(name: `mbd.read_initial_data`, handler: (event: Internal.ReadInitialDataEvent) => void);
+declare function onEvent(name: `mbd.part_added`, handler: (event: Internal.PartAddedEvent) => void);
+declare function onEvent(name: `mbd.write_initial_data`, handler: (event: Internal.WriteInitialDataEvent) => void);
 declare function onEvent(name: `ftbquests.started`, handler: (event: Internal.QuestObjectStartedEventJS) => void);
+declare function onEvent(name: `mbd.structure_formed`, handler: (event: Internal.StructureFormedEvent) => void);
+declare function onEvent(name: `mbd.update_tick`, handler: (event: Internal.UpdateTickEvent) => void);
+declare function onEvent(name: `mbd.status_changed`, handler: (event: Internal.StatusChangedEvent) => void);
+declare function onEvent(name: `mbd.create_ui`, handler: (event: Internal.CreateUIEvent) => void);
+declare function onEvent(name: `mbd.recipe_ui`, handler: (event: Internal.RecipeUIEvent) => void);
+declare function onEvent(name: `mbd.right_click`, handler: (event: Internal.RightClickEvent) => void);
+declare function onEvent(name: `mbd.neighbor_changed`, handler: (event: Internal.NeighborChangedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$LoadFromFile", handler: (event: Internal.PlayerEvent$LoadFromFile) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$FogColors", handler: (event: Internal.EntityViewRenderEvent$FogColors) => void);
 declare function onForgeEvent(name: "mcp.mobius.waila.api.event.WailaRenderEvent$Color", handler: (event: Internal.WailaRenderEvent$Color) => void);
@@ -1437,34 +1869,34 @@ declare function onForgeEvent(name: "net.minecraftforge.event.furnace.FurnaceFue
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkWatchEvent$UnWatch", handler: (event: Internal.ChunkWatchEvent$UnWatch) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerInteractEvent$RightClickItem", handler: (event: Internal.PlayerInteractEvent$RightClickItem) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.village.VillagerTradesEvent", handler: (event: Internal.VillagerTradesEvent) => void);
-declare function onForgeEvent(name: "blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$MultiblockFormEvent", handler: (event: Internal.MultiblockHandler$MultiblockFormEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$HarvestCheck", handler: (event: Internal.PlayerEvent$HarvestCheck) => void);
+declare function onForgeEvent(name: "blusunrize.immersiveengineering.api.multiblocks.MultiblockHandler$MultiblockFormEvent", handler: (event: Internal.MultiblockHandler$MultiblockFormEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.AddReloadListenerEvent", handler: (event: Internal.AddReloadListenerEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$StopTracking", handler: (event: Internal.PlayerEvent$StopTracking) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$MouseInputEvent", handler: (event: Internal.InputEvent$MouseInputEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$DrawScreenEvent$Post", handler: (event: Internal.ScreenEvent$DrawScreenEvent$Post) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientPlayerChangeGameTypeEvent", handler: (event: Internal.ClientPlayerChangeGameTypeEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$CameraSetup", handler: (event: Internal.EntityViewRenderEvent$CameraSetup) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingDamageEvent", handler: (event: Internal.LivingDamageEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$MouseScrollEvent", handler: (event: Internal.InputEvent$MouseScrollEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderHandEvent", handler: (event: Internal.RenderHandEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.RegisterCommandsEvent", handler: (event: Internal.RegisterCommandsEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangeGameModeEvent", handler: (event: Internal.PlayerEvent$PlayerChangeGameModeEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent$Tick", handler: (event: Internal.LivingEntityUseItemEvent$Tick) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$PotionSizeEvent", handler: (event: Internal.ScreenEvent$PotionSizeEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.EntityItemPickupEvent", handler: (event: Internal.EntityItemPickupEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$FluidPlaceBlockEvent", handler: (event: Internal.BlockEvent$FluidPlaceBlockEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingSpawnEvent$AllowDespawn", handler: (event: Internal.LivingSpawnEvent$AllowDespawn) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$PlayerLoggedInEvent", handler: (event: Internal.PlayerEvent$PlayerLoggedInEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingHealEvent", handler: (event: Internal.LivingHealEvent) => void);
 declare function onForgeEvent(name: "slimeknights.tconstruct.library.modifiers.ModifierManager$ModifiersLoadedEvent", handler: (event: Internal.ModifierManager$ModifiersLoadedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderLivingEvent$Pre", handler: (event: Internal.RenderLivingEvent$Pre<any, any>) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkWatchEvent$Watch", handler: (event: Internal.ChunkWatchEvent$Watch) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.server.ServerStartedEvent", handler: (event: Internal.ServerStartedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderNameplateEvent", handler: (event: Internal.RenderNameplateEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$MouseClickedEvent$Pre", handler: (event: Internal.ScreenEvent$MouseClickedEvent$Pre) => void);
+declare function onForgeEvent(name: "net.mehvahdjukaar.selene.villager_ai.VillagerBrainEvent", handler: (event: Internal.VillagerBrainEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.EntityJoinWorldEvent", handler: (event: Internal.EntityJoinWorldEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$RenderFogEvent", handler: (event: Internal.EntityViewRenderEvent$RenderFogEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.TagsUpdatedEvent", handler: (event: Internal.TagsUpdatedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingEvent$LivingVisibilityEvent", handler: (event: Internal.LivingEvent$LivingVisibilityEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.TagsUpdatedEvent", handler: (event: Internal.TagsUpdatedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$MouseReleasedEvent$Post", handler: (event: Internal.ScreenEvent$MouseReleasedEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.WorldEvent$PotentialSpawns", handler: (event: Internal.WorldEvent$PotentialSpawns) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.ItemTooltipEvent", handler: (event: Internal.ItemTooltipEvent) => void);
@@ -1478,7 +1910,9 @@ declare function onForgeEvent(name: "net.minecraftforge.event.DifficultyChangeEv
 declare function onForgeEvent(name: "net.minecraftforge.client.event.DrawSelectionEvent$HighlightBlock", handler: (event: Internal.DrawSelectionEvent$HighlightBlock) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerInteractEvent$LeftClickBlock", handler: (event: Internal.PlayerInteractEvent$LeftClickBlock) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderGameOverlayEvent$PostLayer", handler: (event: Internal.RenderGameOverlayEvent$PostLayer) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.PotionEvent$PotionExpiryEvent", handler: (event: Internal.PotionEvent$PotionExpiryEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.EntityMobGriefingEvent", handler: (event: Internal.EntityMobGriefingEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerXpEvent$LevelChange", handler: (event: Internal.PlayerXpEvent$LevelChange) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$ClickInputEvent", handler: (event: Internal.InputEvent$ClickInputEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.WorldEvent$Load", handler: (event: Internal.WorldEvent$Load) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.PotionColorCalculationEvent", handler: (event: Internal.PotionColorCalculationEvent) => void);
@@ -1492,25 +1926,28 @@ declare function onForgeEvent(name: "net.minecraftforge.event.OnDatapackSyncEven
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingSpawnEvent$CheckSpawn", handler: (event: Internal.LivingSpawnEvent$CheckSpawn) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$MouseClickedEvent$Post", handler: (event: Internal.ScreenEvent$MouseClickedEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.server.ServerAboutToStartEvent", handler: (event: Internal.ServerAboutToStartEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$PlayerLoggedOutEvent", handler: (event: Internal.PlayerEvent$PlayerLoggedOutEvent) => void);
 declare function onForgeEvent(name: "mcp.mobius.waila.api.event.WailaRayTraceEvent", handler: (event: Internal.WailaRayTraceEvent) => void);
 declare function onForgeEvent(name: "mcp.mobius.waila.api.event.WailaTooltipEvent", handler: (event: Internal.WailaTooltipEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.EntityEvent$EntityConstructing", handler: (event: Internal.EntityEvent$EntityConstructing) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenOpenEvent", handler: (event: Internal.ScreenOpenEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerSetSpawnEvent", handler: (event: Internal.PlayerSetSpawnEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderArmEvent", handler: (event: Internal.RenderArmEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingDestroyBlockEvent", handler: (event: Internal.LivingDestroyBlockEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderLevelLastEvent", handler: (event: Internal.RenderLevelLastEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$FogDensity", handler: (event: Internal.EntityViewRenderEvent$FogDensity) => void);
 declare function onForgeEvent(name: "vazkii.botania.api.mana.ManaItemsEvent", handler: (event: Internal.ManaItemsEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.village.WandererTradesEvent", handler: (event: Internal.WandererTradesEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingDeathEvent", handler: (event: Internal.LivingDeathEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.EntityEvent$Size", handler: (event: Internal.EntityEvent$Size) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$MouseDragEvent$Post", handler: (event: Internal.ScreenEvent$MouseDragEvent$Post) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerInteractEvent$LeftClickEmpty", handler: (event: Internal.PlayerInteractEvent$LeftClickEmpty) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.TickEvent$RenderTickEvent", handler: (event: Internal.TickEvent$RenderTickEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.EntityEvent$Size", handler: (event: Internal.EntityEvent$Size) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggedInEvent", handler: (event: Internal.ClientPlayerNetworkEvent$LoggedInEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.server.ServerStoppedEvent", handler: (event: Internal.ServerStoppedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerContainerEvent$Close", handler: (event: Internal.PlayerContainerEvent$Close) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.FOVModifierEvent", handler: (event: Internal.FOVModifierEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingDropsEvent", handler: (event: Internal.LivingDropsEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderPlayerEvent$Post", handler: (event: Internal.RenderPlayerEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkEvent$Load", handler: (event: Internal.ChunkEvent$Load) => void);
+declare function onForgeEvent(name: "com.simibubi.create.api.event.BlockEntityBehaviourEvent", handler: (event: Internal.BlockEntityBehaviourEvent<any>) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$BreakEvent", handler: (event: Internal.BlockEvent$BreakEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkDataEvent$Load", handler: (event: Internal.ChunkDataEvent$Load) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RecipesUpdatedEvent", handler: (event: Internal.RecipesUpdatedEvent) => void);
@@ -1534,6 +1971,7 @@ declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.Play
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientPlayerNetworkEvent$LoggedOutEvent", handler: (event: Internal.ClientPlayerNetworkEvent$LoggedOutEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$DrawScreenEvent$Pre", handler: (event: Internal.ScreenEvent$DrawScreenEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$KeyboardKeyPressedEvent$Post", handler: (event: Internal.ScreenEvent$KeyboardKeyPressedEvent$Post) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$KeyboardCharTypedEvent$Post", handler: (event: Internal.ScreenEvent$KeyboardCharTypedEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.server.permission.events.PermissionGatherEvent$Nodes", handler: (event: Internal.PermissionGatherEvent$Nodes) => void);
 declare function onForgeEvent(name: "com.jozufozu.flywheel.event.RenderLayerEvent", handler: (event: Internal.RenderLayerEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.ChunkEvent$Unload", handler: (event: Internal.ChunkEvent$Unload) => void);
@@ -1542,10 +1980,10 @@ declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingPackSizeEvent", handler: (event: Internal.LivingPackSizeEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.server.permission.events.PermissionGatherEvent$Handler", handler: (event: Internal.PermissionGatherEvent$Handler) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$TabListNameFormat", handler: (event: Internal.PlayerEvent$TabListNameFormat) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LootingLevelEvent", handler: (event: Internal.LootingLevelEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingEvent$LivingJumpEvent", handler: (event: Internal.LivingEvent$LivingJumpEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerFlyableFallEvent", handler: (event: Internal.PlayerFlyableFallEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientPlayerNetworkEvent$RespawnEvent", handler: (event: Internal.ClientPlayerNetworkEvent$RespawnEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.DrawSelectionEvent$HighlightEntity", handler: (event: Internal.DrawSelectionEvent$HighlightEntity) => void);
 declare function onForgeEvent(name: "net.mehvahdjukaar.selene.resourcepack.EarlyPackReloadEvent", handler: (event: Internal.EarlyPackReloadEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$StartTracking", handler: (event: Internal.PlayerEvent$StartTracking) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$ItemPickupEvent", handler: (event: Internal.PlayerEvent$ItemPickupEvent) => void);
@@ -1556,48 +1994,44 @@ declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderGameO
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$KeyboardCharTypedEvent$Pre", handler: (event: Internal.ScreenEvent$KeyboardCharTypedEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingEntityUseItemEvent$Stop", handler: (event: Internal.LivingEntityUseItemEvent$Stop) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$NameFormat", handler: (event: Internal.PlayerEvent$NameFormat) => void);
+declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientChatReceivedEvent", handler: (event: Internal.ClientChatReceivedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.EntityViewRenderEvent$FieldOfView", handler: (event: Internal.EntityViewRenderEvent$FieldOfView) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$MouseScrollEvent$Pre", handler: (event: Internal.ScreenEvent$MouseScrollEvent$Pre) => void);
-declare function onForgeEvent(name: "net.minecraftforge.client.event.ClientChatReceivedEvent", handler: (event: Internal.ClientChatReceivedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$InitScreenEvent$Pre", handler: (event: Internal.ScreenEvent$InitScreenEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderGameOverlayEvent$Pre", handler: (event: Internal.RenderGameOverlayEvent$Pre) => void);
 declare function onForgeEvent(name: "me.desht.pneumaticcraft.api.heat.HeatRegistrationEvent", handler: (event: Internal.HeatRegistrationEvent) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.PotionEvent$PotionAddedEvent", handler: (event: Internal.PotionEvent$PotionAddedEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent", handler: (event: Internal.LivingEquipmentChangeEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.TickEvent$ClientTickEvent", handler: (event: Internal.TickEvent$ClientTickEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.WorldEvent$Save", handler: (event: Internal.WorldEvent$Save) => void);
 declare function onForgeEvent(name: "mcp.mobius.waila.api.event.WailaRenderEvent$Pre", handler: (event: Internal.WailaRenderEvent$Pre) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$CreateFluidSourceEvent", handler: (event: Internal.BlockEvent$CreateFluidSourceEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.sound.PlaySoundEvent", handler: (event: Internal.PlaySoundEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.server.ServerStartingEvent", handler: (event: Internal.ServerStartingEvent) => void);
 declare function onForgeEvent(name: "com.jozufozu.flywheel.event.ReloadRenderersEvent", handler: (event: Internal.ReloadRenderersEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.InputEvent$RawMouseEvent", handler: (event: Internal.InputEvent$RawMouseEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderTooltipEvent$Pre", handler: (event: Internal.RenderTooltipEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.WorldEvent$Unload", handler: (event: Internal.WorldEvent$Unload) => void);
+declare function onForgeEvent(name: "mekanism.common.content.network.EnergyNetwork$EnergyTransferEvent", handler: (event: Internal.EnergyNetwork$EnergyTransferEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.VanillaGameEvent", handler: (event: Internal.VanillaGameEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$CropGrowEvent$Pre", handler: (event: Internal.BlockEvent$CropGrowEvent$Pre) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$CropGrowEvent$Post", handler: (event: Internal.BlockEvent$CropGrowEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.CommandEvent", handler: (event: Internal.CommandEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$BackgroundDrawnEvent", handler: (event: Internal.ScreenEvent$BackgroundDrawnEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderLivingEvent$Post", handler: (event: Internal.RenderLivingEvent$Post<any, any>) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ContainerScreenEvent$DrawForeground", handler: (event: Internal.ContainerScreenEvent$DrawForeground) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderTooltipEvent$Color", handler: (event: Internal.RenderTooltipEvent$Color) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.EnderManAngerEvent", handler: (event: Internal.EnderManAngerEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.TickEvent$ServerTickEvent", handler: (event: Internal.TickEvent$ServerTickEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderPlayerEvent$Pre", handler: (event: Internal.RenderPlayerEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderGameOverlayEvent$Text", handler: (event: Internal.RenderGameOverlayEvent$Text) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$KeyboardKeyReleasedEvent$Post", handler: (event: Internal.ScreenEvent$KeyboardKeyReleasedEvent$Post) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.server.ServerStoppingEvent", handler: (event: Internal.ServerStoppingEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.EntityEvent$EnteringSection", handler: (event: Internal.EntityEvent$EnteringSection) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.AttachCapabilitiesEvent", handler: (event: Internal.AttachCapabilitiesEvent<any>) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.ItemAttributeModifierEvent", handler: (event: Internal.ItemAttributeModifierEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.RenderTooltipEvent$GatherComponents", handler: (event: Internal.RenderTooltipEvent$GatherComponents) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingHurtEvent", handler: (event: Internal.LivingHurtEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$KeyboardKeyPressedEvent$Pre", handler: (event: Internal.ScreenEvent$KeyboardKeyPressedEvent$Pre) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.sound.PlaySoundSourceEvent", handler: (event: Internal.PlaySoundSourceEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.PotionEvent$PotionRemoveEvent", handler: (event: Internal.PotionEvent$PotionRemoveEvent) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent", handler: (event: Internal.PlayerEvent$PlayerChangedDimensionEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$SaveToFile", handler: (event: Internal.PlayerEvent$SaveToFile) => void);
+declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent", handler: (event: Internal.PlayerEvent$PlayerChangedDimensionEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerInteractEvent$RightClickEmpty", handler: (event: Internal.PlayerInteractEvent$RightClickEmpty) => void);
-declare function onForgeEvent(name: "net.minecraftforge.event.entity.living.LivingFallEvent", handler: (event: Internal.LivingFallEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.world.BlockEvent$NeighborNotifyEvent", handler: (event: Internal.BlockEvent$NeighborNotifyEvent) => void);
 declare function onForgeEvent(name: "net.minecraftforge.client.event.ScreenEvent$InitScreenEvent$Post", handler: (event: Internal.ScreenEvent$InitScreenEvent$Post) => void);
 declare function onForgeEvent(name: "net.minecraftforge.event.entity.player.PlayerXpEvent$XpChange", handler: (event: Internal.PlayerXpEvent$XpChange) => void);

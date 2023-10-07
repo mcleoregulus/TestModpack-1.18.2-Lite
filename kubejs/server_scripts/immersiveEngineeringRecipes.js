@@ -43,7 +43,7 @@ onEvent('recipes', event => {
 		"spoils":[{"chance":0.5,"output":{"item":"minecraft:cobblestone"}},
 				  {"chance":0.3,"output":{"item":"minecraft:cobbled_deepslate"}},
 				  {"chance":0.2,"output":{"item":"minecraft:gravel"}}],
-		"dimensions":["jamd:mining"],"weight":15,"fail_chance":0.15}
+		"dimensions":["mining_dimension:mining"],"weight":15,"fail_chance":0.15}
 	)
 
 	event.custom({
@@ -55,7 +55,7 @@ onEvent('recipes', event => {
 				  {"chance":0.2,"output":{"item":"minecraft:sandstone"}},
 				  {"chance":0.2,"output":{"item":"minecraft:red_sand"}},
 				  {"chance":0.1,"output":{"item":"minecraft:red_sandstone"}},],
-		"dimensions":["jamd:mining"],"weight":15,"fail_chance":0.15}
+		"dimensions":["mining_dimension:mining"],"weight":15,"fail_chance":0.15}
 	)
 	
 	// event.custom({
