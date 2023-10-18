@@ -1,0 +1,377 @@
+{
+	id: "5D989364AAAF0254"
+	group: "4EDDA09AC3D8DF61"
+	order_index: 0
+	filename: "chapter_4a"
+	title: "第一节 工业先锋"
+	icon: "industrialforegoing:machine_frame_supreme"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "382130E035D51F41"
+			tasks: [{
+				id: "2F809A8503392250"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			dependencies: [
+				"14FF43430D9EA8A5"
+				"382130E035D51F41"
+			]
+			id: "402E5B62787419C1"
+			tasks: [{
+				id: "3200CC1E79A39761"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			dependencies: ["402E5B62787419C1"]
+			id: "5A2ED18F547D3363"
+			tasks: [{
+				id: "005C029DF06828F9"
+				type: "item"
+				item: "industrialforegoing:sewer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			dependencies: ["5A2ED18F547D3363"]
+			id: "52CF960201246435"
+			tasks: [{
+				id: "24BE0562D0EAA2B1"
+				type: "item"
+				item: "industrialforegoing:sewage_composter"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			dependencies: [
+				"52CF960201246435"
+				"72CC5AE6AEB4577D"
+			]
+			id: "57A7C03292B3E565"
+			tasks: [{
+				id: "1CB857AF9161EFF0"
+				type: "item"
+				item: "industrialforegoing:hydroponic_bed"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -4.0d
+			id: "759C4F6254FF9254"
+			tasks: [{
+				id: "7EB67F8ACD5B10EF"
+				type: "item"
+				item: "mysticalagriculture:inferium_seeds"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["402E5B62787419C1"]
+			id: "227B54A0CA3C3C89"
+			tasks: [{
+				id: "01793E2784E6E04C"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.0d
+			dependencies: ["227B54A0CA3C3C89"]
+			id: "16B2D066AA2D158F"
+			tasks: [{
+				id: "0C1082B7EA5BC79B"
+				type: "item"
+				item: "industrialforegoing:meat_bucket"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 2.0d
+			dependencies: ["227B54A0CA3C3C89"]
+			id: "53D11211BA8AF593"
+			tasks: [{
+				id: "77063A927442ECF4"
+				type: "item"
+				item: "industrialforegoing:pink_slime_bucket"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			dependencies: [
+				"72CC5AE6AEB4577D"
+				"53D11211BA8AF593"
+			]
+			id: "03A68EB8D1DF6336"
+			tasks: [{
+				id: "483F082F87AF6EA9"
+				type: "item"
+				item: "industrialforegoing:machine_frame_advanced"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			dependencies: [
+				"03A68EB8D1DF6336"
+				"3FE4F061A8F48E67"
+			]
+			id: "18EBD06711AC9672"
+			tasks: [{
+				id: "03462475592558ED"
+				type: "item"
+				item: "industrialforegoing:mob_crusher"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["03A68EB8D1DF6336"]
+			id: "245F5C3ECC4408BD"
+			tasks: [{
+				id: "75593B926DB00D9D"
+				type: "item"
+				item: "industrialforegoing:stasis_chamber"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 2.0d
+			dependencies: ["245F5C3ECC4408BD"]
+			id: "780576EC1C692F1A"
+			tasks: [
+				{
+					id: "34C30836525FFF37"
+					type: "item"
+					item: "industrialforegoing:ore_laser_base"
+				}
+				{
+					id: "04038BCC4530A6B2"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+				}
+				{
+					id: "632A5A871E0CAEF0"
+					type: "item"
+					item: "industrialforegoing:laser_lens10"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["566F118F89E438D1"]
+			id: "72CC5AE6AEB4577D"
+			tasks: [{
+				id: "4E251F2ED43A6E17"
+				type: "item"
+				item: "industrialforegoing:machine_frame_simple"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: ["402E5B62787419C1"]
+			id: "566F118F89E438D1"
+			tasks: [{
+				id: "7E1FBD722E1E6837"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+		}
+		{
+			x: 17.0d
+			y: -2.0d
+			dependencies: ["77B688915602294C"]
+			id: "19DFD706E5E8B4A7"
+			tasks: [{
+				id: "069287320E7C0B19"
+				type: "item"
+				item: "industrialforegoing:mob_duplicator"
+			}]
+		}
+		{
+			x: 14.5d
+			y: 4.0d
+			dependencies: ["69A01AD07941A345"]
+			id: "12BBA11BCC3E9C28"
+			tasks: [{
+				id: "010266410A051CF9"
+				type: "item"
+				item: "industrialforegoing:fluid_sieving_machine"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 4.0d
+			dependencies: [
+				"03A68EB8D1DF6336"
+				"16B2D066AA2D158F"
+			]
+			id: "2783E232CEC54827"
+			tasks: [{
+				id: "7351C54026FC8A08"
+				type: "item"
+				item: "industrialforegoing:washing_factory"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 4.0d
+			dependencies: ["2783E232CEC54827"]
+			id: "69A01AD07941A345"
+			tasks: [{
+				id: "54786CC285A8A40D"
+				type: "item"
+				item: "industrialforegoing:fermentation_station"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 2.0d
+			dependencies: ["780576EC1C692F1A"]
+			id: "4D6B33C9934FECFC"
+			tasks: [{
+				id: "331B507370732A05"
+				type: "item"
+				item: "industrialforegoing:ether_gas_bucket"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -4.0d
+			id: "3FE4F061A8F48E67"
+			tasks: [{
+				id: "282528AE83201DE7"
+				type: "item"
+				item: "mob_grinding_utils:dreadful_dirt"
+			}]
+		}
+		{
+			x: 19.5d
+			y: -4.0d
+			id: "1705A32FEF7FB1F7"
+			tasks: [
+				{
+					id: "413BCEB6CB9A67C1"
+					type: "item"
+					item: "mob_grinding_utils:saw"
+				}
+				{
+					id: "6C68ACA656544BD1"
+					type: "item"
+					item: "mob_grinding_utils:saw_upgrade_beheading"
+					count: 10L
+				}
+			]
+		}
+		{
+			x: 19.5d
+			y: -2.0d
+			dependencies: [
+				"19DFD706E5E8B4A7"
+				"1705A32FEF7FB1F7"
+			]
+			id: "7BC687DEB83436A9"
+			tasks: [{
+				id: "11209A3E608E533C"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 0.0d
+			dependencies: [
+				"03A68EB8D1DF6336"
+				"4D6B33C9934FECFC"
+			]
+			id: "2318E335C5ADE263"
+			tasks: [{
+				id: "670CF786D9A9A722"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: 19.5d
+			y: 0.0d
+			dependencies: [
+				"2318E335C5ADE263"
+				"7BC687DEB83436A9"
+				"7A57F1A992A983E7"
+			]
+			id: "34310EC77FFA1277"
+			tasks: [{
+				id: "75080421A9940004"
+				type: "item"
+				item: "industrialforegoing:wither_builder"
+			}]
+		}
+		{
+			x: 19.5d
+			y: 2.0d
+			id: "7A57F1A992A983E7"
+			tasks: [
+				{
+					id: "3BDA6B08225D4AA5"
+					type: "item"
+					item: "mob_grinding_utils:tinted_glass"
+				}
+				{
+					id: "3C50D5E9ED9F6FE5"
+					type: "item"
+					item: "mob_grinding_utils:entity_conveyor"
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: 0.0d
+			dependencies: ["34310EC77FFA1277"]
+			id: "5F0954A552A85B12"
+			tasks: [{
+				id: "0351930FA3AA2D8D"
+				type: "item"
+				item: "minecraft:nether_star"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -2.0d
+			dependencies: ["18EBD06711AC9672"]
+			id: "77B688915602294C"
+			tasks: [{
+				id: "7BA2170FBE434F7D"
+				type: "item"
+				item: "industrialforegoing:essence_bucket"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			id: "14FF43430D9EA8A5"
+			tasks: [{
+				id: "68FBBA550DD08D73"
+				type: "item"
+				item: "twilightforest:canopy_log"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

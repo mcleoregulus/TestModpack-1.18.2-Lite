@@ -58,6 +58,20 @@ onEvent('recipes', event => {
 		"dimensions":["mining_dimension:mining"],"weight":15,"fail_chance":0.15}
 	)
 	
+	event.custom({
+		"type":"immersiveengineering:mineral_mix",
+		"ores":[{"chance":0.3,"output":{"item":"undergarden:depthrock_regalium_ore"}},
+				{"chance":0.15,"output":{"item":"undergarden:shiverstone_regalium_ore"}},
+				{"chance":0.25,"output":{"item":"undergarden:depthrock_cloggrum_ore"}},
+				{"chance":0.1,"output":{"item":"undergarden:shiverstone_cloggrum_ore"}},
+				{"chance":0.15,"output":{"item":"undergarden:depthrock_diamond_ore"}},
+				{"chance":0.05,"output":{"item":"undergarden:shiverstone_diamond_ore"}}],
+		"spoils":[{"chance":0.5,"output":{"item":"undergarden:depthrock"}},
+				  {"chance":0.3,"output":{"item":"kubejs:deepgravel"}},
+				  {"chance":0.2,"output":{"item":"undergarden:shiverstone"}}],
+		"dimensions":["undergarden:undergarden"],"weight":30,"fail_chance":0.15}
+	)
+
 	// event.custom({
 	// 	"type":"immersiveengineering:refinery",
 	// 	"result":{"fluid":"immersiveengineering:biodiesel","amount":16},

@@ -1,0 +1,244 @@
+{
+	id: "373A75B9918A5E86"
+	group: "4EDDA09AC3D8DF61"
+	order_index: 1
+	filename: "chapter_4b"
+	title: "第二节 三位一体"
+	icon: "mekanism:alloy_infused"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "06322B5D496C2426"
+			tasks: [{
+				id: "371B3CA904F99408"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: [
+				"4D2F1AA48B12B3A6"
+				"7B23D06F9410B730"
+				"02B5D97C01DA29C4"
+				"2524E371057B70BC"
+				"06322B5D496C2426"
+			]
+			id: "37A886C6423E8FD1"
+			tasks: [{
+				id: "35100FCB1BC81C91"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 2.5d
+			dependencies: ["1008DCB802DA9864"]
+			id: "4D2F1AA48B12B3A6"
+			tasks: [{
+				id: "1D7FE86F53CBDD6D"
+				type: "item"
+				item: "botania:gaia_ingot"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			id: "7B23D06F9410B730"
+			tasks: [{
+				id: "09433D615AF39FB9"
+				type: "item"
+				item: "industrialforegoing:machine_frame_supreme"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			id: "02B5D97C01DA29C4"
+			tasks: [{
+				id: "7FC0C4D5D43F7969"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			dependencies: ["6389B393324BE720"]
+			id: "2524E371057B70BC"
+			tasks: [{
+				id: "29B5D37D1ACA9DA6"
+				type: "item"
+				item: "forbidden_arcanus:arcane_gold_ingot"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			id: "6389B393324BE720"
+			tasks: [{
+				id: "763FBD9BE6BCDB95"
+				type: "item"
+				item: "forbidden_arcanus:mundabitur_dust"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 2.5d
+			id: "1008DCB802DA9864"
+			tasks: [{
+				id: "3CBB98F98A7639F8"
+				type: "item"
+				item: "botania:life_essence"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.5d
+			dependencies: [
+				"37A886C6423E8FD1"
+				"5B44DA9749916409"
+			]
+			id: "11A5297A4CDB40F5"
+			tasks: [{
+				id: "143A16211D83F65E"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.5d
+			dependencies: [
+				"11A5297A4CDB40F5"
+				"50844C9FF55B46DB"
+			]
+			id: "5C87E73C0308C685"
+			tasks: [{
+				id: "0CF6B62B6A29AF5E"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.5d
+			dependencies: [
+				"5C87E73C0308C685"
+				"6A1D52133395B508"
+			]
+			id: "550297DAC5F51929"
+			tasks: [{
+				id: "07807186862DA57F"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			dependencies: [
+				"37A886C6423E8FD1"
+				"05EFF734016DB947"
+			]
+			id: "2FDD41F020F47DC9"
+			tasks: [{
+				id: "564897B1C8F8AC6D"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["37A886C6423E8FD1"]
+			id: "35A8D7B032531264"
+			tasks: [{
+				id: "04FD9C48EC8213A0"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.5d
+			id: "5B44DA9749916409"
+			tasks: [{
+				id: "3A060667005BDC11"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -3.5d
+			dependencies: ["7B8CEDEC69E0E5C3"]
+			id: "50844C9FF55B46DB"
+			tasks: [{
+				id: "7C12902A0DE87FA4"
+				type: "item"
+				item: "mekanism:dust_refined_obsidian"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -5.5d
+			id: "7B8CEDEC69E0E5C3"
+			tasks: [{
+				id: "71F6B2AB5016BD47"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -3.5d
+			dependencies: ["3183F99B932A4703"]
+			id: "6A1D52133395B508"
+			tasks: [{
+				id: "08D34EBEBF088144"
+				type: "item"
+				item: "tconstruct:dragon_scale"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -5.5d
+			id: "3183F99B932A4703"
+			tasks: [{
+				id: "1E0263CB89F3EADB"
+				type: "item"
+				item: "ars_nouveau:drygmy_charm"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			dependencies: [
+				"11A5297A4CDB40F5"
+				"2FDD41F020F47DC9"
+				"35A8D7B032531264"
+			]
+			id: "4FF8C343C70A796B"
+			tasks: [{
+				id: "5889725F71F0356A"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			id: "05EFF734016DB947"
+			tasks: [{
+				id: "0D6FBAA0547671E9"
+				type: "item"
+				item: "industrialforegoing:pink_slime_ingot"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

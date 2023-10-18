@@ -1,0 +1,313 @@
+{
+	id: "6F353E7264C0DBB0"
+	group: "0512320FA916E829"
+	order_index: 1
+	filename: "chapter_2b"
+	title: "第二节 破碎虚空"
+	icon: "kubejs:soul_shard"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "34DE52DEB39752AF"
+			tasks: [{
+				id: "2C63F4D2C4A6A44C"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 0.0d
+			dependencies: ["4128979DA7FB8202"]
+			id: "38B5A5FEB347258B"
+			tasks: [{
+				id: "0D2154F58CDDAF10"
+				type: "item"
+				item: "immersiveengineering:component_electronic_adv"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 2.0d
+			dependencies: ["4128979DA7FB8202"]
+			id: "78CCC4BB16579ED9"
+			tasks: [{
+				id: "28BF12244B927128"
+				type: "item"
+				item: "immersiveengineering:circuit_board"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["34DE52DEB39752AF"]
+			id: "43370F1600F59065"
+			tasks: [{
+				id: "11489F8D904E5919"
+				type: "item"
+				item: "immersiveengineering:ethanol_bucket"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["43370F1600F59065"]
+			id: "6042CE76924AD11F"
+			tasks: [{
+				id: "61B45A5F0A895902"
+				type: "item"
+				item: "immersiveengineering:acetaldehyde_bucket"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 0.0d
+			dependencies: ["6042CE76924AD11F"]
+			id: "58B4E805ACA3F00A"
+			tasks: [{
+				id: "1A60E260FA2D1BBF"
+				type: "item"
+				item: "immersiveengineering:phenolic_resin_bucket"
+			}]
+		}
+		{
+			x: 13.5d
+			y: 0.0d
+			id: "4128979DA7FB8202"
+			tasks: [{
+				id: "1ABCB6C1CCFEC0E4"
+				type: "item"
+				item: "immersiveengineering:plate_duroplast"
+			}]
+		}
+		{
+			icon: "immersiveengineering:bottling_machine"
+			x: 10.5d
+			y: 0.0d
+			id: "13F32AA949CAD637"
+			tasks: [
+				{
+					id: "084D6E3D7CA741C5"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 3L
+				}
+				{
+					id: "326A7E9795E53F8B"
+					type: "item"
+					item: "immersiveengineering:mold_plate"
+				}
+				{
+					id: "4A31FBB7F0DE3841"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "5F819B9C886C75E7"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 9.0d
+			id: "42EC6B4C23BC640F"
+			tasks: [{
+				id: "32C56DF20A63842A"
+				type: "item"
+				item: "undergarden:blood_mushroom_globule"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.5d
+			id: "64DC580A516DB29A"
+			tasks: [{
+				id: "33C40984655A56CB"
+				type: "item"
+				item: "undergarden:ink_mushroom"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 10.5d
+			id: "7BA083F6CF3F5AB5"
+			tasks: [{
+				id: "3917256508772939"
+				type: "item"
+				item: "undergarden:blood_mushroom"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 10.5d
+			id: "40DE7D28B06B68BE"
+			tasks: [{
+				id: "70141AB323EDC1FD"
+				type: "item"
+				item: "undergarden:indigo_mushroom"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 10.5d
+			id: "499F49A7D2484FB6"
+			tasks: [{
+				id: "77452F72F07966D3"
+				type: "item"
+				item: "undergarden:veil_mushroom"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 10.5d
+			id: "3110F559E57F8637"
+			tasks: [{
+				id: "7AB03198DBBC82FA"
+				type: "item"
+				item: "undergarden:virulent_mix_bucket"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			id: "3985037D268B0218"
+			tasks: [{
+				id: "61C522BA8A83FC80"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 9.0d
+			id: "27128D18109A4821"
+			tasks: [{
+				id: "3EBA9CDC18127237"
+				type: "item"
+				item: "immersiveengineering:ingot_steel"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 10.5d
+			id: "53C0B83AC15D5CC8"
+			tasks: [{
+				id: "5E28A79A3B29A9C2"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 7.5d
+			id: "7E88CA1CB42E4960"
+			tasks: [{
+				id: "7922D43F2C74BDA5"
+				type: "item"
+				item: "immersiveengineering:bucket_wheel"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 9.0d
+			id: "5932AA26F7068416"
+			tasks: [{
+				id: "499A1E9F1DA52CDB"
+				type: "item"
+				item: "undergarden:regalium_crystal"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 9.0d
+			id: "311F1C50167CD15B"
+			tasks: [{
+				id: "20D1C22ED378A922"
+				type: "item"
+				item: "tconstruct:blood_bucket"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 10.5d
+			id: "6243C2B00B30A185"
+			tasks: [{
+				id: "5EAA5669F219C9AF"
+				type: "item"
+				item: "industrialforegoing:sludge_bucket"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 12.0d
+			id: "3A77ECEEDDD5B6DB"
+			tasks: [{
+				id: "78B903ACB799BF51"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 13.0d
+			id: "32B01E8DF02C94CB"
+			tasks: [{
+				id: "6C752F88F4B441FE"
+				type: "item"
+				item: "create:brass_sheet"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 7.5d
+			id: "46A2164BA2A163DE"
+			tasks: [{
+				id: "4B8A2EEFD0AE9F3C"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 10.5d
+			id: "713F6AE5C14B0494"
+			tasks: [{
+				id: "3EB36354A14C2252"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 6.0d
+			id: "5E2AFB20A6354AEF"
+			tasks: [{
+				id: "08E360F2AC444F89"
+				type: "item"
+				item: {
+					id: "immersiveengineering:survey_tools"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 7.5d
+			id: "247976D1611A32C9"
+			tasks: [{
+				id: "57FF63CD183D4F1C"
+				type: "item"
+				item: "immersiveengineering:sample_drill"
+			}]
+		}
+	]
+	quest_links: [ ]
+}

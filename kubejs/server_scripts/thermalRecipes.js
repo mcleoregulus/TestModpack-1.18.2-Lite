@@ -13,9 +13,12 @@ onEvent('recipes', event => {
 	event.remove({id:'thermal:rubber_from_vine'})
 	event.remove({id:'thermal:rubber_from_dandelion'})
 	event.remove({id:'thermal:rubber_3'})
+	event.remove({id:'thermal:smelting/cured_rubber_from_smelting'})
 
 	event.replaceInput({}, '#forge:gears/diamond', 'thermal:diamond_gear')
 	event.replaceInput({id:'thermal:press_gear_die'}, 'thermal:diamond_gear', 'industrialforegoing:diamond_gear')
+	event.replaceInput({id:'thermal:machine_frame'}, 'thermal:tin_gear', 'thermal:invar_gear')
+	event.replaceInput({id:'thermal:machine_frame'}, 'minecraft:iron_ingot', 'thermal:tin_ingot')
 
 	event.shaped('industrialforegoing:diamond_gear', [
 		' A ',
@@ -25,7 +28,6 @@ onEvent('recipes', event => {
 		A: 'minecraft:diamond'
   	})
 
-	event.recipes.thermal.crystallizer('pneumaticcraft:plastic', [Fluid.of('pneumaticcraft:plastic', 250), 'thermal:rubber'])
 	event.recipes.thermal.crystallizer('pneumaticcraft:plastic', [Fluid.of('pneumaticcraft:plastic', 250), 'industrialforegoing:tinydryrubber'])
 
 	event.recipes.thermal.press('pneumaticcraft:compressed_iron_gear',

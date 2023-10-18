@@ -1,11 +1,295 @@
 {
-	id: "2DAB3FCCE89A5E9E"
-	group: "27CC0297EE2CA143"
-	order_index: 2
+	id: "4745558F89D24CDE"
+	group: "35BCF7DBE705E47D"
+	order_index: 0
 	filename: "powah"
-	title: "科技系列 powah！"
+	title: "  ——powah——"
+	icon: "powah:reactor_nitro"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "2372A020FA58326E"
+			tasks: [{
+				id: "7078E35076886EF6"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["2372A020FA58326E"]
+			id: "0BA78BC507AF25B5"
+			tasks: [{
+				id: "6E2FD12EA066A68C"
+				type: "item"
+				item: "powah:dielectric_paste"
+				count: 64L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["0BA78BC507AF25B5"]
+			id: "69D09BA96479BC88"
+			tasks: [
+				{
+					id: "4B620625B0504920"
+					type: "item"
+					item: "powah:dielectric_rod"
+					count: 32L
+				}
+				{
+					id: "48ADFF4ACD6C0ED5"
+					type: "item"
+					item: "powah:dielectric_rod_horizontal"
+					count: 32L
+				}
+				{
+					id: "6C2EF24ADD7C0028"
+					type: "item"
+					item: "powah:dielectric_casing"
+					count: 8L
+				}
+				{
+					id: "1FB332DA34517A1A"
+					type: "item"
+					item: "powah:capacitor_basic"
+					count: 32L
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			dependencies: ["69D09BA96479BC88"]
+			id: "5C074217D870B405"
+			tasks: [
+				{
+					id: "37B6BBEEBA36F97E"
+					type: "item"
+					item: "powah:energizing_rod_starter"
+				}
+				{
+					id: "597C5851E512CA3F"
+					type: "item"
+					item: "powah:energizing_orb"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["5C074217D870B405"]
+			id: "633DB2BF592ABE7D"
+			tasks: [{
+				id: "1339976C740816DA"
+				type: "item"
+				item: "powah:steel_energized"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			dependencies: ["633DB2BF592ABE7D"]
+			id: "2EB1DF0EA63F6BF8"
+			tasks: [{
+				id: "67E196CD8C07660B"
+				type: "item"
+				item: "powah:crystal_blazing"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -2.0d
+			dependencies: ["2EB1DF0EA63F6BF8"]
+			id: "07C05652EEA2D2AD"
+			tasks: [{
+				id: "1ABFC5F45A8E4EC7"
+				type: "item"
+				item: "powah:crystal_niotic"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -2.0d
+			dependencies: ["07C05652EEA2D2AD"]
+			id: "3D64C3296EA17FB5"
+			tasks: [{
+				id: "5C72A939AB46A509"
+				type: "item"
+				item: "powah:crystal_spirited"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -2.0d
+			dependencies: ["3D64C3296EA17FB5"]
+			id: "330D6D3BB31A069A"
+			tasks: [{
+				id: "65F9DFEEC23FACBE"
+				type: "item"
+				item: "powah:crystal_nitro"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			dependencies: [
+				"633DB2BF592ABE7D"
+				"246A494FB59E03AC"
+			]
+			id: "73314E040B3119EA"
+			tasks: [{
+				id: "4BD683C75E1740C6"
+				type: "item"
+				item: "powah:reactor_starter"
+				count: 36L
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			dependencies: ["5C074217D870B405"]
+			id: "53DE9892C5DA1D3C"
+			tasks: [{
+				id: "5910ECAFB39F1E4B"
+				type: "item"
+				item: "powah:uraninite"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			id: "246A494FB59E03AC"
+			tasks: [{
+				id: "6B096D4F0D119CC8"
+				type: "item"
+				item: "powah:dry_ice"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 0.0d
+			dependencies: ["3059E9A4FF20D2A3"]
+			id: "78083EF2AFA4A8E7"
+			tasks: [{
+				id: "2157618CCA0FFA6F"
+				type: "item"
+				item: "powah:player_transmitter_starter"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["633DB2BF592ABE7D"]
+			id: "3059E9A4FF20D2A3"
+			tasks: [{
+				id: "78E9717CD9D160FB"
+				type: "item"
+				item: "powah:aerial_pearl"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 4.0d
+			dependencies: ["73314E040B3119EA"]
+			id: "43605E5555789732"
+			tasks: [{
+				id: "1872CBF1BAB164E3"
+				type: "item"
+				item: "powah:reactor_nitro"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.0d
+			dependencies: ["78083EF2AFA4A8E7"]
+			id: "71390D07C3896A53"
+			tasks: [{
+				id: "2EDCAF13FFFFBE81"
+				type: "item"
+				item: "powah:binding_card"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.0d
+			dependencies: ["71390D07C3896A53"]
+			id: "2B5A3B305D7EBEAC"
+			tasks: [{
+				id: "6CC0FB296CEAFC66"
+				type: "item"
+				item: "powah:binding_card_dim"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 0.0d
+			dependencies: ["71390D07C3896A53"]
+			id: "62BA09FCDAC2D1C3"
+			tasks: [{
+				id: "2A7F4D614E765EDE"
+				type: "item"
+				item: "powah:player_transmitter_nitro"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 2.0d
+			dependencies: ["73314E040B3119EA"]
+			id: "69A76743C5E0D9DE"
+			tasks: [{
+				id: "016B32F364C6CF67"
+				type: "item"
+				item: "powah:ender_cell_starter"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 2.0d
+			dependencies: ["69A76743C5E0D9DE"]
+			id: "1E5292EB76A0BC25"
+			tasks: [{
+				id: "49A9ADE079505EF7"
+				type: "item"
+				item: "powah:ender_gate_starter"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 4.0d
+			dependencies: ["69A76743C5E0D9DE"]
+			id: "6579A1D83916C1E4"
+			tasks: [{
+				id: "73AAC28B296159D0"
+				type: "item"
+				item: "powah:ender_cell_nitro"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			dependencies: ["1E5292EB76A0BC25"]
+			id: "6A9982A6443EE333"
+			tasks: [{
+				id: "4C320EA50691ED15"
+				type: "item"
+				item: "powah:ender_gate_nitro"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -3.5d
+			id: "004E18C762FA0D28"
+			tasks: [{
+				id: "25A85218EFCE9A6D"
+				type: "item"
+				item: "minecraft:tuff"
+			}]
+		}
+	]
 	quest_links: [ ]
 }

@@ -1,0 +1,12 @@
+{
+	id: "000891F9381BAE6A"
+	group: "79282311F056FE84"
+	order_index: 1
+	filename: "undergarden"
+	title: "第二节 深暗之园"
+	icon: "undergarden:catalyst"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

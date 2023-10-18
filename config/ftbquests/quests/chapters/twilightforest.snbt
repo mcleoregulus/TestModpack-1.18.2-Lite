@@ -1,0 +1,12 @@
+{
+	id: "243BE34165DFD9B0"
+	group: "79282311F056FE84"
+	order_index: 0
+	filename: "twilightforest"
+	title: "第一节 暮色森林"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

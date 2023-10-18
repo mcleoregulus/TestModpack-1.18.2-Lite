@@ -138,6 +138,17 @@ onEvent('worldgen.add', event => {
     // })
 })
 
+onEvent('worldgen.remove', event => {
+        event.removeFeatureById(id = "minecraft:stronghold")
+})
+
+onEvent('worldgen.add', event => {
+        event.addFeatureJson((structure) => {
+                structure.id = "kubejs:test"
+                structure.biomes = "javd:void"
+
+        })
+})
 
 // onEvent('worldgen.remove', event => {
 //     console.info("HELP")

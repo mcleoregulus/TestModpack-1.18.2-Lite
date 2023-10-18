@@ -1,0 +1,12 @@
+{
+	id: "771F07F01786AB63"
+	group: "35BCF7DBE705E47D"
+	order_index: 1
+	filename: "cyclic"
+	title: "  ——cyclic——"
+	icon: "cyclic:workbench"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

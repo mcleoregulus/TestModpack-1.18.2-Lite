@@ -1,0 +1,21 @@
+{
+  "type": "javd:void",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "javd:void",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:lava",
+          "height": 64
+        }
+      ]
+    }
+  }
+}

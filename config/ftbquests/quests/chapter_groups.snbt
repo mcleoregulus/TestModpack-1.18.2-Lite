@@ -2,9 +2,12 @@
 	chapter_groups: [
 		{ id: "5493F94E7DB4FE3F", title: "第一章 机械造物" }
 		{ id: "0512320FA916E829", title: "第二章 沉浸生电" }
-		{ id: "27CC0297EE2CA143", title: "第三章 热力复兴" }
-		{ id: "4EDDA09AC3D8DF61", title: "第四章 工业时代" }
-		{ id: "38A5CF1235EC5AED", title: "第五章 科技飞升" }
+		{ id: "27CC0297EE2CA143", title: "第三章 工业时代" }
+		{ id: "4EDDA09AC3D8DF61", title: "第四章 科技飞升" }
+		{ id: "38A5CF1235EC5AED", title: "第五章 登神长阶" }
 		{ id: "7D8A5A40ACC4A15B", title: "第六章 破灭星河" }
+		{ id: "79282311F056FE84", title: "支线章节 复仇征途" }
+		{ id: "4C20C134FD3100F2", title: "支线章节 神秘降临" }
+		{ id: "35BCF7DBE705E47D", title: "支线章节 实用设备" }
 	]
 }

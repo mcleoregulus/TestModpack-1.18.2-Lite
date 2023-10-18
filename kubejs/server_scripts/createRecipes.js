@@ -10,7 +10,7 @@ console.info('Hello, World! (You will see this line every time server resources 
 onEvent('recipes', event => {
 	// Change recipes here
 
-	event.remove({id:"create:crafting/materials/andesite_alloy"})
+	event.remove({output:'create:andesite_alloy'})
 	event.remove({id:"create:crafting/materials/andesite_alloy_from_zinc"})
 	event.remove({id:"create:mixing/andesite_alloy"})
 	event.remove({id:"create:mixing/andesite_alloy_from_zinc"})
@@ -26,12 +26,15 @@ onEvent('recipes', event => {
 	event.remove({id:'create:crafting/appliances/netherite_backtank'})
 	event.remove({id:'create:crafting/appliances/netherite_backtank_from_netherite'})
 	event.remove({type:'createsifter:sifting'})
-
-
 	event.remove({mod:'createaddition', output:'createaddition:biomass'})
 	event.remove({id:'createaddition:compacting/biomass_pellet'})
+	event.remove({id:'create:crafting/kinetics/brass_hand'})
+
 
 	event.replaceInput({id:'create:haunting/soul_sand'}, '#minecraft:sand', '#forge:sand')
+	event.replaceInput({id:'minecraft:brewing_stand'}, '#minecraft:stone_crafting_materials', 'minecraft:cobblestone')
+
+	event.recipes.createFilling('create:brass_hand', [Fluid.of('tconstruct:molten_brass', 90), 'kubejs:rubber_hand'])
 
 	event.recipes.createCompacting([
 		'createaddition:biomass_pellet', Fluid.of('minecraft:water', 50)],
@@ -41,6 +44,11 @@ onEvent('recipes', event => {
 	event.recipes.createCompacting(
 		'thermal:rubber',
 		Fluid.of('thermal:latex', 250)
+	)
+
+	event.recipes.createCompacting([
+		'createaddition:biomass_pellet', Fluid.of('minecraft:water', 50)],
+		'4x createaddition:biomass'
 	)
 
 	event.recipes.createMixing('4x createaddition:biomass',[
@@ -65,35 +73,13 @@ onEvent('recipes', event => {
 		Fluid.of('createaddition:bioethanol', 10),
 	]).heated()
 
-
-	// event.recipes.createMixing('4x createaddition:biomass',[
-	// 	Fluid.of('createaddition:seed_oil',100),
-	// 	'2x #minecraft:flowers',
-	// 	'undergarden:ditchbulb_paste'
-	// ])
-
-	// event.recipes.createMixing('4x createaddition:biomass',[
-	// 	Fluid.of('createaddition:seed_oil',100),
-	// 	'2x #forge:crops',
-	// 	'undergarden:ditchbulb_paste'
-	// ])
-
-	// event.recipes.createMixing('4x createaddition:biomass',[
-	// 	Fluid.of('createaddition:seed_oil',100),
-	// 	'8x minecraft:stick',
-	// 	'undergarden:ditchbulb_paste'
-	// ])
-
-		
-
 	// event.replaceInput({output:'create:empty_blaze_burner'},'minecraft:netherrack','undergarden:tremblecrust')
-
 
 	event.shaped('create:andesite_alloy', [
 		'AB',
 		'BA',
 	], {
-		A: 'undergarden:cloggrum_nugget',
+		A: 'undergarden:cloggrum_ingot',
 		B: 'undergarden:depthrock'
   	})
 
@@ -127,9 +113,18 @@ onEvent('recipes', event => {
 		A: 'minecraft:diamond'
 	})
 
+	event.shaped('kubejs:rubber_hand', [
+		' A ',
+		'BBB',
+		' B ',
+	], {
+		A: 'create:andesite_alloy',
+		B: 'thermal:cured_rubber'
+  	})
+
   	event.recipes.createMixing('create:andesite_alloy',[
 		'undergarden:depthrock',
-		'undergarden:cloggrum_nugget'
+		'undergarden:cloggrum_ingot'
   	])
 
 	  event.recipes.createMixing(Fluid.of('minecraft:lava',50),[
@@ -144,13 +139,17 @@ onEvent('recipes', event => {
 		'undergarden:ditchbulb_paste'
 	])
 
-	event.recipes.createMixing(Fluid.of('undergarden:virulent_mix_source',100),[
-		Fluid.of('minecraft:water',100),
+	event.recipes.createMixing(Fluid.of('undergarden:virulent_mix_source',10),[
+		Fluid.of('minecraft:water',10),
 		'undergarden:ink_mushroom',
 		'undergarden:blood_mushroom',
 		'undergarden:veil_mushroom',
 		'undergarden:indigo_mushroom'
 	])
+
+	event.recipes.createCompacting(Fluid.of('tconstruct:blood',10),
+		'4x undergarden:blood_mushroom_globule'
+	)
 
 	event.recipes.createMilling('kubejs:deepgravel','undergarden:depthrock')
 	event.recipes.createCrushing('kubejs:deepgravel','undergarden:depthrock')
@@ -269,6 +268,15 @@ onEvent('recipes', event => {
 	]).processingTime(200)//.waterlogged()
 
 	event.recipes.createHaunting( 'minecraft:glow_berries', 'undergarden:droopvine_item')
+
+	event.recipes.createMechanicalCrafting('create:brass_hand', [
+		' A ',
+		'BBB',
+		' B '
+	  ], {
+		A: 'create:andesite_alloy',
+		B: 'create:brass_sheet'
+	})
 
 
 

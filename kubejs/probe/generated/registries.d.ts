@@ -36,6 +36,7 @@ declare namespace Registry {
         create(id: string, type: "leggings"): Internal.ArmorItemBuilder$Leggings;
         create(id: string, type: "boots"): Internal.ArmorItemBuilder$Boots;
         create(id: string, type: "music_disc"): Internal.RecordItemJS$Builder;
+        create(id: string, type: "createsifter:mesh"): Internal.MeshItemBuilder;
         create(id: string, type: "create:sequenced_assembly"): Internal.SequencedAssemblyItemBuilder;
         create(id: string): Internal.BasicItemJS$Builder;
     }
@@ -78,5 +79,9 @@ declare namespace Registry {
     class VillagerProfession extends Internal.RegistryObjectBuilderTypes$RegistryEventJS<any> {
         create(id: string, type: "basic"): Internal.VillagerProfessionBuilder;
         create(id: string): Internal.VillagerProfessionBuilder;
+    }
+    class Brews extends Internal.RegistryObjectBuilderTypes$RegistryEventJS<any> {
+        create(id: string, type: "basic"): Internal.BasicBrewJS$Builder;
+        create(id: string): Internal.BasicBrewJS$Builder;
     }
 }

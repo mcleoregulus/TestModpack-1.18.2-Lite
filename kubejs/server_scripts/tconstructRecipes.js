@@ -10,7 +10,7 @@ console.info('Hello, World! (You will see this line every time server resources 
 onEvent('recipes', event => {
 	// Change recipes here
 
-	event.remove({id:'tconstruct:smeltery/alloys/molten_brass'})
+	// event.remove({id:'tconstruct:smeltery/alloys/molten_brass'})
 	event.remove({output:'tconstruct:seared_fuel_gauge'})
 	event.remove({output:'tconstruct:seared_ingot_tank'})
 	event.remove({output:'tconstruct:seared_ingot_gauge'})

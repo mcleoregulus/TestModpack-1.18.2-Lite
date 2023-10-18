@@ -1,0 +1,347 @@
+{
+	id: "62531DA4EC3DD733"
+	group: "27CC0297EE2CA143"
+	order_index: 0
+	filename: "chapter_3a"
+	title: "第一节 热力气动"
+	icon: "thermal:machine_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: -1.0d
+			id: "773F12CABB026A6B"
+			tasks: [{
+				id: "300A26A19287D5EC"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["773F12CABB026A6B"]
+			id: "172C8FB79AF62F5E"
+			tasks: [{
+				id: "7E6236157C281DD9"
+				type: "item"
+				item: "thermal:oil_sand"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			dependencies: ["172C8FB79AF62F5E"]
+			id: "6259ACF25D12164A"
+			tasks: [{
+				id: "3BBC146DEE626ACC"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["6259ACF25D12164A"]
+			id: "128E54EAF81C3CE8"
+			tasks: [{
+				id: "56A2113204AC5BE2"
+				type: "item"
+				item: "thermal:crude_oil_bucket"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			dependencies: [
+				"128E54EAF81C3CE8"
+				"1BAC4845997EB2A9"
+			]
+			id: "0EB61C4953776EC0"
+			tasks: [
+				{
+					id: "01DCE55B6C27214F"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+				{
+					id: "2FF5EE0C9EB336BB"
+					type: "item"
+					item: "pneumaticcraft:refinery_output"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 12.5d
+			y: 3.0d
+			id: "031A008A07B4BABC"
+			tasks: [{
+				id: "07DF83EA939946CF"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.0d
+			dependencies: [
+				"0D062B18F6BB87F0"
+				"0EB61C4953776EC0"
+			]
+			id: "2D0C096605D51AD2"
+			tasks: [{
+				id: "5EF2E2A32C6ACB3E"
+				type: "item"
+				item: "pneumaticcraft:lpg_bucket"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 1.5d
+			dependencies: ["031A008A07B4BABC"]
+			id: "1BAC4845997EB2A9"
+			tasks: [{
+				id: "15C68C0C3D2373F3"
+				type: "item"
+				item: "pneumaticcraft:vortex_tube"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -1.0d
+			dependencies: ["2D0C096605D51AD2"]
+			id: "79CC68EC6732169E"
+			tasks: [{
+				id: "245FF2CBDCA5EB41"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -1.0d
+			dependencies: [
+				"2C6829592D884399"
+				"039A7ADDEF374A80"
+			]
+			id: "21AADC9346A945A1"
+			tasks: [{
+				id: "3F56D626E988AEDF"
+				type: "item"
+				item: "thermal:machine_crystallizer"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -5.0d
+			dependencies: ["5DC33906746CF8A4"]
+			id: "074C21DC980EFE33"
+			tasks: [{
+				id: "5D45FE6A12FDA902"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -7.0d
+			id: "5DC33906746CF8A4"
+			tasks: [{
+				id: "50CCBE64FC0DD631"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+		}
+		{
+			x: 17.5d
+			y: -1.0d
+			dependencies: ["79CC68EC6732169E"]
+			id: "2C6829592D884399"
+			tasks: [{
+				id: "62F707604BC353A1"
+				type: "item"
+				item: "pneumaticcraft:plastic_bucket"
+			}]
+		}
+		{
+			x: 17.5d
+			y: 1.5d
+			dependencies: ["5A76A72DC15C0A28"]
+			id: "7C0CE5606590AA73"
+			tasks: [{
+				id: "618EA9930D7CF034"
+				type: "item"
+				item: "pneumaticcraft:etching_acid_bucket"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 3.0d
+			dependencies: ["031A008A07B4BABC"]
+			id: "5A76A72DC15C0A28"
+			tasks: [
+				{
+					id: "4620A1ABB2281251"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_wall"
+				}
+				{
+					id: "76B8BC936EA809B9"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					count: 2L
+				}
+				{
+					id: "7D379D985069E206"
+					type: "item"
+					item: "pneumaticcraft:pressure_chamber_valve"
+				}
+			]
+		}
+		{
+			x: 17.5d
+			y: 4.0d
+			dependencies: ["5A76A72DC15C0A28"]
+			id: "5992B47AA1F1193A"
+			tasks: [{
+				id: "6B81B52E65E0B90F"
+				type: "item"
+				item: "pneumaticcraft:empty_pcb"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 4.0d
+			subtitle: "80%"
+			dependencies: ["3E8948D7EAC9A100"]
+			id: "6968C49FF9043D0D"
+			tasks: [{
+				id: "0806CEBBBB7274CF"
+				type: "item"
+				item: {
+					id: "pneumaticcraft:empty_pcb"
+					Count: 1b
+					tag: {
+						"pneumaticcraft:uv_exposure": 100
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: 4.0d
+			dependencies: ["5992B47AA1F1193A"]
+			id: "3E8948D7EAC9A100"
+			tasks: [{
+				id: "346148FE871FEFD8"
+				type: "item"
+				item: "pneumaticcraft:uv_light_box"
+			}]
+		}
+		{
+			x: 22.5d
+			y: 1.5d
+			dependencies: ["5930C226F811904E"]
+			id: "667E184856F03C12"
+			tasks: [{
+				id: "372E035F184D29E2"
+				type: "item"
+				item: "pneumaticcraft:unassembled_pcb"
+			}]
+		}
+		{
+			x: 24.5d
+			y: 0.0d
+			dependencies: [
+				"667E184856F03C12"
+				"01B8643812DD9251"
+			]
+			id: "2068582032B6B9D1"
+			tasks: [{
+				id: "27591FF9F5DCAE09"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -3.0d
+			dependencies: ["032B6741201A6960"]
+			id: "0D062B18F6BB87F0"
+			tasks: [{
+				id: "740F4B5A4ECDE220"
+				type: "item"
+				item: "pneumaticcraft:gasoline_bucket"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -5.0d
+			dependencies: ["4006C75E2AE0391E"]
+			id: "032B6741201A6960"
+			tasks: [{
+				id: "15110BBEED55258B"
+				type: "item"
+				item: "pneumaticcraft:kerosene_bucket"
+			}]
+		}
+		{
+			x: 12.5d
+			y: -7.0d
+			id: "4006C75E2AE0391E"
+			tasks: [{
+				id: "3ABED7BC2DACF4E0"
+				type: "item"
+				item: "pneumaticcraft:diesel_bucket"
+			}]
+		}
+		{
+			x: 22.5d
+			y: -1.0d
+			dependencies: ["21AADC9346A945A1"]
+			id: "01B8643812DD9251"
+			tasks: [{
+				id: "2167C0C1ADE2CB33"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -3.0d
+			dependencies: ["074C21DC980EFE33"]
+			id: "039A7ADDEF374A80"
+			tasks: [{
+				id: "2794B74BDD9EF748"
+				type: "item"
+				item: "industrialforegoing:tinydryrubber"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 6.0d
+			id: "73380B05D9F41032"
+			tasks: [{
+				id: "246604E63CBCE5B2"
+				type: "item"
+				item: "pneumaticcraft:failed_pcb"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 1.5d
+			dependencies: [
+				"3E8948D7EAC9A100"
+				"7C0CE5606590AA73"
+			]
+			id: "5930C226F811904E"
+			tasks: [{
+				id: "76D6FA1A649AD763"
+				type: "item"
+				item: "lazierae2:etcher"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
