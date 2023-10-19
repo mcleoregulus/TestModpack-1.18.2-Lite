@@ -13,6 +13,7 @@ onEvent('item.registry', event => {
 
 onEvent('fluid.registry', event => {
 
-    event.create("congestion").displayName("淤血").bucketColor(0x844031).textureThick(0x844031).textureThin(0x844031);
+    event.create("congestion").displayName("淤血")
+		 .color(0x8A0000).bucketColor(0x8A0000).textureThin(0x8A0000).density(1000).viscosity(1000);
 
 })

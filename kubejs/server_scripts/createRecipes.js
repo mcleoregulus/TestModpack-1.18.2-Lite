@@ -29,12 +29,20 @@ onEvent('recipes', event => {
 	event.remove({mod:'createaddition', output:'createaddition:biomass'})
 	event.remove({id:'createaddition:compacting/biomass_pellet'})
 	event.remove({id:'create:crafting/kinetics/brass_hand'})
+	event.remove({id:'create:crafting/materials/electron_tube'})
+	event.remove({id:'create:crafting/materials/rose_quartz'})
 
 
 	event.replaceInput({id:'create:haunting/soul_sand'}, '#minecraft:sand', '#forge:sand')
 	event.replaceInput({id:'minecraft:brewing_stand'}, '#minecraft:stone_crafting_materials', 'minecraft:cobblestone')
 
 	event.recipes.createFilling('create:brass_hand', [Fluid.of('tconstruct:molten_brass', 90), 'kubejs:rubber_hand'])
+	event.recipes.createFilling('create:electron_tube', [Fluid.of('tconstruct:molten_steel', 90), 'create:polished_rose_quartz'])
+	event.recipes.createMixing('create:rose_quartz', [Fluid.of('immersiveengineering:redstone_acid', 250), 'minecraft:quartz'])
+
+	event.recipes.createMixing(Fluid.of('immersiveengineering:redstone_acid',25), [
+	'minecraft:redstone', Fluid.of('minecraft:water', 50),])
+
 
 	event.recipes.createCompacting([
 		'createaddition:biomass_pellet', Fluid.of('minecraft:water', 50)],

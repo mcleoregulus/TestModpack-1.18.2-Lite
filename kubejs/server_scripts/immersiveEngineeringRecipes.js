@@ -17,6 +17,7 @@ onEvent('recipes', event => {
 	event.remove({id:'immersiveengineering:crusher/gravel'})
 	event.remove({id:'immersiveengineering:crusher/glass'})
 	event.remove({id:'immersiveengineering:refinery/biodiesel'})
+	event.remove({id:'immersiveengineering:crafting/redstone_acid'})
 
 	event.replaceInput({id:'immersiveengineering:crafting/cokebrick'}, '#forge:sandstone', 'undergarden:sediment')
 
